@@ -13,9 +13,9 @@ def melody_list(request):
     if request.method == 'GET':
         melodies = Chant.objects.all()
         
-        title = request.GET.get('title', None)
+        title = request.GET.get('incipit', None)
         if title is not None:
-            melodies = melodies.filter(title__icontains=title)
+            melodies = melodies.filter(incipit__icontains=title)
         
         melodies_serializer = ChantSerializer(melodies, many=True)
         return JsonResponse(melodies_serializer.data, safe=False)
@@ -34,9 +34,9 @@ def melody_list(request):
  
 @api_view(['GET', 'PUT', 'DELETE'])
 def melody_detail(request, pk):
-    # find tutorial by pk (id)
+    # find chant by pk (id)
     try: 
-        melody = Chant.objects.get(pk=pk) 
+        melody = Chant.objects.get(id=pk) 
     except Chant.DoesNotExist: 
         return JsonResponse({'message': 'The melody does not exist'}, status=status.HTTP_404_NOT_FOUND) 
 
