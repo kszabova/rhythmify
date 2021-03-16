@@ -10,7 +10,7 @@ import { ChantService } from 'src/app/services/chant.service';
 export class AddChantComponent implements OnInit {
 
   chant: Chant = {
-    title: '',
+    incipit: '',
     volpiano: '',
     full_text: ''
   };
@@ -23,7 +23,7 @@ export class AddChantComponent implements OnInit {
 
   saveChant(): void {
     const data = {
-      title: this.chant.title,
+      incipit: this.chant.incipit,
       volpiano: this.chant.volpiano,
       full_text: this.chant.full_text
     };
@@ -42,7 +42,7 @@ export class AddChantComponent implements OnInit {
   newChant(): void {
     this.submitted = false;
     this.chant = {
-      title: '',
+      incipit: '',
       volpiano: '',
       full_text: ''
     };

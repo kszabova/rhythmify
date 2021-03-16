@@ -3,13 +3,13 @@
       <h4>Chant</h4>
       <form>
         <div class="form-group">
-          <label for="title">Title</label>
+          <label for="incipit">Incipit</label>
           <input
             type="text"
             class="form-control"
-            id="title"
-            [(ngModel)]="currentChant.title"
-            name="title"
+            id="incipit"
+            [(ngModel)]="currentChant.incipit"
+            name="incipit"
           />
         </div>
         <div class="form-group">
@@ -22,6 +22,8 @@
             name="volpiano"
           />
         </div>
+        
+        <div class="melody">{{ currentChant.volpiano }}</div>
   
         <div class="form-group">
             <label for="full_text">Full Text</label>

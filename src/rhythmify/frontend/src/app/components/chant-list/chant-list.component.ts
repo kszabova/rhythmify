@@ -12,7 +12,7 @@ export class ChantListComponent implements OnInit {
   chants?: Chant[];
   currentChant?: Chant;
   currentIndex = -1;
-  title = '';
+  incipit = '';
 
   constructor(private chantService: ChantService) { }
 
@@ -55,8 +55,8 @@ export class ChantListComponent implements OnInit {
         });
   }
 
-  searchTitle(): void {
-    this.chantService.findByTitle(this.title)
+  searchIncipit(): void {
+    this.chantService.findByIncipit(this.incipit)
       .subscribe(
         data => {
           this.chants = data;

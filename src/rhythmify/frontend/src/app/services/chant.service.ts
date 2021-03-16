@@ -36,7 +36,7 @@ export class ChantService {
     return this.http.delete(baseUrl);
   }
 
-  findByTitle(title: any): Observable<Chant[]> {
-    return this.http.get<Chant[]>(`${baseUrl}?title=${title}`);
+  findByIncipit(incipit: any): Observable<Chant[]> {
+    return this.http.get<Chant[]>(`${baseUrl}?incipit=${incipit}`);
   }
 }

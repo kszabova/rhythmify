@@ -10,7 +10,7 @@ import { Chant } from 'src/app/models/chant.model';
 })
 export class ChantDetailsComponent implements OnInit {
   currentChant: Chant = {
-    title: '',
+    incipit: '',
     volpiano: '',
     full_text: ''
   };
@@ -40,7 +40,7 @@ export class ChantDetailsComponent implements OnInit {
 
   updatePublished(status: string): void {
     // const data = {
-    //   title: this.currentChant.title,
+    //   incipit: this.currentChant.incipit,
     //   description: this.currentChant.volpiano,
     //   full_text: status
     // };

@@ -4,14 +4,14 @@
         <input
           type="text"
           class="form-control"
-          placeholder="Search by title"
-          [(ngModel)]="title"
+          placeholder="Search by incipit"
+          [(ngModel)]="incipit"
         />
         <div class="input-group-append">
           <button
             class="btn btn-outline-secondary"
             type="button"
-            (click)="searchTitle()"
+            (click)="searchIncipit()"
           >
             Search
           </button>
@@ -27,7 +27,7 @@
           [class.active]="i == currentIndex"
           (click)="setActiveChant(chant, i)"
         >
-          {{ chant.title }}
+          {{ chant.incipit }}
         </li>
       </ul>
   
@@ -39,7 +39,7 @@
       <div *ngIf="currentChant">
         <h4>Chant</h4>
         <div>
-          <label><strong>Title:</strong></label> {{ currentChant.title }}
+          <label><strong>incipit:</strong></label> {{ currentChant.incipit }}
         </div>
         <div>
           <label><strong>Volpiano:</strong></label>
