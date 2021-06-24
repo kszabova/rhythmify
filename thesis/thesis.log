@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.3.29)  23 JUN 2021 13:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.3.29)  24 JUN 2021 10:02
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -632,7 +632,7 @@ LaTeX Info: Redefining \nameref on input line 109.
 
  (title.tex
 Package hyperref Info: Option `pageanchor' set `false' on input line 6.
-<./logo-en.pdf, id=54, 506.4591pt x 156.49065pt>
+<./logo-en.pdf, id=58, 506.4591pt x 156.49065pt>
 File: ./logo-en.pdf Graphic file (type pdf)
 <use ./logo-en.pdf>
 Package pdftex.def Info: ./logo-en.pdf  used on input line 9.
@@ -719,14 +719,17 @@ eval-u-a-tion of melodic|
 
  (02_data.tex
 Chapter 2.
-) [5
+
+Package natbib Warning: Citation `(' on page 5 undefined on input line 8.
+
+[5
 
 
 
-]
+]) [6]
 \openout2 = `epilog.aux'.
 
- (epilog.tex) [6
+ (epilog.tex) [7
 
 
 
@@ -739,45 +742,48 @@ LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line
 
 ("C:\Users\kristina\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmtt.fd"
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [7
+) [8
 
 
 
-])) [8] (thesis.lof)
+])) [9] (thesis.lof)
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
- [9
+ [10
 
 
 ] (thesis.lot)
 \tf@lot=\write8
 \openout8 = `thesis.lot'.
 
- [10
+ [11
 
-] [11
+] [12
 
 ]
 Appendix A.
-[12
+[13
 
 ]
+
+Package natbib Warning: There were undefined citations.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 154.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 154.
- (thesis.aux (title.aux) (preface.aux) (01_related-work.aux) (02_data.aux)
+(thesis.aux (title.aux) (preface.aux) (01_related-work.aux) (02_data.aux)
 (epilog.aux) (bibliography.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 154.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 154.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 90C077FA8094005D44A85D6861259D1C;1337.
+(rerunfilecheck)             Checksum: B99FA33D2ED578BC9960DC8096881854;1407.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 154.
  ) 
 Here is how much of TeX's memory you used:
- 14628 strings out of 480934
- 211104 string characters out of 2898513
- 445330 words of memory out of 3000000
- 30141 multiletter control sequences out of 15000+200000
+ 14631 strings out of 480934
+ 211135 string characters out of 2898513
+ 445331 words of memory out of 3000000
+ 30142 multiletter control sequences out of 15000+200000
  577953 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,6n,41p,506b,2341s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -789,9 +795,9 @@ e1/public/lm/lmr12.pfb><C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/public/lm/lmr17.pfb><C:/Users/kristina/AppData/Local/Programs/MiKTeX 2
 .9/fonts/type1/public/lm/lmri12.pfb><C:/Users/kristina/AppData/Local/Programs/M
 iKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on thesis.pdf (16 pages, 485094 bytes).
+Output written on thesis.pdf (17 pages, 487078 bytes).
 PDF statistics:
- 247 PDF objects out of 1000 (max. 8388607)
- 43 named destinations out of 1000 (max. 500000)
- 114 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 256 PDF objects out of 1000 (max. 8388607)
+ 45 named destinations out of 1000 (max. 500000)
+ 122 words of extra memory for PDF output out of 10000 (max. 10000000)
 

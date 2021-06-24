@@ -1,13 +1,21 @@
 \chapter{Data}
 
-Our main source of data is the Cantus database (\cite{cantus_db}). The database serves as a digital archive of chants, each entry containing
-information about its source, liturgical occasion, mode, and others. Work on the project started in the late 1980s, and to date, around 500,000
-individual chants from approximately 150 manuscripts have been indexed. Each entry is transcribed manually and undergoes a thorough examination
-before publishing (\cite{cantus_lacoste}).
+Our main source of data is the Cantus database (\cite{cantus_db}), one of the databases indexed in the Cantus Index. The database serves as a 
+digital archive of chants, each entry containing information about its source, liturgical occasion, mode, and others. Work on the project started
+in the late 1980s, and to date, around 500,000 individual chants from approximately 150 manuscripts have been indexed. Each entry is transcribed 
+manually and undergoes a thorough examination before publishing (\cite{cantus_lacoste}).
 
-The entire contents of the Cantus database have been scraped previously and are available for download in csv format as the Cantus Corpus (cite???).
-As per its description, even the latest version does not contain all of the data in the Cantus database, as this is being updated continuously. However,
-for the purposes of this thesis, this does not constitute a problem, as we do not require up-to-date data.
+We are using a scraped version of the Cantus database released as CantusCorpus (\cite(chant21)). Unlike the Cantus database which is continuously being
+updated and is therefore unsuitable for computational study, the corpus is versioned, therefore each version always contains the same data. We are using
+version 0.2 released in July 2020 which contains 497071 entries. The corpus is available for download in CSV format.
+
+\section{CSV}
+
+CSV is one of the most common formats for tabular data. The abbreviation stands for \emph{comma-separated values}. As the name suggests, the format
+uses commas to separate columns (although other separators, such as a semicolon, can be used as well to allow for simpler parsing in case that the data 
+frequently contains commas that would otherwise need to be escaped), while the individual rows are separated by a line break. The data is stored as plaintext,
+which makes it easily readable. Parsing CSV files becomes more complicated when the data contains column and row separators inside fields; in that case
+quotation marks or esape sign has to be used. There exist many well-designed parsers, one such parser is the Python module simply called \emph{CSV}.
 
 \section{Database fields}
 
