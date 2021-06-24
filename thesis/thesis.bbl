@@ -1,0 +1,109 @@
+\begin{thebibliography}{14}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Berten and contributors()]{gregobase}
+Olivier Berten and contributors.
+\newblock Gregobase: A database of gregorian scores.
+\newblock URL \url{https://gregobase.selapa.net/}.
+
+\bibitem[Bountouridis et~al.(2017)Bountouridis, Brown, Wiering, and
+  Veltkamp]{similarity_bioinf}
+Dimitrios Bountouridis, Daniel~G. Brown, Frans Wiering, and Remco~C. Veltkamp.
+\newblock Melodic similarity and applications using biologically-inspired
+  techniques.
+\newblock \emph{Applied Sciences}, 7\penalty0 (12), 2017.
+\newblock ISSN 2076-3417.
+\newblock \doi{10.3390/app7121242}.
+\newblock URL \url{https://www.mdpi.com/2076-3417/7/12/1242}.
+
+\bibitem[Cornelissen et~al.(2020{\natexlab{a}})Cornelissen, Zuidema, and
+  Burgoyne]{chant21}
+Bas Cornelissen, Willem Zuidema, and John~Ashley Burgoyne.
+\newblock Studying large plainchant corpora using chant21.
+\newblock In \emph{7th International Conference on Digital Libraries for
+  Musicology}, DLfM 2020, page 40–44, New York, NY, USA, 2020{\natexlab{a}}.
+  Association for Computing Machinery.
+\newblock ISBN 9781450387606.
+\newblock \doi{10.1145/3424911.3425514}.
+\newblock URL \url{https://doi.org/10.1145/3424911.3425514}.
+
+\bibitem[Cornelissen et~al.(2020{\natexlab{b}})Cornelissen, Zuidema, and
+  Burgoyne]{mode_cornelissen}
+Bas Cornelissen, Willen Zuidema, and John~Ashley Burgoyne.
+\newblock Mode classification and natural units in plainchant.
+\newblock 2020{\natexlab{b}}.
+\newblock URL \url{https://program.ismir2020.org/poster_232.html}.
+
+\bibitem[Cuthbert and Ariza(2010)]{music21}
+Michael~Scott Cuthbert and Christopher Ariza.
+\newblock music21: A toolkit for computer-aided musicology and symbolic music
+  data, 2010.
+
+\bibitem[Helsen and Lacoste(2011)]{volpiano}
+Kate Helsen and Debra Lacoste.
+\newblock A report on the encoding of melodic incipits in the cantus database
+  with the music font ‘volpiano’.
+\newblock \emph{Plainsong and Medieval Music}, 20\penalty0 (1):\penalty0
+  51–65, 2011.
+\newblock \doi{10.1017/S0961137110000197}.
+\newblock URL \url{https://doi.org/10.1017/S0961137110000197}.
+
+\bibitem[Huron(1996)]{melodic_arch}
+David Huron.
+\newblock The melodic arch in western folksongs.
+\newblock \emph{Computing in Musicology}, pages 3--23, 1996.
+
+\bibitem[Huron and Veltman(2006)]{mode_huron}
+David Huron and Joshua Veltman.
+\newblock A cognitive approach to medieval mode: Evidence for an historical
+  antecedent to the major/minor system.
+\newblock \emph{Empirical Musicology Review}, 1\penalty0 (1):\penalty0 33--55,
+  2006.
+\newblock URL \url{https://doi.org/10.18061/1811/24072}.
+
+\bibitem[Lacoste(2012)]{cantus_lacoste}
+Debra Lacoste.
+\newblock The cantus database: Mining for medieval chant traditions.
+\newblock \emph{Digital Medievalist}, 7, 2012.
+\newblock URL \url{http://doi.org/10.16995/dm.42}.
+
+\bibitem[Lacoste and Koláček()]{cantus_index}
+Debra Lacoste and Jan Koláček.
+\newblock Cantus index: Online catalog for mass and office chants.
+\newblock URL \url{http://cantusindex.org/}.
+
+\bibitem[Lacoste et~al.()Lacoste, Koláček, Bailey, and Steiner]{cantus_db}
+Debra Lacoste, Jan Koláček, Terence Bailey, and Ruth Steiner.
+\newblock A database for latin ecclesiastical chant - inventories of chant
+  sources.
+\newblock URL \url{https://cantus.uwaterloo.ca/}.
+
+\bibitem[Park et~al.(2019)Park, Kwon, Lee, Kim, and Nam]{similarity_plot}
+Saebyul Park, Taegyun Kwon, Jongpil Lee, Jeounghoon Kim, and Juhan Nam.
+\newblock A cross-scape plot representation for visualizing symbolic melodic
+  similarity.
+\newblock \emph{Proceedings of the 20th ISMIR Conference}, pages 423--430,
+  2019.
+
+\bibitem[Shaw(2018)]{differentiae}
+Rebecca Shaw.
+\newblock Differentiae in the cantus manuscript database: Standardization and
+  musicological application.
+\newblock In \emph{Proceedings of the 5th International Conference on Digital
+  Libraries for Musicology}, DLfM '18, page 38–46, New York, NY, USA, 2018.
+  Association for Computing Machinery.
+\newblock ISBN 9781450365222.
+\newblock \doi{10.1145/3273024.3273028}.
+\newblock URL \url{https://doi.org/10.1145/3273024.3273028}.
+
+\bibitem[Wickland(2017)]{melodic_similarity}
+David~D. Wickland.
+\newblock Evaluating melodic similarity using pairwise sequence alignments and
+  suffix trees.
+\newblock Master's thesis, The University of Guelph, 9 2017.
+
+\end{thebibliography}

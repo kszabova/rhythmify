@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d (MiKTeX 2.9.7350 64-bit)
+Capacity: max_strings=4000, hash_size=5000, hash_prime=4253
+The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: title.aux
+A level-1 auxiliary file: preface.aux
+A level-1 auxiliary file: 01_related-work.aux
+A level-1 auxiliary file: 02_data.aux
+A level-1 auxiliary file: epilog.aux
+A level-1 auxiliary file: bibliography.aux
+The style file: plainnat.bst
+Database file #1: bibliography.bib
+Warning--empty year in gregobase
+Warning--empty journal in mode_cornelissen
+Warning--empty year in cantus_index
+Warning--empty year in cantus_db
+You've used 14 entries,
+            2773 wiz_defined-function locations,
+            693 strings with 7786 characters,
+and the built_in function-call counts, 6311 in all, are:
+= -- 590
+> -- 331
+< -- 13
++ -- 114
+- -- 99
+* -- 459
+:= -- 960
+add.period$ -- 57
+call.type$ -- 14
+change.case$ -- 75
+chr.to.int$ -- 13
+cite$ -- 32
+duplicate$ -- 307
+empty$ -- 502
+format.name$ -- 123
+if$ -- 1363
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 9
+newline$ -- 91
+num.names$ -- 56
+pop$ -- 150
+preamble$ -- 1
+purify$ -- 61
+quote$ -- 0
+skip$ -- 270
+stack$ -- 0
+substring$ -- 135
+swap$ -- 59
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 154
+warning$ -- 4
+while$ -- 50
+width$ -- 0
+write$ -- 212
+(There were 4 warnings)

@@ -1,0 +1,43 @@
+\chapter{Related work}
+
+With the advent of computers, the field of Music Information Retrieval (MIR) emerged. Research in this interdisciplinary field focuses on extracting
+information from musical notation using computer science methods, such as signal processing or machine learning. Its applications
+vary widely, from recommender systems, to automatic audio transcription, to music generation. MIR encompasses all different kinds of music,
+regardless of their location, age, or function. Researchers have developed a multitude of software tools that facilitate music analysis,
+irrespective of what type of music it is. One of such toolkits is \emph{music21} (\cite{music21}), a Python package able to encode musical notation
+as Python objects and perform analysis on large datasets.
+
+The study of plainchant using computational methods has not been done extensively. The main research tool for musicologists in this field
+is the Cantus Index (\cite{cantus_index}). It is an online index of chants from several different chant databases, providing researchers with 
+a common API for all of them.
+
+\cite{chant21} developed \emph{chant21}, a Python package able to convert two standard melodic notations, \emph{volpiano} and \emph{gabc} to
+a \emph{music21} object, therefore making it easier to study Gregorian chant computationally. The data they used were 
+scraped from Cantus database (\cite{cantus_db}) and GregoBase (\cite{gregobase}) and released as CantusCorpus and GregoBaseCorpus, respectively.
+Finally, they performed two case studies using the package. In the first one, they confirmed the melodic arch hypothesis (\cite{melodic_arch}), 
+which had previously only been studied manually. Second, they analyzed the relation between differentiæ and antiphon openings (\cite{differentiae})
+and found that it differs accross modes.
+
+Some of the computational research into plainchant has been centered on mode classification. \cite{mode_huron} used pitch class profiles to
+classify modes. They created a pitch-class distribution for each of the eight modes, and used these classes to classify previously unseen data.
+\cite{mode_cornelissen} compared three approaches to mode classification: classical approach, which classifies chants based on
+the final pitch, range, and the initial pitch; profile approach, which was largely inspired by \cite{mode_huron}; and distributional approach,
+which focuses on the melodic aspect of mode. The authors chose various segmentations and representations of chants and used a tf-idf vector
+model to classify mode. The study found that we can accurately classify mode even when we discard all absolute pitch information, the melody
+contour contains enough information on its own.
+
+A considerable amount of research has been done into the evaluation of melodic similarity, albeit not for Gregorian chant specifically.
+\cite{melodic_similarity} provides an overview of the methods. He mentions edit distance, Markov chains, and geometric measurements as
+the most widely used ones. \cite{similarity_plot} used an adapted edit distance metric to calculate the similarity of two melodic sequences
+by first calculating the similarity for all segments of each of the sequences and then scaling them by a weight function depending on the
+segment length, which yielded them what they call a multi-scale similarity stack. The overall similarity was obtained by averaging its values.
+Then they used the MSS stack to create a visualization that takes on the shape of a trapezoid that shows which segments of two sequences
+are the most similar.
+
+\cite{similarity_bioinf} argue that methods originally developed for bioinformatics have a great potential to be applied to music. They offer
+analogies for bioinformatics concepts found in musicology. For example, they liken DNA and proteins to melodic sequences, homologues (proteins that
+have the same ancestor) to song covers, evolution to oral transmission, etc. They claim that despite the similarities, MRI has not leveraged the
+full potential of bioinformatics methods. In their article, they focus on modelling melodic similarity using multiple-sequence alignment (MSA)
+algorithms, therefore not relying on heuristics, as opposed to previous works. Their results revealed that the MAFFT algorithm yields the best
+alignemnt, which can be attributed to the algorithm using gap-free segments as anchor points, therefore partitioning melodies into more meaningful
+segments than other algorithms.

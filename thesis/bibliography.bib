@@ -1,15 +1,69 @@
-%
-%  An example of a bibliographical database for bibTeX
-%
-%  Recommended software for maintenance of *.bib files:
-%    JabRef, http://jabref.sourceforge.net/
-%
-%  BEWARE:
-%
-%    *  If a name contains a capital letter, which must be kept such,
-%       use curly brackets ({T}hailand, {HIV}).
-%
-%  ===========================================================================
+@misc{cantus_db,
+  title={A Database for Latin Ecclesiastical Chant - Inventories of Chant Sources},
+  url={https://cantus.uwaterloo.ca/}, 
+  author={Lacoste, Debra and Koláček, Jan and Bailey, Terence and Steiner, Ruth}
+} 
+
+@misc{gregobase,
+  title={GregoBase: A Database of Gregorian Scores},
+  url={https://gregobase.selapa.net/},
+  author={Berten, Olivier and contributors}
+}
+
+@misc{cantus_index,
+  title={Cantus Index: Online catalog for Mass and Office chants},
+  url={http://cantusindex.org/},
+  author={Lacoste, Debra and Koláček, Jan}
+}
+
+@misc{music21,
+  author={Cuthbert, Michael Scott and Ariza, Christopher},
+  title={music21: A Toolkit for Computer-Aided Musicology and Symbolic Music Data},
+  year={2010},
+  journal={Proceedings of the 11th International Conference on Music Information Retrieval (ISMIR 2010)},
+  pages={637-642}
+}
+
+@article{cantus_lacoste,
+  author = {Lacoste, Debra},
+  title = {The Cantus Database: Mining for Medieval Chant Traditions},
+  year = {2012},
+  journal = {Digital Medievalist},
+  volume = {7},
+  URL = {http://doi.org/10.16995/dm.42}
+}
+
+@article{mode_huron,
+  author = {Huron, David and Veltman, Joshua},
+  title = {A Cognitive Approach to Medieval Mode: Evidence for an Historical Antecedent to the Major/Minor System},
+  year = {2006},
+  journal = {Empirical Musicology Review},
+  volume = {1},
+  number = {1},
+  pages = {33-55},
+  URL = {https://doi.org/10.18061/1811/24072}
+}
+
+@article{mode_cornelissen,
+  author = {Cornelissen, Bas and Zuidema, Willen and Burgoyne, John Ashley},
+  title = {Mode classification and natural units in plainchant},
+  booktitle = {Proceedings of 21th International Society for Music Information Retrieval Conference},
+  url = {https://program.ismir2020.org/poster_232.html},
+  year = 2020
+}
+
+@article{volpiano,
+  author = {Helsen, Kate and Lacoste, Debra},
+  title = {A report on the encoding of melodic incipits in the CANTUS database with the music font ‘Volpiano’},
+  journal = {Plainsong and Medieval Music},
+  volume = {20}, 
+  number = {1},
+  publisher = {Cambridge University Press},
+  year = {2011},
+  pages = {51–65},
+  DOI = {10.1017/S0961137110000197},
+  URL = {https://doi.org/10.1017/S0961137110000197}
+}
 
 @inproceedings{chant21,
   author = {Cornelissen, Bas and Zuidema, Willem and Burgoyne, John Ashley},
@@ -21,12 +75,40 @@
   url = {https://doi.org/10.1145/3424911.3425514},
   doi = {10.1145/3424911.3425514},
   abstract = { We present chant21, a Python package to support the plainchant formats gabc and Volpiano in music21, and two large corpora of plainchant. The CantusCorpus contains over 60,000 medieval melodies collected from the Cantus database, encoded in the Volpiano typeface. The GregoBaseCorpus contains over 9,000 transcriptions from more recent chant books in the gabc format. Chant21 converts both formats to music21, while retaining the textual structure of the chant: its division in sections, words, syllables and neumes. We present two case studies. First, we report evidence for the melodic arch hypothesis from the GregoBaseCorpus. Second, we analyze connections between differenti\ae{} and antiphon openings in the CantusCorpus, and show that the systematicity of the connection can be quantified using an entropy-based measure.},
-booktitle = {7th International Conference on Digital Libraries for Musicology},
+  booktitle = {7th International Conference on Digital Libraries for Musicology},
   pages = {40–44},
   numpages = {5},
   keywords = {differentia, datasets, melodic arch, volpiano, plainchant, gabc},
   location = {Montr\'{e}al, QC, Canada},
   series = {DLfM 2020}
+}
+
+@mastersthesis{melodic_similarity,
+  author       = {David D. Wickland}, 
+  title        = {Evaluating Melodic Similarity Using Pairwise Sequence Alignments and Suffix Trees},
+  school       = {The University of Guelph},
+  year         = 2017,
+  month        = 9
+}
+
+@article{similarity_plot,
+  author = {Park, Saebyul and Kwon, Taegyun and Lee, Jongpil and Kim, Jeounghoon and Nam, Juhan},
+  title = {A cross-scape plot representation for visualizing symbolic melodic similarity},
+  journal = {Proceedings of the 20th ISMIR Conference},
+  year = {2019},
+  pages = {423-430}
+}
+
+@article{similarity_bioinf,
+  author = {Bountouridis, Dimitrios and Brown, Daniel G. and Wiering, Frans and Veltkamp, Remco C.},
+  title = {Melodic Similarity and Applications Using Biologically-Inspired Techniques},
+  journal = {Applied Sciences},
+  volume = {7},
+  year = {2017},
+  number = {12},
+  url = {https://www.mdpi.com/2076-3417/7/12/1242},
+  issn = {2076-3417},
+  doi = {10.3390/app7121242}
 }
 
 @article{hornbylooking,
@@ -74,4 +156,28 @@ booktitle = {7th International Conference on Digital Libraries for Musicology},
   pages={43},
   year={2009},
   publisher={John Benjamins Publishing}
+}
+
+@article{melodic_arch,
+  author={Huron, David},
+  title={The Melodic Arch in Western Folksongs},
+  journal={Computing in Musicology},
+  year={1996},
+  pages={3-23}
+}
+
+@inproceedings{differentiae,
+author = {Shaw, Rebecca},
+title = {Differentiae in the Cantus Manuscript Database: Standardization and Musicological Application},
+year = {2018},
+isbn = {9781450365222},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3273024.3273028},
+doi = {10.1145/3273024.3273028},
+booktitle = {Proceedings of the 5th International Conference on Digital Libraries for Musicology},
+pages = {38–46},
+numpages = {9},
+location = {Paris, France},
+series = {DLfM '18}
 }
