@@ -4,6 +4,7 @@
 \contentsline {section}{\numberline {2.1}CSV}{5}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Database fields}{5}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Volpiano}{6}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Data cleaning}{6}{section.2.4}%
 \contentsline {chapter}{Conclusion}{7}{chapter*.3}%
 \contentsline {chapter}{Bibliography}{8}{chapter*.4}%
 \contentsline {chapter}{List of Figures}{10}{chapter*.5}%
