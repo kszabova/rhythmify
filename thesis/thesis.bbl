@@ -1,4 +1,4 @@
-\begin{thebibliography}{14}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -41,7 +41,8 @@ Bas Cornelissen, Willen Zuidema, and John~Ashley Burgoyne.
 \bibitem[Cuthbert and Ariza(2010)]{music21}
 Michael~Scott Cuthbert and Christopher Ariza.
 \newblock music21: A toolkit for computer-aided musicology and symbolic music
-  data, 2010.
+  data.
+\newblock pages 637--642, 2010.
 
 \bibitem[Helsen and Lacoste(2011)]{volpiano}
 Kate Helsen and Debra Lacoste.
@@ -51,6 +52,12 @@ Kate Helsen and Debra Lacoste.
   51–65, 2011.
 \newblock \doi{10.1017/S0961137110000197}.
 \newblock URL \url{https://doi.org/10.1017/S0961137110000197}.
+
+\bibitem[Hiley(2009)]{chant_book}
+David Hiley.
+\newblock \emph{Gregorian Chant}.
+\newblock Cambridge Introductions to Music. Cambridge University Press, 2009.
+\newblock \doi{10.1017/CBO9780511807848}.
 
 \bibitem[Huron(1996)]{melodic_arch}
 David Huron.
@@ -86,8 +93,7 @@ Debra Lacoste, Jan Koláček, Terence Bailey, and Ruth Steiner.
 Saebyul Park, Taegyun Kwon, Jongpil Lee, Jeounghoon Kim, and Juhan Nam.
 \newblock A cross-scape plot representation for visualizing symbolic melodic
   similarity.
-\newblock \emph{Proceedings of the 20th ISMIR Conference}, pages 423--430,
-  2019.
+\newblock pages 423--430, 2019.
 
 \bibitem[Shaw(2018)]{differentiae}
 Rebecca Shaw.
