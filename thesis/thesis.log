@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.3.29)  29 JUN 2021 21:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.3.29)  29 JUN 2021 22:54
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -717,7 +717,7 @@ Package pdftex.def Info: ./images/manuscript.png  used on input line 80.
  (01_related-work.tex
 Chapter 1.
 
-Overfull \hbox (0.5068pt too wide) in paragraph at lines 29--36
+Overfull \hbox (0.5068pt too wide) in paragraph at lines 31--38
 []\OT1/lmr/m/n/12 A con-sid-er-able amount of re-search has been done into the 
 eval-u-a-tion of melodic|
  []
@@ -726,22 +726,28 @@ eval-u-a-tion of melodic|
 
 
 
-]) [6]
+]
+Overfull \hbox (28.90353pt too wide) in paragraph at lines 47--52
+[]\OT1/lmr/m/n/12 The gen-eral al-go-rithm for cal-cu-lat-ing pair-wise se-quen
+ce align-ment is the Needleman-|
+ []
+
+[6]) [7]
 \openout2 = `02_data.aux'.
 
  (02_data.tex
 Chapter 2.
 
-Package natbib Warning: Citation `(' on page 7 undefined on input line 8.
+Package natbib Warning: Citation `(' on page 8 undefined on input line 8.
 
-[7
+[8
 
 
 
-]) [8]
+]) [9]
 \openout2 = `epilog.aux'.
 
- (epilog.tex) [9
+ (epilog.tex) [10
 
 
 
@@ -754,28 +760,28 @@ LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line
 
 ("C:\Users\kristina\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmtt.fd"
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [10
+) [11
 
 
 
-])) [11] (thesis.lof)
+])) [12] (thesis.lof)
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
- [12
+ [13
 
 
 ] (thesis.lot)
 \tf@lot=\write8
 \openout8 = `thesis.lot'.
 
- [13
+ [14
 
-] [14
+] [15
 
 ]
 Appendix A.
-[15
+[16
 
 ]
 
@@ -792,10 +798,10 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 157.
  ) 
 Here is how much of TeX's memory you used:
- 14658 strings out of 480934
- 211557 string characters out of 2898513
- 446372 words of memory out of 3000000
- 30161 multiletter control sequences out of 15000+200000
+ 14680 strings out of 480934
+ 211909 string characters out of 2898513
+ 445606 words of memory out of 3000000
+ 30177 multiletter control sequences out of 15000+200000
  577953 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,7n,41p,506b,2341s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -807,9 +813,9 @@ e1/public/lm/lmr12.pfb><C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/public/lm/lmr17.pfb><C:/Users/kristina/AppData/Local/Programs/MiKTeX 2
 .9/fonts/type1/public/lm/lmri12.pfb><C:/Users/kristina/AppData/Local/Programs/M
 iKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on thesis.pdf (19 pages, 873565 bytes).
+Output written on thesis.pdf (20 pages, 884536 bytes).
 PDF statistics:
- 287 PDF objects out of 1000 (max. 8388607)
- 51 named destinations out of 1000 (max. 500000)
+ 318 PDF objects out of 1000 (max. 8388607)
+ 57 named destinations out of 1000 (max. 500000)
  140 words of extra memory for PDF output out of 10000 (max. 10000000)
 

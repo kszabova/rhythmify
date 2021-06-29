@@ -1,4 +1,4 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{20}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -72,6 +72,16 @@ David Huron and Joshua Veltman.
   2006.
 \newblock URL \url{https://doi.org/10.18061/1811/24072}.
 
+\bibitem[Katoh et~al.(2002)Katoh, Misawa, Kuma, and Miyata]{mafft}
+Kazutaka Katoh, Kazuharu Misawa, Kei‐ichi Kuma, and Takashi Miyata.
+\newblock Mafft: a novel method for rapid multiple sequence alignment based on
+  fast fourier transform.
+\newblock \emph{Nucleic Acids Research}, 30\penalty0 (14):\penalty0 3059--3066,
+  07 2002.
+\newblock ISSN 0305-1048.
+\newblock \doi{10.1093/nar/gkf436}.
+\newblock URL \url{https://doi.org/10.1093/nar/gkf436}.
+
 \bibitem[Lacoste(2012)]{cantus_lacoste}
 Debra Lacoste.
 \newblock The cantus database: Mining for medieval chant traditions.
@@ -89,6 +99,34 @@ Debra Lacoste, Jan Koláček, Terence Bailey, and Ruth Steiner.
   sources.
 \newblock URL \url{https://cantus.uwaterloo.ca/}.
 
+\bibitem[Needleman and Wunsch(1970)]{needleman}
+Saul~B. Needleman and Christian~D. Wunsch.
+\newblock A general method applicable to the search for similarities in the
+  amino acid sequence of two proteins.
+\newblock \emph{Journal of Molecular Biology}, 48\penalty0 (3):\penalty0
+  443--453, 1970.
+\newblock ISSN 0022-2836.
+\newblock \doi{https://doi.org/10.1016/0022-2836(70)90057-4}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/0022283670900574}.
+
+\bibitem[Notredame(2007)]{msa_overview}
+Cédric Notredame.
+\newblock Recent evolutions of multiple sequence alignment algorithms.
+\newblock \emph{PLoS Comput Biol}, 3, 2007.
+\newblock URL \url{https://doi.org/10.1371/journal.pcbi.0030123}.
+
+\bibitem[Notredame et~al.(2000)Notredame, Higgins, and Heringa]{t_coffee}
+Cédric Notredame, Desmond~G Higgins, and Jaap Heringa.
+\newblock T-coffee: a novel method for fast and accurate multiple sequence
+  alignment11edited by j. thornton.
+\newblock \emph{Journal of Molecular Biology}, 302\penalty0 (1):\penalty0
+  205--217, 2000.
+\newblock ISSN 0022-2836.
+\newblock \doi{https://doi.org/10.1006/jmbi.2000.4042}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0022283600940427}.
+
 \bibitem[Park et~al.(2019)Park, Kwon, Lee, Kim, and Nam]{similarity_plot}
 Saebyul Park, Taegyun Kwon, Jongpil Lee, Jeounghoon Kim, and Juhan Nam.
 \newblock A cross-scape plot representation for visualizing symbolic melodic
@@ -105,6 +143,12 @@ Rebecca Shaw.
 \newblock ISBN 9781450365222.
 \newblock \doi{10.1145/3273024.3273028}.
 \newblock URL \url{https://doi.org/10.1145/3273024.3273028}.
+
+\bibitem[Wang and Jiang(2009)]{msa_complexity}
+Lusheng Wang and Tao Jiang.
+\newblock On the complexity of multiple sequence alignment.
+\newblock \emph{Journal of Computational Biology}, 1:\penalty0 337--348, 2009.
+\newblock URL \url{http://doi.org/10.1089/cmb.1994.1.337}.
 
 \bibitem[Wickland(2017)]{melodic_similarity}
 David~D. Wickland.

@@ -4,18 +4,20 @@ With the advent of computers, the field of Music Information Retrieval (MIR) eme
 information from musical notation using computer science methods, such as signal processing or machine learning. Its applications
 vary widely, from recommender systems, to automatic audio transcription, to music generation. MIR encompasses all different kinds of music,
 regardless of their location, age, or function. Researchers have developed a multitude of software tools that facilitate music analysis,
-irrespective of what type of music it is. One of such toolkits is \emph{music21} (\cite{music21}), a Python package able to encode musical notation
+irrespective of what type of music it is. One of such toolkits is \emph{music21} \citep{music21}, a Python package able to encode musical notation
 as Python objects and perform analysis on large datasets.
 
 The study of plainchant using computational methods has not been done extensively. The main research tool for musicologists in this field
-is the Cantus Index (\cite{cantus_index}). It is an online index of chants from several different chant databases, providing researchers with 
-a common API for all of them.
+is the Cantus Index \citep{cantus_index}. It is an online index of chants from several different chant databases, providing researchers with 
+a common API for all of them. The entries in Cantus Index only contain four data fields: full-text, genre, feast (not required), and Cantus ID,
+which is automatically assigned to newly added chants. The tool is also able to search for melodies in the original source and even provides 
+search-by-melody functionality. There are ten databases indexed in the catalogue, the largest of which is the Cantus database \citep{cantus_db}.
 
 \cite{chant21} developed \emph{chant21}, a Python package able to convert two standard melodic notations, \emph{volpiano} and \emph{gabc} to
 a \emph{music21} object, therefore making it easier to study Gregorian chant computationally. The data they used were 
-scraped from Cantus database (\cite{cantus_db}) and GregoBase (\cite{gregobase}) and released as CantusCorpus and GregoBaseCorpus, respectively.
-Finally, they performed two case studies using the package. In the first one, they confirmed the melodic arch hypothesis (\cite{melodic_arch}), 
-which had previously only been studied manually. Second, they analyzed the relation between differentiæ and antiphon openings (\cite{differentiae})
+scraped from Cantus database \citep{cantus_db} and GregoBase \citep{gregobase} and released as CantusCorpus and GregoBaseCorpus, respectively.
+Finally, they performed two case studies using the package. In the first one, they confirmed the melodic arch hypothesis \citep{melodic_arch}, 
+which had previously only been studied manually. Second, they analyzed the relation between differentiæ and antiphon openings \citep{differentiae}
 and found that it differs accross modes.
 
 Some of the computational research into plainchant has been centered on mode classification. \cite{mode_huron} used pitch class profiles to
@@ -41,3 +43,30 @@ full potential of bioinformatics methods. In their article, they focus on modell
 algorithms, therefore not relying on heuristics, as opposed to previous works. Their results revealed that the MAFFT algorithm yields the best
 alignemnt, which can be attributed to the algorithm using gap-free segments as anchor points, therefore partitioning melodies into more meaningful
 segments than other algorithms.
+
+The general algorithm for calculating pairwise sequence alignment is the Needleman-Wunsch algorithm \citep{needleman}. It uses dynamic programming
+to break down the problem into smaller problems. Given two sequences, it starts aligning them from the beginning. At each point, the algorithm checks
+whether the two sequences match in the current position, and if not, whether it will leave the elements mismatched or insert a space. In essence,
+all possible alignments are computed and scored and the best one is chosen. The algorithm always yields an optimal alignment, therefore it is
+used when the quality of the alignment is important. However, because of its time complexity, it is unsuitable for many applications.
+
+Unlike pairwise sequence alignment, multiple sequence alignment has been shown to be NP-complete \citep{msa_complexity}. As such, there is no practical
+way of computing an optimal MSA and we must instead rely on heuristics to obtain a sufficiently good alignment.
+
+\cite{msa_overview} provides an overview of modern multiple sequence alignment algorithms. According to him, the most frequently used algorithms use
+the progressive approach, where a guide tree is estimated from unaligned sequences and then pairwise alignment algorithms are used to find
+the MSA following the tree. He notes that the scoring methods of the pairwise algorithm are essential. There are two main groups of scoring methods:
+matrix-based algorithms, where a substitution matrix is used to determine the cost of replacing one symbol with another, and the consistency-based
+methods, which use a collection of global and local alignments to calculate a position-specific substitution matrix. The author claims that
+the best methods yield indistinguishable results, except for remote homologs with less than 25\% identity.
+
+T-Coffee \citep{t_coffee} uses the progressive approach described above. It was the first algorithm that used a preprocessed collection of 
+alignments to create a library that helps create the guide tree. The library is generated using both global and local pairwise alignments.
+Thanks to this approach, T-Coffee minimizes the errors made in the first stages of building the MSA, which is a shortcoming of many previous
+algorithms, as these errors tend to persist. They combined precomputed local and global alignments and create a function that assigns a weight to
+each pairwise alignment depending on how consistent the pair of residues is with the residue pairs from all other alignments. This process
+leads to a significant improvement of the results.
+
+MAFFT \citep{mafft} further improves on other methods by using Fast Fourier transform to identify homologues fast. In addition, the authors
+propose a simplified scoring system that reduces CPU time while maintaining its accuracy. The authors' results showed a performance 
+100 times better than that of T-Coffee. 
