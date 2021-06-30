@@ -19,17 +19,60 @@ quotation marks or esape sign has to be used. There exist many well-designed par
 
 \section{Database fields}
 
-The csv files in Cantus Corpus contain 21 fields (excluding its row number), of which we are only using a subset.
+The following table represents the data fields in the database.
 
-Each entry contains the chant's incipit, which is the first few words of the text. As chants do not have a title, incipit can substitute its role
-in contexts where one is needed.
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{| c | c |} 
 
-The fields position, sequence, and folio represent the exact location of the original chant in a manuscript from which it was transcribed.
+ \hline
+ Data field & Description \\
+ \hline
+ id & automatically generated id in the database \\ 
+ corpus\_id & human-readable id identifying the chant in the CantusCorpus \\
+ incipit & incipit (the first few words) of chant \\
+ cantus\_id & id identifying the chant in the Cantus Index \\
+ mode & mode of the chant \\
+ finalis & the final note of the chant \\
+ differentia & FILL IN \\
+ siglum & FILL IN \\
+ position & liturgical role of the chant \\
+ folio & page of the manuscript where the chant is found \\
+ sequence & order in which the chant is found in the folio \\
+ marginalia & clarification about the location of the chant \\
+ cao\_concordances & FILL IN \\
+ feast\_id & id of feast \\
+ genre\_id & id of genre \\
+ office\_id & id of office \\ 
+ source\_id & id of source \\
+ melody\_id & id of melody by which it can be found in the Cantus Index \\
+ drupal\_path & URL of the chant on the Cantus database website \\
+ full\_text & full text in a standardized spelling \\
+ full\_text\_manuscript & full text in the manuscript spelling \\
+ volpiano & transcription of the melody \\
+ notes & indexing notes \\
+ \hline
 
-feastid represents the liturgical occasion when the chant was intended to be performed, or, in other words, a feast. Similarly, officeid represents
-the liturgical time of the day during which it was sung.
+\end{tabular}
+\end{center}
+\caption{List of database fields}
+\end{table}
 
-The text and melody of the chant are found in the fulltext and volpiano fields, respectively. Entries can contain both, either, or none of these fields.
+\section{User-defined data}
+
+The application enables user to upload their own dataset. In doing so, the user should upload a CSV file with the fields described above, with
+some clarifications:
+
+\begin{itemize}
+    \item \emph{corpus\_id} is a name invented for this application. The original CSV file has this column listed as \emph{id} and
+        to maintain consistency, so should every user-defined file.
+    \item The column \emph{id} in this application is generated on data upload. This column should not be present in the uploaded
+        data.
+    \item There can optionally be an unnamed column in the first position that will be dropped. It is so in case the user generates
+        data from a database and doesn't remove its original ids.
+    \item The fields \emph{full\_text} and \emph{volpiano} should contain data, as it is the main purpose of the application. Other
+        fields may be left empty.
+\end{itemize}
 
 \section{Volpiano}
 

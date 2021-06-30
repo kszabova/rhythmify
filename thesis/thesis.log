@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.3.29)  29 JUN 2021 22:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.3.29)  30 JUN 2021 09:45
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -632,7 +632,7 @@ LaTeX Info: Redefining \nameref on input line 112.
 
  (title.tex
 Package hyperref Info: Option `pageanchor' set `false' on input line 6.
-<./logo-en.pdf, id=62, 506.4591pt x 156.49065pt>
+<./logo-en.pdf, id=66, 506.4591pt x 156.49065pt>
 File: ./logo-en.pdf Graphic file (type pdf)
 <use ./logo-en.pdf>
 Package pdftex.def Info: ./logo-en.pdf  used on input line 9.
@@ -700,13 +700,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 ]
-<./images/modes.png, id=119, 323.40825pt x 383.63326pt>
+<./images/modes.png, id=124, 323.40825pt x 383.63326pt>
 File: ./images/modes.png Graphic file (type png)
 <use ./images/modes.png>
 Package pdftex.def Info: ./images/modes.png  used on input line 57.
 (pdftex.def)             Requested size: 226.38422pt x 268.54144pt.
  [3 <./images/modes.png>]
-<./images/manuscript.png, id=131, 361.35pt x 135.50626pt>
+<./images/manuscript.png, id=136, 361.35pt x 135.50626pt>
 File: ./images/manuscript.png Graphic file (type png)
 <use ./images/manuscript.png>
 Package pdftex.def Info: ./images/manuscript.png  used on input line 80.
@@ -740,14 +740,27 @@ Chapter 2.
 
 Package natbib Warning: Citation `(' on page 8 undefined on input line 8.
 
+
+Overfull \hbox (32.543pt too wide) in paragraph at lines 26--57
+ [] |
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 6
+7.
+("C:\Users\kristina\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 [8
 
 
 
-]) [9]
+]) [9] [10]
 \openout2 = `epilog.aux'.
 
- (epilog.tex) [10
+ (epilog.tex) [11
 
 
 
@@ -760,28 +773,28 @@ LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line
 
 ("C:\Users\kristina\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmtt.fd"
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [11
+) [12
 
 
 
-])) [12] (thesis.lof)
+])) [13] (thesis.lof)
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
- [13
+ [14
 
 
 ] (thesis.lot)
 \tf@lot=\write8
 \openout8 = `thesis.lot'.
 
- [14
+ [15
 
-] [15
+] [16
 
 ]
 Appendix A.
-[16
+[17
 
 ]
 
@@ -794,28 +807,29 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 157.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 157.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 157.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: EB950B2CCDF8EB8E5F4601ABA74C506D;1530.
+(rerunfilecheck)             Checksum: AE716B51388E63050A70D48E94CECA16;1673.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 157.
  ) 
 Here is how much of TeX's memory you used:
- 14680 strings out of 480934
- 211909 string characters out of 2898513
- 445606 words of memory out of 3000000
- 30177 multiletter control sequences out of 15000+200000
- 577953 words of font info for 58 fonts, out of 3000000 for 9000
+ 14717 strings out of 480934
+ 212843 string characters out of 2898513
+ 447607 words of memory out of 3000000
+ 30207 multiletter control sequences out of 15000+200000
+ 578328 words of font info for 59 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,7n,41p,506b,2341s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,9n,41p,506b,2341s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm
 tt.enc}{C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
-lm-rm.enc}<C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmbx12.pfb><C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/lm/lmr12.pfb><C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/lm/lmr17.pfb><C:/Users/kristina/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/lm/lmri12.pfb><C:/Users/kristina/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on thesis.pdf (20 pages, 884536 bytes).
+lm-ts1.enc}{C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips
+/lm/lm-rm.enc}<C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/lm/lmbx12.pfb><C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/lm/lmr12.pfb><C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/lm/lmr17.pfb><C:/Users/kristina/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Users/kristina/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
+Output written on thesis.pdf (21 pages, 889891 bytes).
 PDF statistics:
- 318 PDF objects out of 1000 (max. 8388607)
- 57 named destinations out of 1000 (max. 500000)
- 140 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 333 PDF objects out of 1000 (max. 8388607)
+ 60 named destinations out of 1000 (max. 500000)
+ 148 words of extra memory for PDF output out of 10000 (max. 10000000)
 
