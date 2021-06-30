@@ -15,48 +15,49 @@ CSV is one of the most common formats for tabular data. The abbreviation stands 
 uses commas to separate columns (although other separators, such as a semicolon, can be used as well to allow for simpler parsing in case that the data 
 frequently contains commas that would otherwise need to be escaped), while the individual rows are separated by a line break. The data is stored as plaintext,
 which makes it easily readable. Parsing CSV files becomes more complicated when the data contains column and row separators inside fields; in that case
-quotation marks or esape sign has to be used. There exist many well-designed parsers, one such parser is the Python module simply called \emph{CSV}.
+quotation marks or esape sign has to be used. There exist many well-designed parsers, one such parser is the Python module simply called \emph{csv}.
+This application uses the module \emph{pandas} to parse CSV files, which in turn uses the \emph{csv} module.
 
 \section{Database fields}
 
 The following table represents the data fields in the database.
 
-\begin{table}[h!]
-\begin{center}
-\begin{tabular}{| c | c |} 
+\begin{longtable}{| p{.25\textwidth} | p{.75\textwidth} |} 
+%\begin{center}
+%\begin{tabular}{| c | c |} 
 
  \hline
  Data field & Description \\
  \hline
- id & automatically generated id in the database \\ 
- corpus\_id & human-readable id identifying the chant in the CantusCorpus \\
- incipit & incipit (the first few words) of chant \\
- cantus\_id & id identifying the chant in the Cantus Index \\
- mode & mode of the chant \\
- finalis & the final note of the chant \\
- differentia & FILL IN \\
- siglum & FILL IN \\
- position & liturgical role of the chant \\
- folio & page of the manuscript where the chant is found \\
- sequence & order in which the chant is found in the folio \\
- marginalia & clarification about the location of the chant \\
- cao\_concordances & FILL IN \\
- feast\_id & id of feast \\
- genre\_id & id of genre \\
- office\_id & id of office \\ 
- source\_id & id of source \\
- melody\_id & id of melody by which it can be found in the Cantus Index \\
- drupal\_path & URL of the chant on the Cantus database website \\
- full\_text & full text in a standardized spelling \\
- full\_text\_manuscript & full text in the manuscript spelling \\
- volpiano & transcription of the melody \\
+ id & automatically generated id in the database \\ \hline
+ corpus\_id & human-readable id identifying the chant in the CantusCorpus \\ \hline
+ incipit & incipit (the first few words) of chant \\ \hline
+ cantus\_id & id identifying the chant in the Cantus Index \\ \hline
+ mode & mode of the chant \\ \hline
+ finalis & the final note of the chant \\ \hline
+ differentia & FILL IN \\ \hline
+ siglum & FILL IN \\ \hline
+ position & liturgical role of the chant \\ \hline
+ folio & page of the manuscript where the chant is found \\ \hline
+ sequence & order in which the chant is found in the folio \\ \hline
+ marginalia & clarification about the location of the chant \\ \hline
+ cao\_concordances & FILL IN \\ \hline
+ feast\_id & id of feast \\ \hline
+ genre\_id & id of genre \\ \hline
+ office\_id & id of office \\ \hline
+ source\_id & id of source \\ \hline
+ melody\_id & id of melody by which it can be found in the Cantus Index \\ \hline
+ drupal\_path & URL of the chant on the Cantus database website \\ \hline
+ full\_text & full text in a standardized spelling \\ \hline
+ full\_text\_manuscript & full text in the manuscript spelling \\ \hline
+ volpiano & transcription of the melody \\ \hline
  notes & indexing notes \\
  \hline
 
-\end{tabular}
-\end{center}
+%\end{tabular}
+%\end{center}
 \caption{List of database fields}
-\end{table}
+\end{longtable}
 
 \section{User-defined data}
 
