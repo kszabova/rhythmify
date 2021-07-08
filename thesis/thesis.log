@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.3.29)  8 JUL 2021 11:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.3.29)  8 JUL 2021 12:57
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -868,45 +868,72 @@ File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ayer/tikz/libraries\tikzlibrarytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )))
-Package hyperref Info: Option `unicode' set `true' on input line 112.
-Package hyperref Info: Option `breaklinks' set `true' on input line 113.
+("C:\Users\kristina\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listin
+gs.sty"
+\lst@mode=\count299
+\lst@gtempboxa=\box65
+\lst@token=\toks46
+\lst@length=\count300
+\lst@currlwidth=\dimen272
+\lst@column=\count301
+\lst@pos=\count302
+\lst@lostspace=\dimen273
+\lst@width=\dimen274
+\lst@newlines=\count303
+\lst@lineno=\count304
+\lst@maxwidth=\dimen275
+
+("C:\Users\kristina\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmis
+c.sty"
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count305
+\lst@skipnumbers=\count306
+\lst@framebox=\box66
+)
+("C:\Users\kristina\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listin
+gs.cfg"
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+Package hyperref Info: Option `unicode' set `true' on input line 113.
+Package hyperref Info: Option `breaklinks' set `true' on input line 114.
 
 \@input{macros.aux}
 \openout2 = `macros.aux'.
 
 (macros.tex
-\c@thm=\count299
-\c@defn=\count300
+\c@thm=\count307
+\c@defn=\count308
 )
 ("C:\Users\kristina\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3bac
 kend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count301
-\l__pdf_internal_box=\box65
+\l__kernel_color_stack_int=\count309
+\l__pdf_internal_box=\box67
 ) (thesis.aux (title.aux) (preface.aux) (01_related-work.aux)
 (02_data.aux) (03_alignment.aux) (epilog.aux) (bibliography.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-19.
+20.
 
 ("C:\Users\kristina\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -915,17 +942,17 @@ ABD: EveryShipout initializing macros
 ("C:\Users\kristina\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\sup
 p-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count302
-\scratchdimen=\dimen272
-\scratchbox=\box66
-\nofMPsegments=\count303
-\nofMParguments=\count304
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count305
-\MPscratchDim=\dimen273
-\MPnumerator=\count306
-\makeMPintoPDFobject=\count307
-\everyMPtoPDFconversion=\toks47
+\scratchcounter=\count310
+\scratchdimen=\dimen276
+\scratchbox=\box68
+\nofMPsegments=\count311
+\nofMParguments=\count312
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count313
+\MPscratchDim=\dimen277
+\MPnumerator=\count314
+\makeMPintoPDFobject=\count315
+\everyMPtoPDFconversion=\toks48
 )
 ("C:\Users\kristina\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\ep
 stopdf-base.sty"
@@ -933,8 +960,8 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-\AtBeginShipoutBox=\box67
-Package hyperref Info: Link coloring OFF on input line 119.
+\AtBeginShipoutBox=\box69
+Package hyperref Info: Link coloring OFF on input line 120.
 
 ("C:\Users\kristina\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\namere
 f.sty"
@@ -948,15 +975,16 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 g\gettitlestring.sty"
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count308
+\c@section@level=\count316
 )
-LaTeX Info: Redefining \ref on input line 119.
-LaTeX Info: Redefining \pageref on input line 119.
-LaTeX Info: Redefining \nameref on input line 119.
+LaTeX Info: Redefining \ref on input line 120.
+LaTeX Info: Redefining \pageref on input line 120.
+LaTeX Info: Redefining \nameref on input line 120.
  (thesis.out) (thesis.out)
 \@outlinefile=\write6
 \openout6 = `thesis.out'.
 
+\c@lstlisting=\count317
 \openout2 = `title.aux'.
 
  (title.tex
@@ -1088,29 +1116,80 @@ Overfull \hbox (25.19997pt too wide) in alignment at lines 51--61
 
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 6
-9.
+Underfull \hbox (badness 1112) in paragraph at lines 74--74
+[]|\OT1/lmr/m/n/12 Can be
+ []
+
+
+Underfull \hbox (badness 8038) in paragraph at lines 77--77
+[]|\OT1/lmr/m/n/12 equivalent to \OT1/lmr/m/it/12 cor-pus[]id \OT1/lmr/m/n/12 i
+n the
+ []
+
+
+Overfull \hbox (49.99994pt too wide) in alignment at lines 69--94
+ [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 94
+ []
+
+
+Overfull \hbox (49.99994pt too wide) in alignment at lines 94--104
+ [] [] [] [] 
+ []
+
+[9]
+LaTeX Font Info:    Trying to load font information for OMS+lmr on input line 1
+11.
+ ("C:\Users\kristina\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmr.fd"
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 111.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+13.
  ("C:\Users\kristina\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [9]) [10]
+)
+
+LaTeX Warning: Float too large for page by 27.7002pt on input line 116.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./images/volpiano.png, id=268, 1716.4125pt x 1032.85875pt>
+File: ./images/volpiano.png Graphic file (type png)
+<use ./images/volpiano.png>
+Package pdftex.def Info: ./images/volpiano.png  used on input line 129.
+(pdftex.def)             Requested size: 171.6513pt x 103.29192pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [10] [11] [12 <./images/volpiano.png>]
 \openout2 = `03_alignment.aux'.
 
  (03_alignment.tex
 Chapter 3.
-[11
+[13
 
 
 
-] [12]
+] [14]
+Overfull \hbox (16.88165pt too wide) in paragraph at lines 88--90
+\OT1/lmr/m/n/12 Dynamic pro-gram-ming tech-niques are use-ful for pair-wise ali
+gn-ment. The Needleman-|
+ []
+
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-93.
-
+100.
 ("C:\Users\kristina\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmtt.fd"
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [13] [14] [15] [16]) [17]
+) [15] [16] [17] [18]) [19]
 \openout2 = `epilog.aux'.
 
- (epilog.tex) [18
+ (epilog.tex) [20
 
 
 
@@ -1118,51 +1197,51 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 \openout2 = `bibliography.aux'.
 
  (bibliography.tex (thesis.bbl
-[19
+[21
 
 
 
-])) [20] (thesis.lof)
+])) [22] (thesis.lof)
 \tf@lof=\write8
 \openout8 = `thesis.lof'.
 
- [21
+ [23
 
 
 ] (thesis.lot)
 \tf@lot=\write9
 \openout9 = `thesis.lot'.
 
- [22
+ [24
 
-] [23
+] [25
 
 ]
 Appendix A.
-[24
+[26
 
 ]
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 165.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 165.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
 (thesis.aux (title.aux) (preface.aux) (01_related-work.aux) (02_data.aux)
 (03_alignment.aux) (epilog.aux) (bibliography.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 165.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 165.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: CDA6C59105DB206AC09130F873C92BB3;3330.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 165.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 166.
  ) 
 Here is how much of TeX's memory you used:
- 24722 strings out of 480934
- 432654 string characters out of 2898513
- 645159 words of memory out of 3000000
- 39975 multiletter control sequences out of 15000+200000
+ 26315 strings out of 480934
+ 453979 string characters out of 2898513
+ 827029 words of memory out of 3000000
+ 41540 multiletter control sequences out of 15000+200000
  584222 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,14n,60p,506b,2341s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,14n,60p,634b,2341s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ma
 thex.enc}{C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/l
 m/lm-mathsy.enc}{C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/
@@ -1183,9 +1262,9 @@ m/lmri12.pfb><C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
 ublic/lm/lmsy10.pfb><C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fonts/
 type1/public/lm/lmsy8.pfb><C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/public/lm/lmtt12.pfb>
-Output written on thesis.pdf (28 pages, 979326 bytes).
+Output written on thesis.pdf (30 pages, 1001679 bytes).
 PDF statistics:
- 457 PDF objects out of 1000 (max. 8388607)
- 80 named destinations out of 1000 (max. 500000)
- 224 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 496 PDF objects out of 1000 (max. 8388607)
+ 93 named destinations out of 1000 (max. 500000)
+ 229 words of extra memory for PDF output out of 10000 (max. 10000000)
 

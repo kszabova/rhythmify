@@ -79,7 +79,14 @@ of sequences to generate a better overall global alignment.
 
 \section{Sequence alignment methods}
 
+The methods used to find sequence alignments depend on how many sequences there are and whether they should be aligned globally or locally.
+Dynamic programming can used for finding pairwise alignment, both local and global. For many sequences, other methods have been developed. They
+do not compute the optimal alignment, however, by using appropriate heuristics, their output is good enough.
+
 \subsection{Dynamic programming}
+
+Dynamic programming techniques are useful for pairwise alignment. The Needleman-Wunsch algorithm \citep{needleman} computes the global alignment
+of two sequences. A variation of the algorithm, the Smith-Waterman algorithm \citep{smith_waterman}, computes the local alignment of two sequences.
 
 \subsubsection{Needleman-Wunsch algorithm}
 
@@ -283,7 +290,7 @@ Figure \ref{alignment_path} shows a path that represents the alignment
 \subsubsection{Smith-Waterman algorithm}
 
 The algorithm is similar to Needleman-Wunsch algorithm. As its purpose is to find an optimal local alignment, it does not
-penalize matches nor gaps. Its purpose is to find regions with the most matches. The only difference from the Needleman-Wunsch 
+penalize long regions of mismatches or gaps. Its purpose is to find regions with the most matches. The only difference from the Needle\-man-Wunsch 
 algorithm is in how new matrix cells are filled out. Namely, when willing out a new cell, we use the formula
 
 \[ M_{i, j} = max

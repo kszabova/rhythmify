@@ -1,4 +1,4 @@
-\begin{thebibliography}{20}
+\begin{thebibliography}{21}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -143,6 +143,16 @@ Rebecca Shaw.
 \newblock ISBN 9781450365222.
 \newblock \doi{10.1145/3273024.3273028}.
 \newblock URL \url{https://doi.org/10.1145/3273024.3273028}.
+
+\bibitem[Smith and Waterman(1981)]{smith_waterman}
+T.F. Smith and M.S. Waterman.
+\newblock Identification of common molecular subsequences.
+\newblock \emph{Journal of Molecular Biology}, 147\penalty0 (1):\penalty0
+  195--197, 1981.
+\newblock ISSN 0022-2836.
+\newblock \doi{https://doi.org/10.1016/0022-2836(81)90087-5}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/0022283681900875}.
 
 \bibitem[Wang and Jiang(2009)]{msa_complexity}
 Lusheng Wang and Tao Jiang.
