@@ -7,7 +7,8 @@ manually and undergoes a thorough examination before publishing (\cite{cantus_la
 
 We are using a scraped version of the Cantus database released as CantusCorpus (\cite(chant21)). Unlike the Cantus database which is continuously being
 updated and is therefore unsuitable for computational study, the corpus is versioned, therefore each version always contains the same data. We are using
-version 0.2 released in July 2020 which contains 497071 entries. The corpus is available for download in CSV format.
+version 0.2 released in July 2020 which contains 497,071 entries. However, a majority of the data is not suitable for this application, as they do not
+contain all the necessary fields, therefore we are only using a subset of size around 13,000. The corpus is available for download in CSV format.
 
 \section{CSV}
 
@@ -85,4 +86,7 @@ to all volpiano-encoded melodies having a standardized format. Each transcriptio
 dashes, while two dashes represent gaps between syllables (\cite{volpiano}).
 
 \section{Data cleaning}
+
+As mentioned earlier, not the entire dataset is usable. Since we are analysing melodies, it is necessary that each data point contains information
+about the chant's melody.
 

@@ -51,9 +51,15 @@
 \usepackage{paralist}       % improved enumerate and itemize
 \usepackage{xcolor}         % typesetting in color
 \usepackage{longtable}		% multipage tables
+\usepackage{tikz}
 
 % Path to images folder
 \graphicspath{ {./images/} }
+
+% Drawing over matrices
+\newcommand{\rn}[2]{%% "rn": "remember node"
+    \tikz[remember picture,baseline=(#1.base)]\node [inner sep=0] (#1) {$#2$};%
+}
 
 %%% Basic information on the thesis
 
@@ -121,6 +127,7 @@ Abstract.
 \include{preface}
 \include{01_related-work}
 \include{02_data}
+\include{03_alignment}
 
 \include{epilog}
 

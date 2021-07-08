@@ -5,6 +5,7 @@ A level-1 auxiliary file: title.aux
 A level-1 auxiliary file: preface.aux
 A level-1 auxiliary file: 01_related-work.aux
 A level-1 auxiliary file: 02_data.aux
+A level-1 auxiliary file: 03_alignment.aux
 A level-1 auxiliary file: epilog.aux
 A level-1 auxiliary file: bibliography.aux
 The style file: plainnat.bst
@@ -18,7 +19,7 @@ Warning--empty year in cantus_db
 Warning--empty booktitle in similarity_plot
 You've used 20 entries,
             2773 wiz_defined-function locations,
-            741 strings with 9068 characters,
+            742 strings with 9084 characters,
 and the built_in function-call counts, 9254 in all, are:
 = -- 874
 > -- 462

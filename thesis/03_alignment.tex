@@ -1,0 +1,306 @@
+\chapter{Sequence alignment}
+
+Sequence alignment, in general, is a task whose purpose is to arrange two or more sequences with a common alphabet to identify similar
+and different regions within them. A set of sequences being \emph{aligned} in this case can be understood as each being extended by spaces
+in such a way that if they are arranged in a matrix, each sequence occupying one row and each column containing one character, it can be seen
+what had to happen for one sequence to change into another on a character-by-character basis: insertion (or deletion), character substitution,
+or nothing if the characters in the given position are identical. A good sequence alignment algorithm is one that does not perform
+unnecessary insertions (deletions) or substitutions.
+
+The problem of sequence alignment (pairwise and multiple sequence) originated in bioinformatics. Since DNA was first sequenced
+in the 1970s, there has been a need to compare various genomes to determine similarity. As organisms mutate and evolve, their
+DNA or RNA changes. Aligning their genomes reveals similar and different regions, which facilitates the tracking of these
+mutations and makes it possible to determine the order in which they happened.
+
+However, the applications of sequence alignment are not limited to biology. Every task that makes use of determinig the similarity
+of some sequences, where the emphasis is put on finding regions where they do not diverge, can make use of the existing methods.
+
+Melody alignment of Gregorian chant can be considered as such. As the tradition spread across Europe, each place changed some of 
+the existing melodies by a little, thereby creating new melodies that can change further as they travel through time and space.
+This is akin to the mutations in DNA caused by environmental factors. Finding well-conserved regions in many instances of chant
+provides great insight into which parts of a melody are unlikely to change, and, on the other hand, which ones tend to vary
+a lot. It can also reveal the ancestors of a melody and the path which it traveled to transform into its final form.
+
+In this chapter, we will first give the definition of the problem of sequence alignment. We will mention some important considerations,
+as well as theoretical limitations. Then we will provide an overview of the methods developed for bioinformatics that attempt to solve
+the problem. Finally, we will show how we applied the existing methods and technologies on Gregorian chant melodies.
+
+\section{The problem of sequence alignment}
+
+Assume that we have an alphabet $\mathcal{A}$ and a character $\sigma$ such that $\sigma \notin \mathcal{A}$. Then let us have a set
+of sequences $S = \{s_1, s_2, ..., s_k\}$ with $s_i \in \mathcal{A}^{l_i}$. The output of a sequence alignment algorithm is the set of
+aligned sequences $A = \{a_1, a_2, ..., a_k\}$, where $a_k \in (\mathcal{A}\cup\{\sigma\})^L$, $L \geq l_i \:\forall i\in\{1, 2, ..., k\}$.
+Additionally, each original sequence $s_i$ is a subsequence of the aligned sequence $a_i$.
+
+Given two aligned sequences $a_i$ and $a_j$ and an index $p \leq L$, we define the following operations:
+
+\begin{itemize}
+    \item \emph{Identity}: $(a_i)_k = (a_j)_k$
+    \item \emph{Insertion}: $(a_i)_k = \sigma \land (a_j)_k \in \mathcal{A}$
+    \item \emph{Deletion}: $(a_i)_k \in \mathcal{A} \land (a_j)_k = \sigma$
+    \item \emph{Substitution}: $(a_i)_k \in \mathcal{A} \land (a_j)_k \in \mathcal{A} \land (a_i)_k \neq (a_j)_k$
+\end{itemize}
+
+Each of the operations has an associated cost. The cost of substitution can further vary depending on which characters are being
+substituted. We can then define the overall cost of the alignment $A$ in different ways, e.g. as the sum of costs over all triples
+$(i, j, p) \: \forall i, j \in \{1, 2, ..., k\} \: \forall p \leq L$ or as the sum of costs for unordered pairs $\{i, j\}$ and indices $p$,
+in which case insertion and deletion are considered the same operation. The goal of a sequence alignment algorithm is to minimize the cost.
+There are other, more complicated ways of defining the cost  function, and the performance of an algorithm is highly dependent on which one it uses.
+
+\subsection{Pairwise and multiple sequence alignment}
+
+Depending on the number of sequences to align, we distinguish between pairwise alignment for pairs of sequences and multiple sequence alignment
+for more than two. Despite the similarity in their outcomes, the two problems are fundamentally different from a computational perspective.
+
+Pairwise alignment is relatively easy to solve. The Needleman-Wunsch algorithm, which is a dynamic programming algorithm, can find an optimal
+solution in the asymptotic time of $\mathcal{O}(mn)$, where $m$ and $n$ are the respective lengths of the sequences. This means that it is
+possible to find an optimal alignment even for longer sequences.
+
+Needleman-Wunsch algorithm can be extended to more than two sequences. However, with each additional sequence, its complexity increases,
+and it quickly becomes impractical or even practically impossible to align multiple sequences this way. In fact, it has been proven that multiple sequence
+alignment is an NP-complete problem \citep{msa_complexity}. It is therefore necessary to use various heuristics to generate alignments. Current
+algorithms do not aim at finding the optimal alignment; instead, they try to produce one that is good enough.
+
+\subsection{Local and global sequence alignment}
+
+There is a distinction to be made between local and global sequence alignment.
+
+The above problem description is the definition of global alignment. Aligning sequences globally means aligning the entire sequences end-to-end.
+(This does not mean, however, that there cannot be gaps at the beginning or at the end of the generated alignment.)
+All characters from both sequences must be present in the final alignment. Global alignment is used to compare relatively similar
+sequences, such as protein homologues or versions of the same chant sung at different points in time.
+
+On the other hand, the goal of local alignment is to find similar regions in divergent sequences, while the rest of the sequences is disregarded.
+The output of local alignment algorithms contains only a substring of both sequences. Local alignment is suitable for finding conserved patterns.
+
+Both methods are useful in their own way. Local alignment provides a slightly different insight than global alignment, however, they can
+be combined to extract more information. In fact, the best current multiple sequence alignment algorithms use local alignment for pairs
+of sequences to generate a better overall global alignment.
+
+\section{Sequence alignment methods}
+
+\subsection{Dynamic programming}
+
+\subsubsection{Needleman-Wunsch algorithm}
+
+The idea of the algorithm is to start with two empty sequences and subsequently add characters from either or both of the given sequences so as
+to obtain an optimal alignment in each step. Namely, suppose that we have two sequence prefixes $A$ and $B$ that have already been aligned optimally
+and their alignment gives a score of $s$. Furthermore, suppose that the next characters in the sequences are $a$ and $b$, respectively. There are
+three possibilities:
+
+\begin{itemize}
+    \item We append $a$ and $b$ to the respective prefixes. By doing so, we obtain the aligned sequence prefixes $Aa$ and $Bb$.
+        \begin{verbatim}
+            Aa
+            Bb
+        \end{verbatim}
+    \item We append $a$ to $A$ and a gap to $B$. This way, we get the aligned prefixes $Aa$ and $B$.
+        \begin{verbatim}
+            Aa
+            B-
+        \end{verbatim}
+    \item We append a gap to $A$ and $b$ to $B$. Now we have aligned the prefixes $A$ and $Bb$.
+        \begin{verbatim}
+            A-
+            Bb
+        \end{verbatim}
+\end{itemize}
+
+Each of the possibilities adds a value to the score $s$ depending on what characters were added. To get the optimal alignment, we choose the one
+that yields the highest score. We then proceed to the next character, having two optimally aligned prefixes $A'$ and $B'$. This leads to a recursive
+algorithm that can be formulated using dynamic programming.
+
+Let us have two input sequences, $A$ and $B$ of lengths $m$ and $n$ with a common alphabet $\mathcal{A}$ and the gap character $\sigma$.
+Let us define the scoring function $s$ as
+
+\[ s(a, b) = 
+    \begin{cases}
+        1  & \text{if } a = b \\
+        -1 & \text{if } a = \sigma \lor b = \sigma \\
+        -1 & \text{if }  a \neq b
+    \end{cases}
+\]
+
+The algorithm initializes a matrix $M$ of size $(m+1) * (n+1)$. The rows and columns represent the characters of $A$ and $B$, respectively, except
+for the first row and the first column, which represent the beginning of a sequence or an empty sequence. That is to say, the row $M_{i, *}$ represents the
+character $A_{i-1}$ for $i \geq 2$ and analogically, the column $M_{*, j}$ represents the character $B_{j-1}$ for $j \geq 2$.
+
+The algorithm iterates over the rows and columns of the matrix. In each step, it calculates the value of a cell $M_{i,j}$, provided that each of the cells $M_{i-1, j}$,
+$M_{i, j-1}$ and $M_{i-1, j-1}$ have been filled out, as
+
+\[ M_{i, j} = max
+    \begin{cases}
+        M_{i-1, j-1} + s(A_{i-1}, B_{j-1}) \\
+        M_{i-1, j} + s(A_{i-1}, \sigma)    \\
+        M_{i, j-1} + s(\sigma, B_{j-1})
+    \end{cases}
+\]
+
+In other words, the algorithm either aligns the two characters in positions $i-1$ and $j-1$, or it inserts a gap into sequence $B$, or it inserts a gap into sequence $A$,
+and chooses the version which yields the highest score.
+
+The first row and column are apparently special cases, as there is no previous row or column. Therefore, for each cell in the first row or column, there is
+only one possible choice of score, which is equivalent to inserting a space.
+
+After filling out the entire matrix, the algorithm then finds the optimal alignment by backtracking in the matrix. It starts in the bottom right
+cell of the matrix, which represents both sequences being aligned. In each iteration, it looks at the cells above, to the left and to the top-left
+of the current positions and chooses the highest score. If it moves top or left, it means that a gap was inserted. Moving diagonally represents a match
+or mismatch. By tracing its way back to the top left corner, the algorithm finds the alignment that yielded the highest score.
+
+Let us show the algorithm on an example. Consider two sequences of nucleotide residues:
+
+\begin{verbatim}
+    GATTA
+    GCATG
+\end{verbatim}
+
+The matrix is initialized without anything filled out.
+
+% create a figure
+
+\begin{verbatim}
+          G  C  A  T  G
+      
+    G 
+    A 
+    T 
+    T 
+    A 
+\end{verbatim}
+
+We start filling out the matrix in the top left corner. Using the basic scoring scheme (+1 for a match, -1 for everything else), we insert a 0
+to the beginning, and, since there is no top cell for the first row and no left cell for the first column, we add -1 to each subsequent cell,
+representing a gap insertion.
+
+\begin{verbatim}
+          G  C  A  T  G
+       0 -1 -2 -3 -4 -5
+    G -1
+    A -2
+    T -3
+    T -4
+    A -5
+\end{verbatim}
+
+The next cell to fill out is the one in the first \verb|G| column and the first \verb|G| row. We have three options:
+
+\begin{itemize}
+    \item Move from the top, represents gap insertion for a score of -1. The final score would be $(-1) + (-1) = -2$.
+    \item Move diagonally, represents match, giving a score of +1. The score in this case would be $0 + 1 = 1$.
+    \item Move from the left, i.e. gap insertion. The score would be $-2$ as in the first case.
+\end{itemize}
+
+We choose the highest score, which in this case is a diagonal move representing a match. It follows intuition: we are now aligning
+\verb|G| and \verb|G|, matching them seems logical.
+
+\begin{verbatim}
+          G  C  A  T  G
+       0 -1 -2 -3 -4 -5
+    G -1  1
+    A -2
+    T -3
+    T -4
+    A -5
+\end{verbatim}
+
+Now let us look at the cell in the \verb|C| column and the \verb|G| row. Moving from the top yields -3, moving from the left yields
+0 and moving diagonally yields -2, as it is a mismatch in this case. The highest of these scores is 0.
+
+\begin{verbatim}
+          G  C  A  T  G
+       0 -1 -2 -3 -4 -5
+    G -1  1  0
+    A -2
+    T -3
+    T -4
+    A -5
+\end{verbatim}
+
+We continue filling out the table this way until it is complete.
+
+\begin{verbatim}
+          G  C  A  T  G
+       0 -1 -2 -3 -4 -5
+    G -1  1  0 -1 -2 -3
+    A -2  0  0  1  0 -1
+    T -3 -1 -1  0  2  1
+    T -4 -2 -2 -1  1  1
+    A -5 -3 -3 -1  0  0
+\end{verbatim}
+
+As we have now calculated the scores for all prefixes, we can use backtracking to find the optimal alignment for the two sequences.
+Starting in the bottom right cell, we choose the cell (top, left or top-left) with the highest score. If multiple cells have the same score, we can 
+choose either. The different alignments the cells represent are all optimal. The cell that we choose gives us the optimal alignment
+of the sequences before the last character was added. Depending on the direction by which we moved, we know whether this last character
+was a character of the sequence or a gap.
+
+For example, consider the bottom right corner of the matrix.
+
+\begin{verbatim}
+       T  G
+    T  1  1
+    A  0  0
+\end{verbatim}
+
+Starting in the bottom right, we can choose either the top or the top-left cell. Choosing the top-left one, i.e. moving diagonally, means that
+the last characters in the alignment were \verb|A| and \verb|G| for the respective sequences. We can find the alignment of the prefixes \verb|GATT|
+and \verb|GCAT| by backtracking from the top-left cell. By contrast, choosing the top cell means inserting a gap in the second sequence, and by backtracking
+from there we can find the alignment of \verb|GATT| and \verb|GCATG|.
+
+\begin{figure}[h]
+    \begin{equation*}
+        \begin{matrix}
+                &            & G          & C          & A          & T          & G        \\
+                & \rn{00}{0} & -1         & -2         & -3         & -4         & -5       \\
+            G   & -1         & \rn{11}{1} & 0          & -1         & -2         & -3       \\
+            A   & -2         & 0          & \rn{22}{0} & \rn{23}{1} & 0          & -1       \\
+            T   & -3         & -1         & -1         & 0          & \rn{34}{2} & 1        \\
+            T   & -4         & -2         & -2         & -1         & \rn{44}{1} & 1        \\
+            A   & -5         & -3         & 3          & -1         & 0          & \rn{55}{0}
+        \end{matrix}
+    \end{equation*}
+
+    \begin{tikzpicture}[overlay,remember picture]
+        \draw [->] (55) -- (44);
+        \draw [->] (44) -- (34);
+        \draw [->] (34) -- (23);
+        \draw [->] (23) -- (22);
+        \draw [->] (22) -- (11);
+        \draw [->] (11) -- (00);
+    \end{tikzpicture}
+\caption{A path representing an optimal alignment.}
+\label{alignment_path}
+\end{figure}
+
+
+Figure \ref{alignment_path} shows a path that represents the alignment
+
+\begin{verbatim}
+    G A - T T A
+    G C A T - G
+\end{verbatim}
+
+\subsubsection{Smith-Waterman algorithm}
+
+The algorithm is similar to Needleman-Wunsch algorithm. As its purpose is to find an optimal local alignment, it does not
+penalize matches nor gaps. Its purpose is to find regions with the most matches. The only difference from the Needleman-Wunsch 
+algorithm is in how new matrix cells are filled out. Namely, when willing out a new cell, we use the formula
+
+\[ M_{i, j} = max
+    \begin{cases}
+        0   \\
+        M_{i-1, j-1} + s(A_{i-1}, B_{j-1}) \\
+        M_{i-1, j} + s(A_{i-1}, \sigma)    \\
+        M_{i, j-1} + s(\sigma, B_{j-1})
+    \end{cases}
+\]
+
+In other words, all negative values in what would be the matrix from Needle\-man-Wunsch algorithm are replaced by 0.
+
+\subsection{Progressive methods}
+
+\subsubsection{T-COFFEE}
+
+\subsubsection{MAFFT}
+
+\section{Sequence alignment for chant melodies}
