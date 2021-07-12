@@ -5,5 +5,9 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Example of a valid CSV file}}{11}{figure.2.1}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Example of volpiano as stored in the database and how it is rendered as musical notation. \cite [Figure\nobreakspace {}2]{cantus_lacoste}}}{12}{figure.2.2}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces A path representing an optimal alignment.}}{18}{figure.3.1}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces A path representing an optimal alignment.}}{19}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Misalignment of the word CAT using other progressive methods. \citep [Figure\nobreakspace {}2(a)]{t_coffee}}}{20}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Primary library created from 4 sequences. \citep [Figure\nobreakspace {}2(b)]{t_coffee}}}{20}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Extended library weights for two sequences and their alignment recomputed using these weights. \citep [Figure\nobreakspace {}2(c)]{t_coffee}}}{21}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces T-Coffee layout. \citep [Figure\nobreakspace {}1]{t_coffee}}}{22}{figure.3.5}%
 \addvspace {10\p@ }

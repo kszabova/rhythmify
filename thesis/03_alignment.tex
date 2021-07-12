@@ -1,4 +1,4 @@
-\chapter{Sequence alignment}
+\chapter{Multiple sequence alignment}
 
 Sequence alignment, in general, is a task whose purpose is to arrange two or more sequences with a common alphabet to identify similar
 and different regions within them. A set of sequences being \emph{aligned} in this case can be understood as each being extended by spaces
@@ -7,7 +7,7 @@ what had to happen for one sequence to change into another on a character-by-cha
 or nothing if the characters in the given position are identical. A good sequence alignment algorithm is one that does not perform
 unnecessary insertions (deletions) or substitutions.
 
-The problem of sequence alignment (pairwise and multiple sequence) originated in bioinformatics. Since DNA was first sequenced
+The problem of multiple sequence alignment is most studied in bioinformatics. Since DNA was first sequenced
 in the 1970s, there has been a need to compare various genomes to determine similarity. As organisms mutate and evolve, their
 DNA or RNA changes. Aligning their genomes reveals similar and different regions, which facilitates the tracking of these
 mutations and makes it possible to determine the order in which they happened.
@@ -20,6 +20,10 @@ the existing melodies by a little, thereby creating new melodies that can change
 This is akin to the mutations in DNA caused by environmental factors. Finding well-conserved regions in many instances of chant
 provides great insight into which parts of a melody are unlikely to change, and, on the other hand, which ones tend to vary
 a lot. It can also reveal the ancestors of a melody and the path which it traveled to transform into its final form.
+This is in line with the focus of philology shifting not to merely reconstructing an earliest layer of a text (with the unspoken 
+assumption that this is the ``real'' text), but to map the entire tradition of text transmission and evolution, taking the later layers 
+to be as valid within their cultural environment as the older layers.
+
 
 In this chapter, we will first give the definition of the problem of sequence alignment. We will mention some important considerations,
 as well as theoretical limitations. Then we will provide an overview of the methods developed for bioinformatics that attempt to solve
@@ -30,7 +34,7 @@ the problem. Finally, we will show how we applied the existing methods and techn
 Assume that we have an alphabet $\mathcal{A}$ and a character $\sigma$ such that $\sigma \notin \mathcal{A}$. Then let us have a set
 of sequences $S = \{s_1, s_2, ..., s_k\}$ with $s_i \in \mathcal{A}^{l_i}$. The output of a sequence alignment algorithm is the set of
 aligned sequences $A = \{a_1, a_2, ..., a_k\}$, where $a_k \in (\mathcal{A}\cup\{\sigma\})^L$, $L \geq l_i \:\forall i\in\{1, 2, ..., k\}$.
-Additionally, each original sequence $s_i$ is a subsequence of the aligned sequence $a_i$.
+Each original sequence $s_i$ can be obtained from the aligned sequence $a_i$ by removing all $\sigma$.
 
 Given two aligned sequences $a_i$ and $a_j$ and an index $p \leq L$, we define the following operations:
 
@@ -65,9 +69,9 @@ algorithms do not aim at finding the optimal alignment; instead, they try to pro
 
 There is a distinction to be made between local and global sequence alignment.
 
-The above problem description is the definition of global alignment. Aligning sequences globally means aligning the entire sequences end-to-end.
+The problem description above is the definition of global alignment. Aligning sequences globally means aligning the entire sequences end-to-end.
 (This does not mean, however, that there cannot be gaps at the beginning or at the end of the generated alignment.)
-All characters from both sequences must be present in the final alignment. Global alignment is used to compare relatively similar
+All characters from all sequences must be present in the final alignment. Global alignment is used to compare relatively similar
 sequences, such as protein homologues or versions of the same chant sung at different points in time.
 
 On the other hand, the goal of local alignment is to find similar regions in divergent sequences, while the rest of the sequences is disregarded.
@@ -75,7 +79,7 @@ The output of local alignment algorithms contains only a substring of both seque
 
 Both methods are useful in their own way. Local alignment provides a slightly different insight than global alignment, however, they can
 be combined to extract more information. In fact, the best current multiple sequence alignment algorithms use local alignment for pairs
-of sequences to generate a better overall global alignment.
+of sequences to generate a better overall global alignment. \citep{msa_overview}
 
 \section{Sequence alignment methods}
 
@@ -83,7 +87,7 @@ The methods used to find sequence alignments depend on how many sequences there 
 Dynamic programming can used for finding pairwise alignment, both local and global. For many sequences, other methods have been developed. They
 do not compute the optimal alignment, however, by using appropriate heuristics, their output is good enough.
 
-\subsection{Dynamic programming}
+\subsection{Pairwise alignment: dynamic programming}
 
 Dynamic programming techniques are useful for pairwise alignment. The Needleman-Wunsch algorithm \citep{needleman} computes the global alignment
 of two sequences. A variation of the algorithm, the Smith-Waterman algorithm \citep{smith_waterman}, computes the local alignment of two sequences.
@@ -304,9 +308,74 @@ algorithm is in how new matrix cells are filled out. Namely, when willing out a 
 
 In other words, all negative values in what would be the matrix from Needle\-man-Wunsch algorithm are replaced by 0.
 
-\subsection{Progressive methods}
+\subsection{Multiple sequence alignment: progressive methods}
 
-\subsubsection{T-COFFEE}
+As has already been mentioned, it is essentially impossible to use dynamic programming to compute the alignment of more than two sequences.
+Therefore, other methods have been developed. The most successful ones appear to be the so-called progressive methods. In general,
+they use some heuristics to estimate a guide tree, which is a phylogenetic tree determining how close the sequences are to each other,
+and then they compute the actual multiple alignment following the order of this tree.
+
+One of such methods is the T-Coffee algorithm \citep{t_coffee}. Its most important contribution is its extended library generated from
+both local and global pairwise alignments of all pairs of input sequences. This library enables the algorithm to make fewer mistakes
+in the initial stages of the guide tree, as these errors propagate throughout the entire tree.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.85]{t-coffee-errors}
+\caption{Misalignment of the word CAT using other progressive methods. \citep[Figure~2(a)]{t_coffee}}
+\end{figure}
+
+\subsubsection{T-Coffee}
+
+The T-Coffee algorithm consists of various stages. The first one is to compute pairwise alignments for all pairs of input sequences.
+Two primary libraries are generated, one for global and one for local alignments. Each can contain more than one alignment for each pair.
+
+As some alignments tend to be more correct than others, weighting is then performed. The authors chose sequence identity of two aligned
+sequences as the weight of each of the aligned residues in the pair. For example, consider the sequences $A$ \verb|GARFIELD THE LAST FAT CAT|
+and $B$ \verb|GARFIELD THE FAST CAT|. If they are aligned as
+
+\begin{verbatim}
+    GARFIELD THE LAST FAT CAT
+    GARFIELD THE FAST CAT ---
+\end{verbatim}
+
+then their sequence identity is 88\%, as there are two non-equal characters aligned (i.e. there is no gap penalty). Therefore, the weight of
+each residue pair $W(A(x), B(y))$, where $A(x)$ denotes the character $x$ from sequence $A$, and analogically for $B(y)$, is equal to 88.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.85]{t-coffee-primary-lib}
+\caption{Primary library created from 4 sequences. \citep[Figure~2(b)]{t_coffee}}
+\end{figure}
+
+The two primary libraries are then combined into one by combining all identical residue pairs into one entry and summing their weights, while
+pairs that are only present once are added with their original weight. Residue pairs that are not present in any alignment have an implicit weight
+of 0.
+
+Although the information present in the primary library is sufficient to obtain a multiple alignment, it is computationally hard to do so. Instead,
+the authors chose to generate what they call an extended library using the weights in the primary library.
+
+Library extension is performed by comparing each aligned residue pair with all the others. Consider a residue pair $(A(x), B(y))$ and a sequence $C$.
+The initial weight of the pair is then increased by $min(W(A(x), C(z)), W(C(z), B(y)))$, i.e. the minimum weight associated to the alignment of some
+residue $C(z)$ with both $A(x)$ and $B(y)$. This is done for all residues from all sequences. In practice, most of the weights will be 0, therefore 
+the actual algorithm computes the weights more efficiently. Library extension in effect computes how consistent a residue-pair alignment is.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.85]{t-coffee-extended-lib}
+\caption{Extended library weights for two sequences and their alignment recomputed using these weights. \citep[Figure~2(c)]{t_coffee}}
+\end{figure}
+
+Having obtained the consistency information from the extended library, it is now possible to create the guide tree and the final multiple alignment.
+Using a distance matrix between all the sequences, the tree is computed as follows. First, we align the closest two sequences using dynamic programming
+and the weights from the extended library. In each of the following steps, we either add a sequence to an already computed alignment, or we align
+the next closest sequences. We repeat this step until the alignment of all sequences is complete.
+
+\begin{figure}[h]
+\centering
+\includegraphics{t-coffee-flowchart}
+\caption{T-Coffee layout. \citep[Figure~1]{t_coffee}}
+\end{figure}
 
 \subsubsection{MAFFT}
 

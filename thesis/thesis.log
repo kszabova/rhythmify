@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.3.29)  8 JUL 2021 12:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.3.29)  11 JUL 2021 22:56
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1095,9 +1095,6 @@ ce align-ment is the Needleman-|
  (02_data.tex
 Chapter 2.
 
-Package natbib Warning: Citation `(' on page 8 undefined on input line 8.
-
-
 Overfull \hbox (25.19997pt too wide) in alignment at lines 26--51
  [] [] 
  []
@@ -1159,7 +1156,7 @@ LaTeX Warning: Float too large for page by 27.7002pt on input line 116.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./images/volpiano.png, id=268, 1716.4125pt x 1032.85875pt>
+<./images/volpiano.png, id=270, 1716.4125pt x 1032.85875pt>
 File: ./images/volpiano.png Graphic file (type png)
 <use ./images/volpiano.png>
 Package pdftex.def Info: ./images/volpiano.png  used on input line 129.
@@ -1177,68 +1174,108 @@ Chapter 3.
 
 
 ] [14]
-Overfull \hbox (16.88165pt too wide) in paragraph at lines 88--90
+Overfull \hbox (16.88165pt too wide) in paragraph at lines 92--94
 \OT1/lmr/m/n/12 Dynamic pro-gram-ming tech-niques are use-ful for pair-wise ali
 gn-ment. The Needleman-|
  []
 
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-100.
+104.
 ("C:\Users\kristina\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmtt.fd"
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [15] [16] [17] [18]) [19]
+) [15] [16] [17]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[18]
+<./images/t-coffee-errors.png, id=346, 454.69875pt x 121.05225pt>
+File: ./images/t-coffee-errors.png Graphic file (type png)
+<use ./images/t-coffee-errors.png>
+Package pdftex.def Info: ./images/t-coffee-errors.png  used on input line 324.
+(pdftex.def)             Requested size: 386.49576pt x 102.89488pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[19]
+<./images/t-coffee-primary-lib.png, id=357, 467.94826pt x 85.5195pt>
+File: ./images/t-coffee-primary-lib.png Graphic file (type png)
+<use ./images/t-coffee-primary-lib.png>
+Package pdftex.def Info: ./images/t-coffee-primary-lib.png  used on input line 
+347.
+(pdftex.def)             Requested size: 397.75789pt x 72.6919pt.
+<./images/t-coffee-extended-lib.png, id=362, 465.53925pt x 173.448pt>
+File: ./images/t-coffee-extended-lib.png Graphic file (type png)
+<use ./images/t-coffee-extended-lib.png>
+Package pdftex.def Info: ./images/t-coffee-extended-lib.png  used on input line
+ 365.
+(pdftex.def)             Requested size: 395.71022pt x 147.43149pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[20 <./images/t-coffee-errors.png> <./images/t-coffee-primary-lib.png>]
+<./images/t-coffee-flowchart.png, id=375, 316.7835pt x 439.6425pt>
+File: ./images/t-coffee-flowchart.png Graphic file (type png)
+<use ./images/t-coffee-flowchart.png>
+Package pdftex.def Info: ./images/t-coffee-flowchart.png  used on input line 37
+6.
+(pdftex.def)             Requested size: 316.78271pt x 439.64142pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [21 <./images/t-coffee-extended-lib.png>] [22 <./images/t-coffee-flowchart.pn
+g>]
 \openout2 = `epilog.aux'.
 
- (epilog.tex) [20
+ (epilog.tex) [23
 
 
 
 ]
 \openout2 = `bibliography.aux'.
 
- (bibliography.tex (thesis.bbl
-[21
+ (bibliography.tex (thesis.bbl [24
 
 
 
-])) [22] (thesis.lof)
+])) [25] (thesis.lof)
 \tf@lof=\write8
 \openout8 = `thesis.lof'.
 
- [23
+
+[26
 
 
 ] (thesis.lot)
 \tf@lot=\write9
 \openout9 = `thesis.lot'.
 
- [24
+ [27
 
-] [25
+] [28
 
 ]
 Appendix A.
-[26
+[29
 
 ]
-
-Package natbib Warning: There were undefined citations.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
-(thesis.aux (title.aux) (preface.aux) (01_related-work.aux) (02_data.aux)
+ (thesis.aux (title.aux) (preface.aux) (01_related-work.aux) (02_data.aux)
 (03_alignment.aux) (epilog.aux) (bibliography.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: CDA6C59105DB206AC09130F873C92BB3;3330.
+(rerunfilecheck)             Checksum: 27679AB5D4AF62A65D2EF1D9DA606855;3638.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 166.
  ) 
 Here is how much of TeX's memory you used:
- 26315 strings out of 480934
- 453979 string characters out of 2898513
- 827029 words of memory out of 3000000
- 41540 multiletter control sequences out of 15000+200000
+ 26350 strings out of 480934
+ 454890 string characters out of 2898513
+ 827035 words of memory out of 3000000
+ 41568 multiletter control sequences out of 15000+200000
  584222 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,14n,60p,634b,2341s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1262,9 +1299,9 @@ m/lmri12.pfb><C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
 ublic/lm/lmsy10.pfb><C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fonts/
 type1/public/lm/lmsy8.pfb><C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/public/lm/lmtt12.pfb>
-Output written on thesis.pdf (30 pages, 1001679 bytes).
+Output written on thesis.pdf (33 pages, 1209469 bytes).
 PDF statistics:
- 496 PDF objects out of 1000 (max. 8388607)
- 93 named destinations out of 1000 (max. 500000)
- 229 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 557 PDF objects out of 1000 (max. 8388607)
+ 100 named destinations out of 1000 (max. 500000)
+ 249 words of extra memory for PDF output out of 10000 (max. 10000000)
 

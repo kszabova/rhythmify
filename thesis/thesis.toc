@@ -6,22 +6,22 @@
 \contentsline {section}{\numberline {2.3}User-defined data}{9}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Volpiano}{10}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Data cleaning}{10}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Sequence alignment}{13}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Multiple sequence alignment}{13}{chapter.3}%
 \contentsline {section}{\numberline {3.1}The problem of sequence alignment}{13}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Pairwise and multiple sequence alignment}{14}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Local and global sequence alignment}{14}{subsection.3.1.2}%
 \contentsline {section}{\numberline {3.2}Sequence alignment methods}{15}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Dynamic programming}{15}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.1}Pairwise alignment: dynamic programming}{15}{subsection.3.2.1}%
 \contentsline {subsubsection}{Needleman-Wunsch algorithm}{15}{section*.3}%
 \contentsline {subsubsection}{Smith-Waterman algorithm}{19}{section*.4}%
-\contentsline {subsection}{\numberline {3.2.2}Progressive methods}{19}{subsection.3.2.2}%
-\contentsline {subsubsection}{T-COFFEE}{19}{section*.5}%
-\contentsline {subsubsection}{MAFFT}{19}{section*.6}%
-\contentsline {section}{\numberline {3.3}Sequence alignment for chant melodies}{19}{section.3.3}%
-\contentsline {chapter}{Conclusion}{20}{chapter*.7}%
-\contentsline {chapter}{Bibliography}{21}{chapter*.8}%
-\contentsline {chapter}{List of Figures}{23}{chapter*.9}%
-\contentsline {chapter}{List of Tables}{24}{chapter*.10}%
-\contentsline {chapter}{List of Abbreviations}{25}{chapter*.11}%
-\contentsline {chapter}{\numberline {A}Attachments}{26}{appendix.A}%
-\contentsline {section}{\numberline {A.1}First Attachment}{26}{section.A.1}%
+\contentsline {subsection}{\numberline {3.2.2}Multiple sequence alignment: progressive methods}{19}{subsection.3.2.2}%
+\contentsline {subsubsection}{T-Coffee}{19}{section*.5}%
+\contentsline {subsubsection}{MAFFT}{21}{section*.6}%
+\contentsline {section}{\numberline {3.3}Sequence alignment for chant melodies}{21}{section.3.3}%
+\contentsline {chapter}{Conclusion}{23}{chapter*.7}%
+\contentsline {chapter}{Bibliography}{24}{chapter*.8}%
+\contentsline {chapter}{List of Figures}{26}{chapter*.9}%
+\contentsline {chapter}{List of Tables}{27}{chapter*.10}%
+\contentsline {chapter}{List of Abbreviations}{28}{chapter*.11}%
+\contentsline {chapter}{\numberline {A}Attachments}{29}{appendix.A}%
+\contentsline {section}{\numberline {A.1}First Attachment}{29}{section.A.1}%

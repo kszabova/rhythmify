@@ -1,14 +1,14 @@
 \chapter{Data}
 
-Our main source of data is the Cantus database (\cite{cantus_db}), one of the databases indexed in the Cantus Index. The database serves as a 
+Our main source of data is the Cantus database \citep{cantus_db}, one of the databases indexed in the Cantus Index. The database serves as a 
 digital archive of chants, each entry containing information about its source, liturgical occasion, mode, and others. Work on the project started
 in the late 1980s, and to date, around 500,000 individual chants from approximately 150 manuscripts have been indexed. Each entry is transcribed 
-manually and undergoes a thorough examination before publishing (\cite{cantus_lacoste}).
+manually and undergoes a thorough examination before publishing \citep{cantus_lacoste}.
 
-We are using a scraped version of the Cantus database released as CantusCorpus (\cite(chant21)). Unlike the Cantus database which is continuously being
+We are using a scraped version of the Cantus database released as CantusCorpus \citep{chant21}. Unlike the Cantus database which is continuously being
 updated and is therefore unsuitable for computational study, the corpus is versioned, therefore each version always contains the same data. We are using
 version 0.2 released in July 2020 which contains 497,071 entries. However, a majority of the data is not suitable for this application, as they do not
-contain all the necessary fields, therefore we are only using a subset of size around 13,000. The corpus is available for download in CSV format.
+contain both melodic and textual data in full, therefore we are only using a subset of size around 13,000. The corpus is available for download in CSV format.
 
 \section{CSV}
 
@@ -42,7 +42,7 @@ The following table represents the data fields in the database.
  folio          & page of the manuscript where the chant is found \\ \hline
  sequence       & order in which the chant is found in the folio \\ \hline
  marginalia     & clarification about the location of the chant \\ \hline
- cao\_concordances & FILL IN \\ \hline
+ cao\_concordances & references to older literature \\ \hline
  feast\_id      & feast of the year during which the chant was sung \\ \hline
  genre\_id      & genre of the chant, e.g. \emph{antiphon}, \emph{responsory} \\ \hline
  office\_id     & office of the day during which the chant was sung, e.g. \emph{Laudes}, \emph{Vespers} \\ \hline
@@ -62,8 +62,8 @@ The following table represents the data fields in the database.
 
 \section{User-defined data}
 
-The application enables user to upload their own dataset. The following table specifies the fields in the database. If a CSV in an
-incorrect format is uploaded (e.g. the required fields are empty), the application will not work properly. The meaning of the individual
+The application enables user to upload their own dataset. The following table specifies the fields in the database. Validation of the
+file is not implemented; it is left up to the user to upload a valid file. The meaning of the individual
 fields is as described in the previous section unless said otherwise.
 
 \begin{longtable}{| p{.3\textwidth} | p{.15\textwidth} | p{.1\textwidth} | p{.45\textwidth} |} 
@@ -80,7 +80,7 @@ fields is as described in the previous section unless said otherwise.
  mode           & string & yes & list of modes is in attachment \\ \hline
  finalis        & string & yes & \\ \hline
  differentia    & string & yes & \\ \hline
- siglum         & string & yes & \\ \hline
+ siglum         & string & no  & \\ \hline
  position       & string & yes & \\ \hline
  folio          & string & yes & \\ \hline
  sequence       & string & yes & \\ \hline
