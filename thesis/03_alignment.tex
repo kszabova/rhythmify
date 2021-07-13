@@ -315,15 +315,19 @@ Therefore, other methods have been developed. The most successful ones appear to
 they use some heuristics to estimate a guide tree, which is a phylogenetic tree determining how close the sequences are to each other,
 and then they compute the actual multiple alignment following the order of this tree.
 
-One of such methods is the T-Coffee algorithm \citep{t_coffee}. Its most important contribution is its extended library generated from
-both local and global pairwise alignments of all pairs of input sequences. This library enables the algorithm to make fewer mistakes
-in the initial stages of the guide tree, as these errors propagate throughout the entire tree.
+One of such methods is the Tree-based Consistency Objective Function for alignment Evaluation (T-Coffee) algorithm \citep{t_coffee}.
+Its most important contribution is its extended library generated from both local and global pairwise alignments of all pairs of input sequences.
+This library enables the algorithm to make fewer mistakes in the initial stages of the guide tree, as these errors propagate throughout the entire tree.
 
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.85]{t-coffee-errors}
 \caption{Misalignment of the word CAT using other progressive methods. \citep[Figure~2(a)]{t_coffee}}
 \end{figure}
+
+Another method is MAFFT (the name presumably coming from the acronyms for multiple alignment and fast Fourier transform) \citep{mafft}.
+The authors focused on finding alignments that are not only optimal, but also biologically correct. They developed a way of rapid identification
+of homologous regions between two sequences using FFT, and then used the better pairwise alignments to create a better multiple alignment.
 
 \subsubsection{T-Coffee}
 
@@ -373,10 +377,252 @@ the next closest sequences. We repeat this step until the alignment of all seque
 
 \begin{figure}[h]
 \centering
-\includegraphics{t-coffee-flowchart}
+\includegraphics[scale=0.5]{t-coffee-flowchart}
 \caption{T-Coffee layout. \citep[Figure~1]{t_coffee}}
 \end{figure}
 
 \subsubsection{MAFFT}
 
+The MAFFT method is similar to T-Coffee in that it constructs a library of alignments which it then uses to create the final multiple alignment. The authors developed MAFFT
+to work in multiple modes, one of which is the progressive method as described above; the other one is the iterative refinement method, which allows for alterations
+of the multiple alignment obtained from the progressive method.
+
+Pairwise alignment in MAFFT uses the fact that certain amino acids have more similar physico-chemical properties than others. Substitutions tend to preserve the
+overall structrure of a protein, therefore substitutions of similar amino acids are more frequent than those of different ones. The two properties
+the authors use are amino acid volume and polarity.
+
+Let us define the correlation of the volume component between two amino acid sequences with the positional lag of $k$ as
+
+\[
+    c_v(k) = \sum_{1\leq n \leq N, 1 \leq n+k \leq M} \hat{v}_1(n) \hat{v}_2(n+k)
+\]
+where $N$ and $M$ are the lengths of the sequences and $\hat{v}(a) = [v(a) - \bar{v}] / \sigma_v$ is the normalized volume value with $\bar{v}$
+denoting the average volume of all the amino acids and $\sigma_v$ their standard deviation.
+
+Since the sequences tend to be equal in length, computing $c_v(k)$ using naive methods takes time proportional to $N^2$. However, applying Fast Fourier
+transform to the calculation reduces the time to $\mathcal{O}(N log N)$.
+
+We define the polarity component correlation $c_p(k)$ analogically.
+
+The correlation between two amino acids is then expressed as 
+
+\[
+    c(k) = c_v(k) + c_p(k)
+\]
+
+\begin{figure}[h]
+\centering
+\includegraphics{mafft_correlation_plot}
+\caption{Plot of the correlation function $c(k)$. \citep[Figure~1A]{mafft}}
+\label{fig:mafft1}
+\end{figure}
+
+If we plot the function $c(k)$, there will be some peaks corresponding to the homologous regions of the two sequences, if there are any (Figure \ref{fig:mafft1}). However, the FFT
+analysis only gives us the positional lag of the regions, not their positions. To find the exact positions, we use a sliding window (of size 30 in the article)
+and calculate the degree of local homologies for the 20 highest peaks in the $c(k)$ function. If a segment exceeding a given homology threshold is identified,
+we label it as a homologous region.
+
+\begin{figure}[h]
+\centering
+\includegraphics{mafft_sliding_window}
+\caption{Finding homologous regions with different positional lags using a sliding window. \citep[Figure~1B]{mafft}}
+\label{fig:mafft2}
+\end{figure}
+
+After finding homologous segments between two sequences, their alignment is obtained by constructing a homology matrix $S \in R^{n*n}$, where $n$ is the number of homologous
+segments. The cell $S_{ij}$ is assigned a value depending on whether the $i$-th homologous segments of the first sequence corresponds to the $j$-th homologous segment
+of the second sequence. If so, the cell gets a value corresponding to the score of this segment; otherwise it has a value of 0. The optimal arrangment of homologous segments
+is then obtained using dynamic programming.
+
+\begin{figure}[h]
+\centering
+\includegraphics{mafft_optimal_path}
+\caption{Dynamic programming applied on segment arrangement. \citep[Figure~2A]{mafft}}
+\label{fig:mafft3}
+\end{figure}
+
+Having arranged homologous segments, the algorithm then computes pairwise alignments for each pair of sequences. As in T-Coffee, it uses the alignments to create
+the primary and extended libraries, which are in turn used to estimate the guide tree and the final alignment. If MAFFT is configured to perform the progressive 
+method, this alignment is the final one. Otherwise, if iterative refinement is allowed, MAFFT uses the weights from the library to adjust the alignment to get a more
+optimal one. However, iterative refinement is very slow from a relatively low number of sequences, therefore it is not suitable for a large dataset.
+
 \section{Sequence alignment for chant melodies}
+
+As we have discussed before, melodies of Gregorian chant are in many ways similar to biological sequences. The alphabet is different (instead of 20 amino acids
+in proteins or 4 nucleotide bases in DNA we have around 40 different characters used in melody representation) and the chants are usually shorter in length.
+The evolution of both biological and melodic sequences is guided by environmental factors such as migration to other places. Some segments tend to undergo a lot
+of modifications, while other remain relatively unchanged. Studying the alignment of chant melodies can reveal a lot of information about their relationship.
+
+In the following sections, we describe three approaches to melody alignment used in our application.
+
+The first one is a naive approach. It merely aligns all chants to have the same number of words and each word to have the same number of syllables, filling the extra
+positions with gaps, if needed.
+
+The other two approaches use MAFFT to perform a proper sequence alignment. They differ in what we are aligning. One of them aligns notes and other symbols as they are;
+each representing a certain pitch. The other one is more sophisticated: it does not use the absolute value of the pitches, but rather the intervals between the notes.
+This way, we can see segments that have merely been shifted by a certain interval.
+
+\subsection{Naive alignment}
+
+\subsection{Multiple alignment using absolute pitches}
+
+For this task, we are using the MAFFT software\footnote{https://mafft.cbrc.jp/alignment/software/}. As the software uses the character \verb|-| for marking gaps,
+it requires that the input sequences do not contain any, or they will be removed. Since melodies encoded as Volpiano use the character to mark ends of words
+and ends of syllables, we need to perform some preprocessing. Namely, we replace all contiguous sequences \verb|---| with the end-of-word marking symbol \verb|~|
+and all contiguous sequences \verb|--| with the end-of-syllable marker \verb=|=. All remaining \verb|-|s are removed, if there are any.
+
+The sequences are then passed to MAFFT with the option \verb|--text|, which indicates that the sequences are not biological. Additionally, we also pass the option
+\verb|--reorder|, which returns the aligned sequences in order of similarity. We made this choice so as to facilitate the identification of related melodies.
+
+After MAFFT performs the alignment, we retrieve the sequences and attempt to combine them with their text.
+We do this by splitting both the text and the melody into syllables and mapping them onto each other (Algorithm \ref{algo:volpiano_text_combine}). 
+However, this might not be possible. Due to errors in the original encoded melody (i.e. a missing or an extra \verb|-|),
+we may have altered the structure of the chant in preprocessing. In case of such event, we remove the affected sequence from consideration and align the remaining
+sequences again.\newline
+
+\begin{algorithm}[H]
+\SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+    \Input{\emph{volpiano}: melody divided into words and those into syllables, and \emph{text}: lyric divided analogically}
+    \Output{\emph{volpiano} and \emph{text} aligned}
+    \BlankLine
+    set \emph{aligned\_text\_and\_melody} to be an empty list\;
+    \For{word at index i}{
+        open new word in \emph{aligned\_text\_and\_melody}\;
+        \uIf{i-th word of text has more syllables than i-th word of melody}{
+            merge the extra syllables into the last one\;
+        }
+        \uElseIf{i-th word of text has fewer syllables than i-th word of melody}{
+            extend the i-th word of text by empty syllables to match the volpiano word
+        }
+        \For{syllable at index j of i-th word}{
+            combine text and melody of the j-th syllable of the i-th word and add it to the current word\;
+        }
+        close current word\;
+    }
+    return \emph{aligned\_text\_and\_melody}\;
+    \caption{Aligning melody and lyric}
+    \label{algo:volpiano_text_combine}
+\end{algorithm}
+
+Once all sequences are successfully aligned without errors in text and melody combination, we can display them to the user. In the application, we use the Volpiano font,
+so as to maintain consistency. However, the sequences shown are not properly encoded in Volpiano format. First of all, we choose different representations of end of a word
+(here we use a bar line) and end of a syllable (a single space) so that the number of characters in each sequence remains equal and the alignment is visible. Second of all,
+after the alignment, MAFFT will have inserted \verb|-|s to represent gaps. In proper Volpiano, these characters represent gaps between words, syllables, and neumes. However,
+here they just mean empty space.\newline
+
+\begin{algorithm}[H]
+\SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+    \Input{a set of volpiano-encoded melodies with their respective lyrics}
+    \Output{aligned melodies combined with their lyrics}
+    \BlankLine
+    preprocess all melodies to a MAFFT-friendly format\;
+    \While{melodies have not been aligned without error}{
+        run MAFFT on all melodies\;
+        \For{aligned melody}{
+            combine melody with its text\;
+            \If{melody and text cannot be combined}{
+                remove melody from list\;
+                remember to run the while loop again\;
+            } 
+        }
+    }
+    return list of aligned melodies combined with their texts\;
+    \caption{Multiple alignment using absolute pitches}
+    \label{algo:align_pitch}
+\end{algorithm}
+
+\subsection{Multiple alignment using intervals}
+
+The general outline of the algorithm is the same as Algorithm \ref{algo:align_pitch}. However, as we are not aligning absolute pitches, but rather intervals,
+we need to compute these intervals.
+
+There are 18 possible pitches, which means 37 possible intervals (17 positive, 17 negative, and one without the change of pitch). We will represent the no-change interval
+with the character \verb|a|, the positive intervals with the lowercase characters \verb|b-t| and the negative intervals with the uppercase characters \verb|B-T|. The characters
+\verb|i| and \verb|I| are not used for reasons explained later.
+
+The interval representation is constructed from a Volpiano-encoded melody by replacing the note symbols with the appropriate interval symbol. The $i$-th note will be
+replaced with the symbol representing the interval $(i-1, i)$. As the first note has no predecessor, it is left as it is. The non-note symbols also remain unchanged.\newline
+
+\begin{algorithm}[H]
+\SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+    \Input{volpiano-encoded melody}
+    \Output{interval representation of the input melody}
+    \BlankLine
+    $interval\_representation \longleftarrow ""$\;
+    \For{character c in volpiano}{
+        \uIf{c is a non-note character}{
+            append c to \emph{interval\_representation}\;
+        }
+        \uElseIf{c is a note-representing character and it is the first such one}{
+            append c to \emph{interval\_representation}\;
+            $last\_seen\_note \longleftarrow c$\;
+        }
+        \uElse{
+            $interval \longleftarrow (last\_seen\_note, c)$\;
+            $i \longleftarrow symbol \: for \: interval$\;
+            append i to \emph{interval\_representation}\;
+            $last\_seen\_note \longleftarrow c$\;
+        }
+    }
+    return \emph{interval\_representation}\;
+    \caption{Converting volpiano-encoded melody into interval representation}
+    \label{algo:convert_to_interval}
+\end{algorithm}
+
+We use the interval representations as inputs to MAFFT. That means that what MAFFT returns are the aligned sequences of intervals. To display them to the user
+properly, we need to decode the sequences.\newline
+
+\begin{algorithm}[H]
+\SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+    \Output{interval representation of a melody}
+    \Input{volpiano-encoded equivalent of the input melody}
+    \BlankLine
+    $volpiano \longleftarrow ""$\;
+    \For{character c in interval representation}{
+        \uIf{c is a non-interval character}{
+            append c to \emph{volpiano}\;
+        }
+        \uElseIf{c is a note-representing character and it is the first such one}{
+            append c to \emph{volpiano}\;
+            $last\_seen\_note \longleftarrow c$\;
+        }
+        \uElseIf{c is an interval-representing character and we have already seen the first note}{
+            $note \longleftarrow last\_seen\_note +$ interval represented by $i$\;
+            append note to \emph{volpiano}\;
+            $last\_seen\_note \longleftarrow note$\;
+        }
+    }
+    return \emph{volpiano}\;
+    \caption{Converting interval representation back to volpiano}
+    \label{algo:decode_interval}
+\end{algorithm}
+
+The reason why we are not using \verb|i| and \verb|I| as symbols for an interval is that as we are looking at whether a character is a note or an interval or neither, 
+if they represented an interval, we would choose the appropriate branch in Algorithm \ref{algo:decode_interval}. However, marking an interval is not the only way how
+the character could have got there: \verb|i| and \verb|I| represent non-note elements in the Volpiano protocol. Therefore, we could mistakenly shift the melody by an interval,
+as there is no way of knowing which case it is.
+
+The complete algorithm is similar to Algorithm \ref{algo:align_pitch}.\newline
+
+\begin{algorithm}[H]
+\SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+    \Input{a set of volpiano-encoded melodies with their respective lyrics}
+    \Output{aligned melodies combined with their lyrics}
+    \BlankLine
+    convert all melodies to interval representations\;
+    preprocess all interval representations to a MAFFT-friendly format\;
+    \While{melodies have not been aligned without error}{
+        run MAFFT on all interval representations\;
+        \For{aligned interval representation}{
+            convert interval representation to volpiano-encoded melody\;
+            combine melody with its text\;
+            \If{melody and text cannot be combined}{
+                remove melody from list\;
+                remember to run the while loop again\;
+            } 
+        }
+    }
+    return list of aligned melodies combined with their texts\;
+    \caption{Multiple alignment using intervals}
+    \label{algo:align_intervals}
+\end{algorithm}

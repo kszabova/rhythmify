@@ -3,6 +3,7 @@
 \@writefile{toc}{\contentsline {chapter}{\numberline {3}Multiple sequence alignment}{13}{chapter.3}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}The problem of sequence alignment}{13}{section.3.1}\protected@file@percent }
 \citation{msa_complexity}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Pairwise and multiple sequence alignment}{14}{subsection.3.1.1}\protected@file@percent }
@@ -16,51 +17,80 @@
 \citation{t_coffee}
 \citation{t_coffee}
 \citation{t_coffee}
+\citation{mafft}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces A path representing an optimal alignment.}}{19}{figure.3.1}\protected@file@percent }
 \newlabel{alignment_path}{{3.1}{19}{A path representing an optimal alignment}{figure.3.1}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Smith-Waterman algorithm}{19}{section*.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Multiple sequence alignment: progressive methods}{19}{subsection.3.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{T-Coffee}{19}{section*.5}\protected@file@percent }
-\citation{t_coffee}
-\citation{t_coffee}
 \citation{t_coffee}
 \citation{t_coffee}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Misalignment of the word CAT using other progressive methods. \citep  [Figure\nobreakspace  {}2(a)]{t_coffee}}}{20}{figure.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{T-Coffee}{20}{section*.5}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Primary library created from 4 sequences. \citep  [Figure\nobreakspace  {}2(b)]{t_coffee}}}{20}{figure.3.3}\protected@file@percent }
 \citation{t_coffee}
+\citation{t_coffee}
+\citation{t_coffee}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Extended library weights for two sequences and their alignment recomputed using these weights. \citep  [Figure\nobreakspace  {}2(c)]{t_coffee}}}{21}{figure.3.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{MAFFT}{21}{section*.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Sequence alignment for chant melodies}{21}{section.3.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces T-Coffee layout. \citep  [Figure\nobreakspace  {}1]{t_coffee}}}{22}{figure.3.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces T-Coffee layout. \citep  [Figure\nobreakspace  {}1]{t_coffee}}}{21}{figure.3.5}\protected@file@percent }
+\citation{mafft}
+\citation{mafft}
+\citation{mafft}
+\@writefile{toc}{\contentsline {subsubsection}{MAFFT}{22}{section*.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Plot of the correlation function $c(k)$. \citep  [Figure\nobreakspace  {}1A]{mafft}}}{22}{figure.3.6}\protected@file@percent }
+\newlabel{fig:mafft1}{{3.6}{22}{Plot of the correlation function $c(k)$. \citep [Figure~1A]{mafft}}{figure.3.6}{}}
+\citation{mafft}
+\citation{mafft}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Finding homologous regions with different positional lags using a sliding window. \citep  [Figure\nobreakspace  {}1B]{mafft}}}{23}{figure.3.7}\protected@file@percent }
+\newlabel{fig:mafft2}{{3.7}{23}{Finding homologous regions with different positional lags using a sliding window. \citep [Figure~1B]{mafft}}{figure.3.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Dynamic programming applied on segment arrangement. \citep  [Figure\nobreakspace  {}2A]{mafft}}}{23}{figure.3.8}\protected@file@percent }
+\newlabel{fig:mafft3}{{3.8}{23}{Dynamic programming applied on segment arrangement. \citep [Figure~2A]{mafft}}{figure.3.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Sequence alignment for chant melodies}{24}{section.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Naive alignment}{24}{subsection.3.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Multiple alignment using absolute pitches}{24}{subsection.3.3.2}\protected@file@percent }
+\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Aligning melody and lyric}}{25}{algocf.1}\protected@file@percent }
+\newlabel{algo:volpiano_text_combine}{{1}{25}{Multiple alignment using absolute pitches}{algocf.1}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces Multiple alignment using absolute pitches}}{26}{algocf.2}\protected@file@percent }
+\newlabel{algo:align_pitch}{{2}{26}{Multiple alignment using absolute pitches}{algocf.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Multiple alignment using intervals}{26}{subsection.3.3.3}\protected@file@percent }
+\@writefile{loa}{\contentsline {algocf}{\numberline {3}{\ignorespaces Converting volpiano-encoded melody into interval representation}}{27}{algocf.3}\protected@file@percent }
+\newlabel{algo:convert_to_interval}{{3}{27}{Multiple alignment using intervals}{algocf.3}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {4}{\ignorespaces Converting interval representation back to volpiano}}{27}{algocf.4}\protected@file@percent }
+\newlabel{algo:decode_interval}{{4}{27}{Multiple alignment using intervals}{algocf.4}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {5}{\ignorespaces Multiple alignment using intervals}}{28}{algocf.5}\protected@file@percent }
+\newlabel{algo:align_intervals}{{5}{28}{Multiple alignment using intervals}{algocf.5}{}}
 \@setckpt{03_alignment}{
-\setcounter{page}{23}
+\setcounter{page}{29}
 \setcounter{equation}{0}
 \setcounter{enumi}{0}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
 \setcounter{enumiv}{0}
-\setcounter{footnote}{0}
+\setcounter{footnote}{1}
 \setcounter{mpfootnote}{0}
 \setcounter{part}{0}
 \setcounter{chapter}{3}
 \setcounter{section}{3}
-\setcounter{subsection}{0}
+\setcounter{subsection}{3}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{5}
+\setcounter{figure}{8}
 \setcounter{table}{0}
 \setcounter{Item}{0}
-\setcounter{Hfootnote}{0}
-\setcounter{bookmark@seq@number}{16}
+\setcounter{Hfootnote}{1}
+\setcounter{bookmark@seq@number}{19}
 \setcounter{parentequation}{0}
 \setcounter{FancyVerbLine}{0}
 \setcounter{NAT@ctr}{0}
 \setcounter{LT@tables}{2}
 \setcounter{LT@chunks}{2}
 \setcounter{lstnumber}{7}
+\setcounter{AlgoLine}{0}
+\setcounter{algocfline}{5}
+\setcounter{algocfproc}{5}
+\setcounter{algocf}{5}
 \setcounter{thm}{0}
 \setcounter{defn}{0}
-\setcounter{section@level}{1}
+\setcounter{section@level}{2}
 \setcounter{lstlisting}{0}
 }
