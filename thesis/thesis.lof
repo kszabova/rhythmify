@@ -13,4 +13,9 @@
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Plot of the correlation function $c(k)$. \citep [Figure\nobreakspace {}1A]{mafft}}}{22}{figure.3.6}%
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Finding homologous regions with different positional lags using a sliding window. \citep [Figure\nobreakspace {}1B]{mafft}}}{23}{figure.3.7}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Dynamic programming applied on segment arrangement. \citep [Figure\nobreakspace {}2A]{mafft}}}{23}{figure.3.8}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Chants of different genres aligned using the naive approach.}}{25}{figure.3.9}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Chants aligned using MAFFT on absolute pitches.}}{27}{figure.3.10}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Chants aligned using MAFFT on intervals.}}{29}{figure.3.11}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Conservation profile on chants aligned by pitch.}}{30}{figure.3.12}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Conservation profile on chants aligned by intervals.}}{30}{figure.3.13}%
 \addvspace {10\p@ }

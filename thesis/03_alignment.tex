@@ -496,6 +496,13 @@ with characters until there are any to use and the remaining ones are left empty
     \label{algo:align_naive}
 \end{algorithm}
 
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4]{alignment_naive}
+\caption{Chants of different genres aligned using the naive approach.}
+\label{fig:align_naive}
+\end{figure}
+
 \subsection{Multiple alignment using absolute pitches}
 
 For this task, we are using the MAFFT software\footnote{https://mafft.cbrc.jp/alignment/software/}. As the software uses the character \verb|-| for marking gaps,
@@ -562,6 +569,13 @@ here they just mean empty space.\newline
     \caption{Multiple alignment using absolute pitches}
     \label{algo:align_pitch}
 \end{algorithm}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4]{alignment_pitches}
+\caption{Chants aligned using MAFFT on absolute pitches.}
+\label{fig:align_pitches}
+\end{figure}
 
 \subsection{Multiple alignment using intervals}
 
@@ -658,3 +672,40 @@ The complete algorithm is similar to Algorithm \ref{algo:align_pitch}.\newline
     \caption{Multiple alignment using intervals}
     \label{algo:align_intervals}
 \end{algorithm}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4]{alignment_intervals}
+\caption{Chants aligned using MAFFT on intervals.}
+\label{fig:align_intervals}
+\end{figure}
+
+\subsection{Conservation profile}
+
+By obtaining an alignment of a set of chants, we can obtain an interesting characteristic which we call the conservation profile. We define the conservation value
+of an element $a$ at position $i$ as 
+
+\[
+    con_i(a) = \frac{\sum_{C: C_i = a} 1}{\sum_C 1}
+\]
+where $C$ denotes a chant and $C_i$ the element at position $i$ in the aligned chant $C$. In other words, the conservation value gives the ratio of elements $a$
+at position $i$ out of all chants.
+
+Conservation profile of aligned sequences depends on what approach we choose. Consider the last two chants shown in Figure \ref{fig:align_intervals}. Each note
+is different, however, a person well-versed in musical theory immediately notices that they are only shifted by 5 semitones (except for the first note). If we consider only
+the intervals, they are almost the same melodies. However, if we consider the absolute pitches, they are totally different. Figure \ref{fig:cons_pitch}
+and Figure \ref{fig:cons_intervals} demonstrate these differences by displaying the chants' conservation profile.
+
+\begin{figure}[h]
+\centering
+\includegraphics{alignment_antiphons_pitches}
+\caption{Conservation profile on chants aligned by pitch.}
+\label{fig:cons_pitch}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics{alignment_antiphons_intervals}
+\caption{Conservation profile on chants aligned by intervals.}
+\label{fig:cons_intervals}
+\end{figure}
