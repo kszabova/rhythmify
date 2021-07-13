@@ -464,6 +464,38 @@ This way, we can see segments that have merely been shifted by a certain interva
 
 \subsection{Naive alignment}
 
+The naive approach serves as a baseline for the other two. The algorithm simply extends all sequences to have the number of words equal to the maximum out of all
+sequences, and each word at a position $i$ to have the number of syllables equal to the maximum out of all words at that position. The syllables are then filled
+with characters until there are any to use and the remaining ones are left empty.\newline
+
+\begin{algorithm}[H]
+\SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+    \Input{$n$ volpiano-encoded melodies and their texts}
+    \Output{aligned melodies}
+    \BlankLine
+    $num\_words \longleftarrow max(length(sequence))$ for all sequences\;
+    initialize $n$ empty lists of length $num\_words$\;
+    \For{word at index i}{
+        $num\_syllables \longleftarrow max(length(word))$ for all words at position $i$\;
+        set the $i$-th position of each list to be of length $num\_syllables$\;
+        \For{syllable at index j}{
+            $num\_characters \longleftarrow max(length(syllable))$ for all syllables at position $j$ of words at position $i$\;
+            set the $j$-th position of the $i$-th sublist of each sequence to be of length $num\_characters$\;
+        }
+    }
+    \For{each melody}{
+        \For{i-th word of melody}{
+            \For{j-th syllable of word}{
+                fill the $j$-th position of the $i$-th sublist of the list corresponding to the melody with the characters corresponding to the current syllable\;
+            }
+        }
+        combine the text with the melody\;
+    }
+    return aligned melodies combined with their texts\;
+    \caption{Naive approach to alignment}
+    \label{algo:align_naive}
+\end{algorithm}
+
 \subsection{Multiple alignment using absolute pitches}
 
 For this task, we are using the MAFFT software\footnote{https://mafft.cbrc.jp/alignment/software/}. As the software uses the character \verb|-| for marking gaps,
