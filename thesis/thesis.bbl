@@ -1,4 +1,4 @@
-\begin{thebibliography}{21}
+\begin{thebibliography}{20}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -43,15 +43,6 @@ Michael~Scott Cuthbert and Christopher Ariza.
 \newblock music21: A toolkit for computer-aided musicology and symbolic music
   data.
 \newblock pages 637--642, 2010.
-
-\bibitem[Helsen and Lacoste(2011)]{volpiano}
-Kate Helsen and Debra Lacoste.
-\newblock A report on the encoding of melodic incipits in the cantus database
-  with the music font ‘volpiano’.
-\newblock \emph{Plainsong and Medieval Music}, 20\penalty0 (1):\penalty0
-  51–65, 2011.
-\newblock \doi{10.1017/S0961137110000197}.
-\newblock URL \url{https://doi.org/10.1017/S0961137110000197}.
 
 \bibitem[Hiley(2009)]{chant_book}
 David Hiley.

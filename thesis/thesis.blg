@@ -17,45 +17,45 @@ Warning--empty booktitle in music21
 Warning--empty year in cantus_index
 Warning--empty year in cantus_db
 Warning--empty booktitle in similarity_plot
-You've used 21 entries,
+You've used 20 entries,
             2773 wiz_defined-function locations,
-            751 strings with 9313 characters,
-and the built_in function-call counts, 9741 in all, are:
-= -- 924
-> -- 483
-< -- 19
-+ -- 166
-- -- 144
-* -- 738
-:= -- 1490
-add.period$ -- 95
-call.type$ -- 21
-change.case$ -- 110
-chr.to.int$ -- 20
-cite$ -- 48
-duplicate$ -- 466
-empty$ -- 792
-format.name$ -- 181
-if$ -- 2104
+            742 strings with 9065 characters,
+and the built_in function-call counts, 9270 in all, are:
+= -- 878
+> -- 462
+< -- 18
++ -- 159
+- -- 138
+* -- 698
+:= -- 1417
+add.period$ -- 90
+call.type$ -- 20
+change.case$ -- 105
+chr.to.int$ -- 19
+cite$ -- 46
+duplicate$ -- 446
+empty$ -- 752
+format.name$ -- 172
+if$ -- 2004
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 18
-newline$ -- 142
-num.names$ -- 84
-pop$ -- 202
+missing$ -- 17
+newline$ -- 135
+num.names$ -- 80
+pop$ -- 196
 preamble$ -- 1
-purify$ -- 90
+purify$ -- 86
 quote$ -- 0
-skip$ -- 387
+skip$ -- 371
 stack$ -- 0
-substring$ -- 288
-swap$ -- 76
+substring$ -- 265
+swap$ -- 75
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 226
+type$ -- 215
 warning$ -- 6
-while$ -- 78
+while$ -- 74
 width$ -- 0
-write$ -- 334
+write$ -- 317
 (There were 6 warnings)

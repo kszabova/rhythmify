@@ -16,8 +16,8 @@ CSV is one of the most common formats for tabular data. The abbreviation stands 
 uses commas to separate columns (although other separators, such as a semicolon, can be used as well to allow for simpler parsing in case that the data 
 frequently contains commas that would otherwise need to be escaped), while the individual rows are separated by a line break. The data is stored as plaintext,
 which makes it easily readable. Parsing CSV files becomes more complicated when the data contains column and row separators inside fields; in that case
-quotation marks or esape sign has to be used. There exist many well-designed parsers, one such parser is the Python module simply called \emph{csv}.
-This application uses the module \emph{pandas} to parse CSV files, which in turn uses the \emph{csv} module.
+quotation marks or esape sign has to be used. There exist many well-designed parsers, one such parser is the Python module simply called \emph{csv}\footnote{https://docs.python.org/3/library/csv.html}.
+This application uses the module \emph{pandas}\footnote{https://pandas.pydata.org/} to parse CSV files, which in turn uses the \emph{csv} module.
 
 \section{Database fields}
 
@@ -115,14 +115,15 @@ fields is as described in the previous section unless said otherwise.
 \caption{Example of a valid CSV file}
 \end{figure}
 
-\section{Volpiano}
+\section{Melody encoding}
 
 The melodies in the volpiano fields are encoded as strings of alphanumeric characters and dashes. These can be rendered as musical notation using
-the volpiano font. Each character represents either a pitch, empty space, or other musical characters, such as a clef.
+the Volpiano font. Each character represents either a pitch, empty space, or other musical characters, such as a clef.
 
 Volpiano was developed as a research tool optimized for databases and word processors. There are strict rules concerning the transcription, which leads
-to all volpiano-encoded melodies having a standardized format. Each transcription begins with a treble clef. Gaps between words are encoded as three
-dashes, while two dashes represent gaps between syllables (\cite{volpiano}).
+to all Volpiano-encoded melodies having a standardized format. For example, the Volpiano protocol dictates that each transcription begins with
+a treble clef followed by three spaces, that words are separated by three spaces and syllables by two, and others.
+\footnote{https://cantus.uwaterloo.ca/sites/default/files/documents/2.\%20Volpiano\%20Protocols.pdf}
 
 \begin{figure}[h]
 \centering
