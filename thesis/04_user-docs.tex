@@ -15,7 +15,7 @@ The panel on the right side enables data source selection. To change data source
 to the data source name and click \emph{save}. To hide or unhide the data source panel, click on the black \emph{Data sources} button. The panel
 is available in the entire application.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics[scale=0.5]{udocs-homepage-marked}
 \caption{Landing page and its features.}
@@ -28,14 +28,14 @@ The landing page provides the possibility to filter chants from the current sele
 the field in the top-right corner marked as \emph{Search incipit} and press Enter. A set of chants that contain the query as a substring of their incipit will be displayed.
 Be aware that a misspelled query will not return the correct results.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics{udocs-search-incipit}
 \caption{Entering search query into the \emph{Search incipit} box.}
 \label{fig:inc-search}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics[scale=0.6]{udocs-after-incipit-search}
 \caption{The result of the query. Notice that each incipit has the query as a substring.}
@@ -51,7 +51,7 @@ or unselect all genres or offices, click the checkbox next to \emph{All} in the 
 The filter panel does not use the full names of the genres and offices, as in some cases, the name can be very long. Instead, it uses their abbreviations as used 
 in Cantus Index. Attachments XXX and YYY provide a list of genres, resp. offices and their abbreviations.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics[scale=0.5]{udocs-filter-marked}
 \caption{Search filter panel.}
@@ -65,7 +65,7 @@ as well as other information of interest. It shows the chant's Cantus ID, by whi
 points to the corresponding entry on the Cantus website. These fields are valid for all chants from the default \emph{CantusCorpus v0.2} dataset,
 but there is no guarantee of their correctness in user-uploaded data.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics[scale=0.6]{udocs-chant-detail}
 \caption{Page with the detail of the selected chant.}
@@ -78,7 +78,7 @@ The user may wish to export the results of their search into a CSV file. In that
 their incipit (or \emph{Select all}) and click the \emph{Export to CSV} button at the bottom of the page. A file with the name \emph{dataset.csv}
 will be automatically downloaded.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics[scale=0.4]{udocs-exported-ds}
 \caption{First few lines of the exported CSV file.}
@@ -96,14 +96,14 @@ To create a data source from the search results, check the checkboxes next to th
 of the page. The user will be prompted for the data source name. If no name is entered, the name of the data source will be \emph{undefined}. After confirming
 the name, the data source list will be automatically updated with the newly-created one.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics[scale=0.6]{udocs-create-ds}
 \caption{Prompt for entering the name of the data source appears after clicking the \emph{Create Dataset} button.}
 \label{fig:create-ds}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics{udocs-ds-in-list}
 \caption{The newly created data source automatically appears in the data source list.}
@@ -116,14 +116,14 @@ To upload new data, navigate to the \emph{Upload data} page in the top panel. Se
 in CSV format and its contents are specified in section XXX. Click \emph{Upload} to upload the file. After the file is processed, the data source list will
 be automatically updated. The exported file created in section XX is suitable for upload.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics{udocs-upload-respon}
 \caption{The upload form with the file \emph{dataset.csv} selected for upload. The new data source will have the name \emph{Responsories}.}
 \label{fig:upload-ds}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics{udocs-ds-with-respon}
 \caption{The uploaded data source automatically appears in the list.}
@@ -139,7 +139,7 @@ is shown. In some cases, the alignment make take up to a minute to complete.
 The alignment result is shown as a list of melodies. The melodies are either arranged in the same order as they were displayed in the chant list (in the case of
 naive alignment) or in the order of similarity.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics[scale=0.4]{udocs-alignment-basic-marked}
 \caption{Result of the alignment.}
@@ -149,7 +149,7 @@ naive alignment) or in the order of similarity.
 To show more information about each melody, the user can click on the chant source button by which each chant is identified. The same information as when navigating
 to the chant's page is displayed. To hide the detail, click on the chant source button again.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics[scale=0.4]{udocs-alignment-detail}
 \caption{Aligned melody with the chant information displayed.}
@@ -158,7 +158,7 @@ to the chant's page is displayed. To hide the detail, click on the chant source 
 
 If the user wishes to rearrange the displayed melodies, simply click anywhere close to a melody and drag it to another position.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics[scale=0.4]{udocs-alignment-rearrange}
 \caption{Alignment after dragging and dropping the last melody. Compare to Figure \ref{fig:align-result}.}
@@ -171,14 +171,14 @@ After the alignment is shown, the user can choose to collapse the alignment (i.e
 in each melody's header or to remove it completely by clicking on the \emph{Remove button}. The chant can be uncollapsed by clicking
 on the same button. However, removing the chant entirely is permanent. To get the removed chant back, the page needs to be reloaded.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics[scale=0.4]{udocs-alignment-collapsed}
 \caption{The first chant is collapsed.}
 \label{fig:align-collapsed}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics[scale=0.4]{udocs-alignment-deleted}
 \caption{The first chant is removed. Compare to Figure \ref{fig:align-result}.}
@@ -193,7 +193,7 @@ As the Volpiano font does not have characters of equal width, the notes that are
 actual alignment, the user can change the display mode above the aligned melodies to \emph{Raw}, which shows the melodies as the encoded string
 in a monopaced font.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics[scale=0.4]{udocs-alignment-raw}
 \caption{Aligned melodies shown as the raw string.}
@@ -203,14 +203,14 @@ in a monopaced font.
 To see the aligned sequences better, it is possible to remove the headers and the text independently by unclicking the corresponding boxes
 in the alignment options.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics[scale=0.4]{udocs-alignment-no-headers}
 \caption{The aligned melodies shown without headers.}
 \label{fig:align-no-headers}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics[scale=0.4]{udocs-alignment-no-headers-no-text}
 \caption{The aligned melodies shown in \emph{Raw} mode without headers and text.}
@@ -220,7 +220,7 @@ in the alignment options.
 It is possible to see how similar certain regions are. The first option is to color each note based on its absolute pitch. In the case of interval alignment,
 this option may show different colors even though the intervals are the same.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics[scale=0.4]{udocs-alignment-vol-colors}
 \caption{Aligned melodies with each note colored a different color.}
@@ -231,7 +231,7 @@ The other option is to show the conservation profile, i.e. the proportion of the
 conservation profile corresponding to the intervals in the interval alignment option. Darker colors mean the position is more conserved, while lighter colors mean less conserved.
 Using this option, it is possible to see how similar entire regions are.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics[scale=0.4]{udocs-alignment-vol-cons}
 \caption{Aligned melodies with their conservation profile shown.}

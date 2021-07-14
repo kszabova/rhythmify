@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.3.29)  14 JUL 2021 16:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.3.29)  14 JUL 2021 17:02
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1493,7 +1493,7 @@ ut line 144.
 (pdftex.def)             Requested size: 358.21194pt x 195.60732pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <./images/udocs-alignment-detail.png, id=629, 983.47424pt x 425.79076pt>
 File: ./images/udocs-alignment-detail.png Graphic file (type png)
@@ -1502,7 +1502,7 @@ Package pdftex.def Info: ./images/udocs-alignment-detail.png  used on input lin
 e 154.
 (pdftex.def)             Requested size: 393.38274pt x 170.31328pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <./images/udocs-alignment-rearrange.png, id=630, 1001.54175pt x 308.352pt>
 File: ./images/udocs-alignment-rearrange.png Graphic file (type png)
@@ -1511,49 +1511,43 @@ Package pdftex.def Info: ./images/udocs-alignment-rearrange.png  used on input
 line 163.
 (pdftex.def)             Requested size: 400.6096pt x 123.33861pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [36 <./images/udocs-upload-respon.png> <./images/udocs-ds-with-respon.png>]
-<./images/udocs-alignment-collapsed.png, id=641, 1000.9395pt x 329.43076pt>
+[37 <./images/udocs-alignment-basic-marked.png> <./images/udocs-alignment-detai
+l.png> <./images/udocs-alignment-rearrange.png>]
+<./images/udocs-alignment-collapsed.png, id=651, 1000.9395pt x 329.43076pt>
 File: ./images/udocs-alignment-collapsed.png Graphic file (type png)
 <use ./images/udocs-alignment-collapsed.png>
 Package pdftex.def Info: ./images/udocs-alignment-collapsed.png  used on input 
 line 176.
 (pdftex.def)             Requested size: 400.36871pt x 131.76996pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./images/udocs-alignment-deleted.png, id=642, 1003.95074pt x 302.93175pt>
+<./images/udocs-alignment-deleted.png, id=652, 1003.95074pt x 302.93175pt>
 File: ./images/udocs-alignment-deleted.png Graphic file (type png)
 <use ./images/udocs-alignment-deleted.png>
 Package pdftex.def Info: ./images/udocs-alignment-deleted.png  used on input li
 ne 183.
 (pdftex.def)             Requested size: 401.57318pt x 121.17055pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./images/udocs-alignment-raw.png, id=644, 961.79324pt x 487.8225pt>
+<./images/udocs-alignment-raw.png, id=654, 961.79324pt x 487.8225pt>
 File: ./images/udocs-alignment-raw.png Graphic file (type png)
 <use ./images/udocs-alignment-raw.png>
 Package pdftex.def Info: ./images/udocs-alignment-raw.png  used on input line 1
 98.
 (pdftex.def)             Requested size: 384.71048pt x 195.12553pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./images/udocs-alignment-no-headers.png, id=645, 893.13675pt x 301.72725pt>
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./images/udocs-alignment-no-headers.png, id=655, 893.13675pt x 301.72725pt>
 File: ./images/udocs-alignment-no-headers.png Graphic file (type png)
 <use ./images/udocs-alignment-no-headers.png>
 Package pdftex.def Info: ./images/udocs-alignment-no-headers.png  used on input
  line 208.
 (pdftex.def)             Requested size: 357.24837pt x 120.68875pt.
-[37 <./images/udocs-alignment-basic-marked.png> <./images/udocs-alignment-detai
-l.png>]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./images/udocs-alignment-no-headers-no-text.png, id=654, 962.3955pt x 248.127p
+<./images/udocs-alignment-no-headers-no-text.png, id=656, 962.3955pt x 248.127p
 t>
 File: ./images/udocs-alignment-no-headers-no-text.png Graphic file (type png)
 <use ./images/udocs-alignment-no-headers-no-text.png>
@@ -1561,63 +1555,62 @@ Package pdftex.def Info: ./images/udocs-alignment-no-headers-no-text.png  used
 on input line 215.
 (pdftex.def)             Requested size: 384.95139pt x 99.24902pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./images/udocs-alignment-vol-colors.png, id=655, 897.95474pt x 488.42474pt>
+<./images/udocs-alignment-vol-colors.png, id=657, 897.95474pt x 488.42474pt>
 File: ./images/udocs-alignment-vol-colors.png Graphic file (type png)
 <use ./images/udocs-alignment-vol-colors.png>
 Package pdftex.def Info: ./images/udocs-alignment-vol-colors.png  used on input
  line 225.
 (pdftex.def)             Requested size: 359.17554pt x 195.36642pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./images/udocs-alignment-vol-cons.png, id=656, 893.13675pt x 492.03825pt>
+<./images/udocs-alignment-vol-cons.png, id=658, 893.13675pt x 492.03825pt>
 File: ./images/udocs-alignment-vol-cons.png Graphic file (type png)
 <use ./images/udocs-alignment-vol-cons.png>
 Package pdftex.def Info: ./images/udocs-alignment-vol-cons.png  used on input l
 ine 236.
 (pdftex.def)             Requested size: 357.24837pt x 196.81181pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [38 <./images/udocs-alignment-rearrange.png> <./images/udocs-alignment-collap
-sed.png>] [39 <./images/udocs-alignment-deleted.png> <./images/udocs-alignment-
-raw.png>] [40 <./images/udocs-alignment-no-headers.png> <./images/udocs-alignme
-nt-no-headers-no-text.png> <./images/udocs-alignment-vol-colors.png>] [41 <./im
-ages/udocs-alignment-vol-cons.png>]
+[38 <./images/udocs-alignment-collapsed.png> <./images/udocs-alignment-deleted.
+png>]) [39 <./images/udocs-alignment-raw.png> <./images/udocs-alignment-no-head
+ers.png> <./images/udocs-alignment-no-headers-no-text.png>] [40 <./images/udocs
+-alignment-vol-colors.png> <./images/udocs-alignment-vol-cons.png>]
 \openout2 = `epilog.aux'.
 
- (epilog.tex) [42
+ (epilog.tex) [41
 
 
 
 ]
 \openout2 = `bibliography.aux'.
 
- (bibliography.tex
-(thesis.bbl [43
+ (bibliography.tex (thesis.bbl [42
 
 
 
-])) [44] (thesis.lof [45
+])) [43] (thesis.lof [44
 
 
 ])
 \tf@lof=\write8
 \openout8 = `thesis.lof'.
 
- [46] (thesis.lot)
+ [45]
+(thesis.lot)
 \tf@lot=\write9
 \openout9 = `thesis.lot'.
 
- [47
+ [46
 
-] [48
+] [47
 
 ]
 Appendix A.
-[49
+[48
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 169.
@@ -1631,8 +1624,8 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 169.
  ) 
 Here is how much of TeX's memory you used:
- 27832 strings out of 480934
- 481974 string characters out of 2898513
+ 27831 strings out of 480934
+ 481967 string characters out of 2898513
  857973 words of memory out of 3000000
  42929 multiletter control sequences out of 15000+200000
  607042 words of font info for 85 fonts, out of 3000000 for 9000
@@ -1660,9 +1653,9 @@ e1/public/lm/lmri12.pfb><C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fo
 nts/type1/public/lm/lmsy10.pfb><C:/Users/kristina/AppData/Local/Programs/MiKTeX
  2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/kristina/AppData/Local/Programs/
 MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on thesis.pdf (53 pages, 2528652 bytes).
+Output written on thesis.pdf (52 pages, 2527997 bytes).
 PDF statistics:
- 928 PDF objects out of 1000 (max. 8388607)
- 180 named destinations out of 1000 (max. 500000)
+ 924 PDF objects out of 1000 (max. 8388607)
+ 179 named destinations out of 1000 (max. 500000)
  541 words of extra memory for PDF output out of 10000 (max. 10000000)
 
