@@ -447,13 +447,20 @@ method, this alignment is the final one. Otherwise, if iterative refinement is a
 optimal one. However, iterative refinement is very slow from a relatively low number of sequences, therefore it is not suitable for a large dataset.
 
 \section{Sequence alignment for chant melodies}
+\label{section:chant_alignment}
+
+% unlike bioinformatics data, we are working with two sequences - melody and text
+% textual boundaries are important as well!
+% textual boundaries are important for segmentation of melodies - reference CantusCorpus article
 
 As we have discussed before, melodies of Gregorian chant are in many ways similar to biological sequences. The alphabet is different (instead of 20 amino acids
 in proteins or 4 nucleotide bases in DNA we have around 40 different characters used in melody representation) and the chants are usually shorter in length.
 The evolution of both biological and melodic sequences is guided by environmental factors such as migration to other places. Some segments tend to undergo a lot
 of modifications, while other remain relatively unchanged. Studying the alignment of chant melodies can reveal a lot of information about their relationship.
 
-In the following sections, we describe three approaches to melody alignment used in our application.
+% merge the following three paragraphs into one
+% mention why intervals are important - transposition etc
+In the following sections, we describe three approaches to melody alignment used in our application: the naive text-based alignment, .
 
 The first one is a naive approach. It merely aligns all chants to have the same number of words and each word to have the same number of syllables, filling the extra
 positions with gaps, if needed.
@@ -462,16 +469,22 @@ The other two approaches use MAFFT to perform a proper sequence alignment. They 
 each representing a certain pitch. The other one is more sophisticated: it does not use the absolute value of the pitches, but rather the intervals between the notes.
 This way, we can see segments that have merely been shifted by a certain interval.
 
-\subsection{Naive alignment}
+\subsection{Word-based alignment}
 
-The naive approach serves as a baseline for the other two. The algorithm simply extends all sequences to have the number of words equal to the maximum out of all
+% baseline - change to basic tool
+The word-based approach serves as a basic tool to show the relationship between the text setting and melody.
+% something like "the algorithm puts the individual syllables in a row"
+% this algorithm is meant primarily for comparing melodies of the same / similar text, such as a chant that belongs to the same liturgial position
+The algorithm simply extends all sequences to have the number of words equal to the maximum out of all
 sequences, and each word at a position $i$ to have the number of syllables equal to the maximum out of all words at that position. The syllables are then filled
 with characters until there are any to use and the remaining ones are left empty.\newline
 
 \begin{algorithm}[H]
 \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+% more formalized data structures text : V_1, ... V_k , words : S_1, S_k
+% for each pair (melody, text) there is a function that says which notes start at which position
     \Input{$n$ volpiano-encoded melodies and their texts}
-    \Output{aligned melodies}
+    \Output{aligned melodies combined with their texts}
     \BlankLine
     $num\_words \longleftarrow max(length(sequence))$ for all sequences\;
     initialize $n$ empty lists of length $num\_words$\;
@@ -489,6 +502,7 @@ with characters until there are any to use and the remaining ones are left empty
                 fill the $j$-th position of the $i$-th sublist of the list corresponding to the melody with the characters corresponding to the current syllable\;
             }
         }
+        % set syllable position in melody according to original placement
         combine the text with the melody\;
     }
     return aligned melodies combined with their texts\;
@@ -499,13 +513,17 @@ with characters until there are any to use and the remaining ones are left empty
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.4]{alignment_naive}
-\caption{Chants of different genres aligned using the naive approach.}
+\caption{Chants of different genres aligned using the naive approach. The vertical lines represent word boundaries.}
 \label{fig:align_naive}
 \end{figure}
 
 \subsection{Multiple alignment using absolute pitches}
 
-For this task, we are using the MAFFT software\footnote{https://mafft.cbrc.jp/alignment/software/}. As the software uses the character \verb|-| for marking gaps,
+For this task, we are using the MAFFT software\footnote{https://mafft.cbrc.jp/alignment/software/}.
+MAFFT primarily works for sequences of amino acids and nucleotide bases, but it also has a limited support for non-biological sequences.
+
+%the below into a new subsection
+As the software uses the character \verb|-| for marking gaps,
 it requires that the input sequences do not contain any, or they will be removed. Since melodies encoded as Volpiano use the character to mark ends of words
 and ends of syllables, we need to perform some preprocessing. Namely, we replace all contiguous sequences \verb|---| with the end-of-word marking symbol \verb|~|
 and all contiguous sequences \verb|--| with the end-of-syllable marker \verb=|=. All remaining \verb|-|s are removed, if there are any.
@@ -544,7 +562,7 @@ sequences again.\newline
 \end{algorithm}
 
 Once all sequences are successfully aligned without errors in text and melody combination, we can display them to the user. In the application, we use the Volpiano font,
-so as to maintain consistency. However, the sequences shown are not properly encoded in Volpiano format. First of all, we choose different representations of end of a word
+so as to maintain consistency. However, the sequences shown are not properly encoded following Volpiano protocols. First of all, we choose different representations of end of a word
 (here we use a bar line) and end of a syllable (a single space) so that the number of characters in each sequence remains equal and the alignment is visible. Second of all,
 after the alignment, MAFFT will have inserted \verb|-|s to represent gaps. In proper Volpiano, these characters represent gaps between words, syllables, and neumes. However,
 here they just mean empty space.\newline
@@ -573,6 +591,7 @@ here they just mean empty space.\newline
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.4]{alignment_pitches}
+% write that the tildes and pipes from MAFFT are replaced with - and spaces
 \caption{Chants aligned using MAFFT on absolute pitches.}
 \label{fig:align_pitches}
 \end{figure}
@@ -643,12 +662,16 @@ properly, we need to decode the sequences.\newline
     \label{algo:decode_interval}
 \end{algorithm}
 
+% reformulate
+% the reason why i and I do not represent an interval is that they 
+
+% to introduction - chant uses diatonic scale with the 7th having two versions (with becko) - ignoring b is legitimate
 The reason why we are not using \verb|i| and \verb|I| as symbols for an interval is that as we are looking at whether a character is a note or an interval or neither, 
 if they represented an interval, we would choose the appropriate branch in Algorithm \ref{algo:decode_interval}. However, marking an interval is not the only way how
 the character could have got there: \verb|i| and \verb|I| represent non-note elements in the Volpiano protocol. Therefore, we could mistakenly shift the melody by an interval,
 as there is no way of knowing which case it is.
 
-The complete algorithm is similar to Algorithm \ref{algo:align_pitch}.\newline
+The complete Algorithm \ref{algo:align_intervals}, similar to Algorithm \ref{algo:align_pitch}:\newline
 
 \begin{algorithm}[H]
 \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
@@ -680,9 +703,11 @@ The complete algorithm is similar to Algorithm \ref{algo:align_pitch}.\newline
 \label{fig:align_intervals}
 \end{figure}
 
-\subsection{Conservation profile}
+\section{Conservation profile}
 
-By obtaining an alignment of a set of chants, we can obtain an interesting characteristic which we call the conservation profile. We define the conservation value
+% we can borrow other bioinformatics characteristics after having computed an alignment
+
+By obtaining an alignment of a set of chants, we can obtain an interesting characteristic which is called the \emph{conservation profile}. We define the conservation value
 of an element $a$ at position $i$ as 
 
 \[
@@ -690,6 +715,9 @@ of an element $a$ at position $i$ as
 \]
 where $C$ denotes a chant and $C_i$ the element at position $i$ in the aligned chant $C$. In other words, the conservation value gives the ratio of elements $a$
 at position $i$ out of all chants.
+
+% conservation profile is a vector with the average of conservation values
+% we visualize something different
 
 Conservation profile of aligned sequences depends on what approach we choose. Consider the last two chants shown in Figure \ref{fig:align_intervals}. Each note
 is different, however, a person well-versed in musical theory immediately notices that they are only shifted by 5 semitones (except for the first note). If we consider only
@@ -709,3 +737,8 @@ and Figure \ref{fig:cons_intervals} demonstrate these differences by displaying 
 \caption{Conservation profile on chants aligned by intervals.}
 \label{fig:cons_intervals}
 \end{figure}
+
+% the natural next step would be to compute the phylogenetic tree which we did not do
+
+% write why we do three different alignments
+% kontrafakta for 3.2

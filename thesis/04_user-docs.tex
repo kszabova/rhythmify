@@ -1,7 +1,13 @@
 \chapter{User documentation}
 
+% the application does not substitute the function for database webs
+% it is functionality for user-uploaded data
+% we uploaded some data, but to do research, the researchers must upload their own data!
+
 In this chapter, we present an overview of the functionality of the application. The first section sketches out the overall
 functionality of the application. The following sections describe each feature in more detail.
+
+% explain the basic objects - data source - what it is
 
 \section{Site map}
 
@@ -22,11 +28,16 @@ is available in the entire application.
 \label{fig:land_page}
 \end{figure}
 
+% create data source from user-defined search
+% say what incipit* means
+
+\subsection{List of available chants}
+
 \subsection{Incipit search}
 
-The landing page provides the possibility to filter chants from the current selection by incipit. To do so, enter the desired string into
-the field in the top-right corner marked as \emph{Search incipit} and press Enter. A set of chants that contain the query as a substring of their incipit will be displayed.
-Be aware that a misspelled query will not return the correct results.
+The landing page provides the possibility to filter chants from the current selection by their incipit (the first few words of the chant). To do so, enter the desired string into
+the field in the top-right corner marked as \emph{Search incipit} and press Enter. A set of chants that contain the query as a substring (not necessarily as a prefix)
+of their incipit will be displayed. Be aware that a misspelled query will not return the correct results.
 
 \begin{figure}[!h]
 \centering
@@ -131,6 +142,9 @@ be automatically updated. The exported file created in section XX is suitable fo
 \end{figure}
 
 \section{Alignment}
+
+% this is the core functionality of the application
+% refer to the first image when talking about the buttons
 
 It is possible to select a set of chants and have them be aligned using one of the methods described in section XXX. The alignment option is selected by clicking
 on one of the buttons above the chant list after selecting the chants to be aligned. After doing so, the user is redirected to a page where the alignment result
@@ -249,3 +263,9 @@ in the case of interval alignment.
 Only the unremoved melodies will be present in the file. Their order will be the same as the current order on the page.
 
 \section{Dashboard}
+% some basic state, waiting for other features
+% it is not clear what will be needed - well see from how its used
+
+\section{Known issues}
+% different width of volpiano
+% when aligning more than x chants, loading is slow
