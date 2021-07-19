@@ -1,56 +1,61 @@
 \contentsline {chapter}{Introduction}{3}{chapter*.2}%
-\contentsline {chapter}{\numberline {1}Related work}{6}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Data}{9}{chapter.2}%
-\contentsline {section}{\numberline {2.1}CSV}{9}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Database fields}{9}{section.2.2}%
-\contentsline {section}{\numberline {2.3}User-defined data}{10}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Melody encoding}{11}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Data cleaning}{11}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Multiple sequence alignment}{14}{chapter.3}%
-\contentsline {section}{\numberline {3.1}The problem of sequence alignment}{14}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Pairwise and multiple sequence alignment}{15}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Local and global sequence alignment}{15}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Sequence alignment methods}{16}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Pairwise alignment: dynamic programming}{16}{subsection.3.2.1}%
-\contentsline {subsubsection}{Needleman-Wunsch algorithm}{16}{section*.3}%
-\contentsline {subsubsection}{Smith-Waterman algorithm}{20}{section*.4}%
-\contentsline {subsection}{\numberline {3.2.2}Multiple sequence alignment: progressive methods}{20}{subsection.3.2.2}%
-\contentsline {subsubsection}{T-Coffee}{21}{section*.5}%
-\contentsline {subsubsection}{MAFFT}{23}{section*.6}%
-\contentsline {section}{\numberline {3.3}Sequence alignment for chant melodies}{25}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Word-based alignment}{25}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Multiple alignment using absolute pitches}{26}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Multiple alignment using intervals}{28}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Conservation profile}{30}{section.3.4}%
-\contentsline {chapter}{\numberline {4}User documentation}{32}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Site map}{32}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Landing page}{32}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}List of available chants}{33}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Incipit search}{33}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Search filter}{33}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Chant detail}{33}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Data export}{34}{subsection.4.2.5}%
-\contentsline {section}{\numberline {4.3}Data source creation}{35}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Create from search}{35}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}User data upload}{35}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Alignment}{36}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Collapsing and deleting alignment}{37}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Alignment display options}{38}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Alignment export}{40}{subsection.4.4.3}%
-\contentsline {section}{\numberline {4.5}Dashboard}{40}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Known issues}{40}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Development documentation}{41}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Data}{41}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Back end}{42}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Core}{43}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}REST API}{45}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}Front end}{47}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Services}{47}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Components}{49}{subsection.5.3.2}%
-\contentsline {chapter}{Conclusion}{51}{chapter*.7}%
-\contentsline {chapter}{Bibliography}{52}{chapter*.8}%
-\contentsline {chapter}{List of Figures}{54}{chapter*.9}%
-\contentsline {chapter}{List of Tables}{56}{chapter*.10}%
-\contentsline {chapter}{List of Abbreviations}{57}{chapter*.11}%
-\contentsline {chapter}{\numberline {A}Attachments}{58}{appendix.A}%
-\contentsline {section}{\numberline {A.1}First Attachment}{58}{section.A.1}%
+\contentsline {chapter}{\numberline {1}Related work}{4}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Gregorian chant}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Mass and Divine Office}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Variation between chants}{8}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Chant notation}{9}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Chant research}{10}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Data}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}CSV}{11}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Database fields}{11}{section.3.2}%
+\contentsline {section}{\numberline {3.3}User-defined data}{12}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Melody encoding}{13}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Data cleaning}{13}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Multiple sequence alignment}{16}{chapter.4}%
+\contentsline {section}{\numberline {4.1}The problem of sequence alignment}{16}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Pairwise and multiple sequence alignment}{17}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Local and global sequence alignment}{17}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Sequence alignment methods}{18}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Pairwise alignment: dynamic programming}{18}{subsection.4.2.1}%
+\contentsline {subsubsection}{Needleman-Wunsch algorithm}{18}{section*.3}%
+\contentsline {subsubsection}{Smith-Waterman algorithm}{22}{section*.4}%
+\contentsline {subsection}{\numberline {4.2.2}Multiple sequence alignment: progressive methods}{22}{subsection.4.2.2}%
+\contentsline {subsubsection}{T-Coffee}{23}{section*.5}%
+\contentsline {subsubsection}{MAFFT}{25}{section*.6}%
+\contentsline {section}{\numberline {4.3}Sequence alignment for chant melodies}{27}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Word-based alignment}{27}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Multiple alignment using absolute pitches}{28}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Multiple alignment using intervals}{30}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Conservation profile}{32}{section.4.4}%
+\contentsline {chapter}{\numberline {5}User documentation}{34}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Site map}{34}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Landing page}{34}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}List of available chants}{35}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Incipit search}{35}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Search filter}{35}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Chant detail}{35}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Data export}{36}{subsection.5.2.5}%
+\contentsline {section}{\numberline {5.3}Data source creation}{37}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Create from search}{37}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}User data upload}{37}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Alignment}{38}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Collapsing and deleting alignment}{39}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Alignment display options}{40}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Alignment export}{42}{subsection.5.4.3}%
+\contentsline {section}{\numberline {5.5}Dashboard}{42}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Known issues}{42}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Development documentation}{43}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Data}{43}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Back end}{44}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Core}{45}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}REST API}{47}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}Front end}{49}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Services}{49}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Components}{51}{subsection.6.3.2}%
+\contentsline {chapter}{Conclusion}{53}{chapter*.7}%
+\contentsline {chapter}{Bibliography}{54}{chapter*.8}%
+\contentsline {chapter}{List of Figures}{56}{chapter*.9}%
+\contentsline {chapter}{List of Tables}{58}{chapter*.10}%
+\contentsline {chapter}{List of Abbreviations}{59}{chapter*.11}%
+\contentsline {chapter}{\numberline {A}Attachments}{60}{appendix.A}%
+\contentsline {section}{\numberline {A.1}First Attachment}{60}{section.A.1}%

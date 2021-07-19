@@ -4,6 +4,7 @@ The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: title.aux
 A level-1 auxiliary file: preface.aux
 A level-1 auxiliary file: 01_related-work.aux
+A level-1 auxiliary file: 00_chant.aux
 A level-1 auxiliary file: 02_data.aux
 A level-1 auxiliary file: 03_alignment.aux
 A level-1 auxiliary file: 04_user-docs.aux
@@ -20,7 +21,7 @@ Warning--empty year in cantus_db
 Warning--empty booktitle in similarity_plot
 You've used 20 entries,
             2773 wiz_defined-function locations,
-            743 strings with 9080 characters,
+            744 strings with 9092 characters,
 and the built_in function-call counts, 9270 in all, are:
 = -- 878
 > -- 462
