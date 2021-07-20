@@ -21,43 +21,43 @@
 \contentsline {subsubsection}{Smith-Waterman algorithm}{24}{section*.4}%
 \contentsline {subsection}{\numberline {4.2.2}Multiple sequence alignment: progressive methods}{24}{subsection.4.2.2}%
 \contentsline {subsubsection}{T-Coffee}{25}{section*.5}%
-\contentsline {subsubsection}{MAFFT}{27}{section*.6}%
-\contentsline {section}{\numberline {4.3}Sequence alignment for chant melodies}{29}{section.4.3}%
+\contentsline {subsubsection}{MAFFT}{26}{section*.6}%
+\contentsline {section}{\numberline {4.3}Sequence alignment for chant melodies}{28}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Word-based alignment}{29}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Multiple alignment using absolute pitches}{30}{subsection.4.3.2}%
-\contentsline {subsubsection}{Melody preprocessing}{31}{section*.7}%
-\contentsline {subsection}{\numberline {4.3.3}Multiple alignment using intervals}{32}{subsection.4.3.3}%
-\contentsline {section}{\numberline {4.4}Conservation profile}{34}{section.4.4}%
-\contentsline {chapter}{\numberline {5}User documentation}{36}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Site map}{36}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Landing page}{36}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}List of available chants}{37}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Incipit search}{37}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Search filter}{37}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Chant detail}{38}{subsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.2.5}Data export}{39}{subsection.5.2.5}%
-\contentsline {section}{\numberline {5.3}Data source creation}{39}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Create from search}{39}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}User data upload}{40}{subsection.5.3.2}%
-\contentsline {section}{\numberline {5.4}Alignment}{40}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Collapsing and deleting alignment}{41}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Alignment display options}{42}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Alignment export}{45}{subsection.5.4.3}%
-\contentsline {section}{\numberline {5.5}Dashboard}{45}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Known issues}{45}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Development documentation}{46}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Data}{46}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Back end}{47}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}REST API}{48}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Core}{50}{subsection.6.2.2}%
-\contentsline {section}{\numberline {6.3}Front end}{53}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Services}{53}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Components}{56}{subsection.6.3.2}%
-\contentsline {section}{\numberline {6.4}Dependencies}{57}{section.6.4}%
-\contentsline {chapter}{Conclusion}{58}{chapter*.8}%
-\contentsline {chapter}{Bibliography}{60}{chapter*.10}%
-\contentsline {chapter}{List of Figures}{62}{chapter*.11}%
-\contentsline {chapter}{List of Tables}{64}{chapter*.12}%
-\contentsline {chapter}{\numberline {A}List of genres and their abbreviations}{65}{appendix.A}%
-\contentsline {chapter}{\numberline {B}List of offices and their abbreviations}{67}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Installation instructions}{68}{appendix.C}%
+\contentsline {subsection}{\numberline {4.3.2}Melody preprocessing}{31}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Multiple alignment using absolute pitches}{31}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Multiple alignment using intervals}{33}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Conservation profile}{35}{section.4.4}%
+\contentsline {chapter}{\numberline {5}User documentation}{37}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Site map}{37}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Landing page}{37}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}List of available chants}{38}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Incipit search}{38}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Search filter}{38}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Chant detail}{39}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Data export}{40}{subsection.5.2.5}%
+\contentsline {section}{\numberline {5.3}Data source creation}{40}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Create from search}{40}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}User data upload}{41}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Alignment}{41}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Collapsing and deleting alignment}{42}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Alignment display options}{43}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Alignment export}{46}{subsection.5.4.3}%
+\contentsline {section}{\numberline {5.5}Dashboard}{46}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Known issues}{46}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Development documentation}{47}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Data}{47}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Back end}{48}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}REST API}{49}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Core}{51}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}Front end}{54}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Services}{54}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Components}{57}{subsection.6.3.2}%
+\contentsline {section}{\numberline {6.4}Dependencies}{58}{section.6.4}%
+\contentsline {chapter}{Conclusion}{59}{chapter*.7}%
+\contentsline {chapter}{Bibliography}{61}{chapter*.9}%
+\contentsline {chapter}{List of Figures}{63}{chapter*.10}%
+\contentsline {chapter}{List of Tables}{65}{chapter*.11}%
+\contentsline {chapter}{\numberline {A}List of genres and their abbreviations}{66}{appendix.A}%
+\contentsline {chapter}{\numberline {B}List of offices and their abbreviations}{68}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Installation instructions}{69}{appendix.C}%
