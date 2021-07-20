@@ -55,6 +55,7 @@
 \usepackage{tikz}
 \usepackage{listings}
 \usepackage[ruled]{algorithm2e}
+%\usepackage[hyphens]{url}
 
 % Path to images folder
 \graphicspath{ {./images/} }
@@ -128,8 +129,8 @@ Abstract.
 
 %%% Each chapter is kept in a separate file
 \include{preface}
-\include{01_related-work}
 \include{00_chant}
+\include{01_related-work}
 \include{02_data}
 \include{03_alignment}
 \include{04_user-docs}
@@ -149,7 +150,7 @@ Abstract.
 
 %%% Abbreviations used in the thesis, if any, including their explanation
 %%% In mathematical theses, it could be better to move the list of abbreviations to the beginning of the thesis.
-\chapwithtoc{List of Abbreviations}
+%\chapwithtoc{List of Abbreviations}
 
 %%% Attachments to the bachelor thesis, if any. Each attachment must be
 %%% referred to at least once from the text of the thesis. Attachments
@@ -163,9 +164,9 @@ Abstract.
 %%% should be uploaded to SIS and optionally also included in the thesis on a~CD/DVD.
 %%% Allowed file formats are specified in provision of the rector no. 72/2017.
 \appendix
-\chapter{Attachments}
-
-\section{First Attachment}
+\include{attachment_genres}
+\include{attachment_offices}
+\include{attachment_installation}
 
 \openright
 \end{document}

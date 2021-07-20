@@ -4,12 +4,28 @@
 % it is functionality for user-uploaded data
 % we uploaded some data, but to do research, the researchers must upload their own data!
 
+This application is a tool for analyzing user-defined data. It comes with some data already provided, however, it does not substitute the
+function of database webs.
+
+The application is a locally-run web application. It can be accessed via a web browser by navigating to the corresponding URL.\footnote{
+In the default settings, this URL is \url{localhost:4200}.}
+
 In this chapter, we present an overview of the functionality of the application. The first section sketches out the overall
 functionality of the application. The following sections describe each feature in more detail.
 
 % explain the basic objects - data source - what it is
 
 \section{Site map}
+
+Figure \ref{fig:sitemap} shows a sitemap of the application. It shows how the site can be navigated to get to the different functions.
+The rectangles represent pages with their own URLs, while the ellipses represent the pages' functions.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.65]{udocs_sitemap}
+\caption{Sitemap of the application.}
+\label{fig:sitemap}
+\end{figure}
 
 \section{Landing page}
 
@@ -84,6 +100,7 @@ but there is no guarantee of their correctness in user-uploaded data.
 \end{figure}
 
 \subsection{Data export}
+\label{section:data_export}
 
 The user may wish to export the results of their search into a CSV file. In that case, select the desired chants by checking the checkbox next to
 their incipit (or \emph{Select all}) and click the \emph{Export to CSV} button at the bottom of the page. A file with the name \emph{dataset.csv}
@@ -124,8 +141,8 @@ the name, the data source list will be automatically updated with the newly-crea
 \subsection{User data upload}
 
 To upload new data, navigate to the \emph{Upload data} page in the top panel. Select the file to upload and enter the data source name. The file should be
-in CSV format and its contents are specified in section XXX. Click \emph{Upload} to upload the file. After the file is processed, the data source list will
-be automatically updated. The exported file created in section XX is suitable for upload.
+in CSV format and its contents are specified in Section \ref{section:data_usr}. Click \emph{Upload} to upload the file. After the file is processed, the data source list will
+be automatically updated. The exported file created in Section \ref{section:data_export} is suitable for upload.
 
 \begin{figure}[!h]
 \centering
@@ -143,11 +160,11 @@ be automatically updated. The exported file created in section XX is suitable fo
 
 \section{Alignment}
 
-% this is the core functionality of the application
+The alignment tool is the core functionality of the application.
 % refer to the first image when talking about the buttons
 
-It is possible to select a set of chants and have them be aligned using one of the methods described in section XXX. The alignment option is selected by clicking
-on one of the buttons above the chant list after selecting the chants to be aligned. After doing so, the user is redirected to a page where the alignment result
+It is possible to select a set of chants and have them be aligned using one of the methods described in Section \ref{section:chant_alignment}. The alignment option is selected by clicking
+on one of the buttons above the chant list (see Figure \ref{fig:land_page}) after selecting the chants to be aligned. After doing so, the user is redirected to a page where the alignment result
 is shown. In some cases, the alignment make take up to a minute to complete.
 
 The alignment result is shown as a list of melodies. The melodies are either arranged in the same order as they were displayed in the chant list (in the case of
@@ -263,9 +280,19 @@ in the case of interval alignment.
 Only the unremoved melodies will be present in the file. Their order will be the same as the current order on the page.
 
 \section{Dashboard}
+
+The dashboard provides visualizations of the data. The visualizations are simple, as this feature is not the main priority of the application. Since at the time of development
+it was not completely clear what data visualizations are useful for chant research, we only provide some most basic ones. Other visualizations will be added
+as the application is used and it is clarified what researchers need most.
+
 % some basic state, waiting for other features
 % it is not clear what will be needed - well see from how its used
 
 \section{Known issues}
-% different width of volpiano
-% when aligning more than x chants, loading is slow
+
+When displaying alignment results, some melodies may differ in their width on the screen even though they contain the same number of characters. This is caused by the font
+Volpiano which does not have characters of equal width. There is no simple solution to this problem; to overcome it, we provide the option to display the alignment
+as raw strings (not musical notation) using a monospaced font.
+
+When aligning a larger number of chants (around 30 or more), the rendering becomes relatively slow and the page reacts to user input with a noticeable delay.
+In the future, we may consider offering a simplified view without the interactive elements so that the delay is reduced to a minimum.

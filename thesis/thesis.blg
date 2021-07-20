@@ -3,8 +3,8 @@ Capacity: max_strings=4000, hash_size=5000, hash_prime=4253
 The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: title.aux
 A level-1 auxiliary file: preface.aux
-A level-1 auxiliary file: 01_related-work.aux
 A level-1 auxiliary file: 00_chant.aux
+A level-1 auxiliary file: 01_related-work.aux
 A level-1 auxiliary file: 02_data.aux
 A level-1 auxiliary file: 03_alignment.aux
 A level-1 auxiliary file: 04_user-docs.aux
@@ -12,6 +12,9 @@ A level-1 auxiliary file: 05_dev-docs.aux
 A level-1 auxiliary file: epilog.aux
 A level-1 auxiliary file: bibliography.aux
 The style file: plainnat.bst
+A level-1 auxiliary file: attachment_genres.aux
+A level-1 auxiliary file: attachment_offices.aux
+A level-1 auxiliary file: attachment_installation.aux
 Database file #1: bibliography.bib
 Warning--empty year in gregobase
 Warning--empty journal in mode_cornelissen
@@ -21,7 +24,7 @@ Warning--empty year in cantus_db
 Warning--empty booktitle in similarity_plot
 You've used 20 entries,
             2773 wiz_defined-function locations,
-            744 strings with 9092 characters,
+            747 strings with 9162 characters,
 and the built_in function-call counts, 9270 in all, are:
 = -- 878
 > -- 462

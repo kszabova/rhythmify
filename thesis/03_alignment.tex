@@ -483,7 +483,8 @@ with characters until there are any to use and the remaining ones are left empty
 \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
 % more formalized data structures text : V_1, ... V_k , words : S_1, S_k
 % for each pair (melody, text) there is a function that says which notes start at which position
-    \Input{$n$ volpiano-encoded melodies and their texts}
+    \Input{volpiano-encoded melodies $V_1, ..., V_k$; $V_i$ is composed of words $W_{i1}, ..., W_{il}$; $W_{ij}$ is composed of syllables $S_{ij1}, ..., S_{ijm}$;
+            the texts corresponding to the melodies}
     \Output{aligned melodies combined with their texts}
     \BlankLine
     $num\_words \longleftarrow max(length(sequence))$ for all sequences\;
@@ -519,10 +520,14 @@ with characters until there are any to use and the remaining ones are left empty
 
 \subsection{Multiple alignment using absolute pitches}
 
-For this task, we are using the MAFFT software\footnote{https://mafft.cbrc.jp/alignment/software/}.
+For this task, we are using the MAFFT software\footnote{\url{https://mafft.cbrc.jp/alignment/software/}}.
 MAFFT primarily works for sequences of amino acids and nucleotide bases, but it also has a limited support for non-biological sequences.
 
 %the below into a new subsection
+
+\subsubsection{Melody preprocessing}
+\label{section:vol_preprocess}
+
 As the software uses the character \verb|-| for marking gaps,
 it requires that the input sequences do not contain any, or they will be removed. Since melodies encoded as Volpiano use the character to mark ends of words
 and ends of syllables, we need to perform some preprocessing. Namely, we replace all contiguous sequences \verb|---| with the end-of-word marking symbol \verb|~|

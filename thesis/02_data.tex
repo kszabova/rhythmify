@@ -1,5 +1,9 @@
 \chapter{Data}
 
+Despite the fact that the aim of this work is not to create a database of chants, nor to carry out experiments on data, but rather to create a tool
+that researchers can use to conduct trials, we provide a source of data that can be used for the purposes. It is the largest set of digitalized
+chants that musicologists regularly use in their research.
+
 Our main source of data is the Cantus database \citep{cantus_db}, one of the databases indexed in the Cantus Index. The database serves as a 
 digital archive of chants, each entry containing information about its source, liturgical occasion, mode, and others. Work on the project started
 in the late 1980s, and to date, around 500,000 individual chants from approximately 150 manuscripts have been indexed. Each entry is transcribed 
@@ -22,7 +26,7 @@ This application uses the module \emph{pandas}\footnote{https://pandas.pydata.or
 \section{Database fields}
 \label{section:db_fields}
 
-The following table represents the data fields in the database.
+Table \ref{table:data_db} represents the data fields in the database.
 
 \begin{longtable}{| p{.25\textwidth} | p{.75\textwidth} |} 
 %\begin{center}
@@ -53,55 +57,63 @@ The following table represents the data fields in the database.
  full\_text     & full text in a standardized spelling \\ \hline
  full\_text\_manuscript & full text in the manuscript spelling \\ \hline
  volpiano       & transcription of the melody in volpiano format \\ \hline
- notes          & indexing notes \\
+ notes          & indexing notes \\ \hline
+ dataset\_name  & name of the data source to which the chant belongs \\ \hline
+ dataset\_idx   & index of the data source to which the chant belongs \\
  \hline
 
 %\end{tabular}
 %\end{center}
 \caption{List of database fields}
+\label{table:data_db}
 \end{longtable}
 
 \section{User-defined data}
+\label{section:data_usr}
 
-The application enables user to upload their own dataset. The following table specifies the fields in the database. Validation of the
+The application enables user to upload their own dataset. Table \ref{table:data_usr} specifies the fields in the database. Validation of the
 file is not implemented; it is left up to the user to upload a valid file. The meaning of the individual
-fields is as described in the previous section unless said otherwise.
+fields is as described in the previous section unless said otherwise. The value in the column \emph{Required} indicates whether
+the column must be present in the file. The value \emph{Nullable} indicates whether a data entry can have \emph{null} or an empty value in the column.
 
-\begin{longtable}{| p{.3\textwidth} | p{.15\textwidth} | p{.1\textwidth} | p{.45\textwidth} |} 
+\begin{longtable}{| p{.25\textwidth} | p{.1\textwidth} | p{.1\textwidth} | p{.1\textwidth} | p{.35\textwidth} |} 
 %\begin{center}
-%\begin{tabular}{| c | c | c | c |} 
+%\begin{tabular}{| c | c | c | c | c |} 
 
  \hline
- Column name     & Type  & Can be empty  & Notes \\
+ Column name     & Type & Re\-qui\-red  & Null\-able  & Notes \\
  \hline
- \emph{none} \emph{or} Unnamed: 1 & any & yes & the column will be dropped  \\ \hline
- id             & string & yes & equivalent to \emph{corpus\_id} in the database \\ \hline
- incipit        & string & no  & \\ \hline
- cantus\_id     & string & yes & should be a valid Cantus ID \\ \hline
- mode           & string & yes & list of modes is in attachment \\ \hline
- finalis        & string & yes & \\ \hline
- differentia    & string & yes & \\ \hline
- siglum         & string & no  & \\ \hline
- position       & string & yes & \\ \hline
- folio          & string & yes & \\ \hline
- sequence       & string & yes & \\ \hline
- marginalia     & string & yes & \\ \hline
- cao\_concordances & string & yes & \\ \hline
- feast\_id      & string & yes & list of feasts is in attachment \\ \hline
- genre\_id      & string & yes & list of genres is in attachment \\ \hline
- office\_id     & string & yes & list of offices is in attachment \\ \hline
- source\_id     & string & yes & \\ \hline
- melody\_id     & string & yes & \\ \hline
- drupal\_path   & string & yes & should be a valid URL \\ \hline
- full\_text     & string & no  & \\ \hline
- full\_text\_manuscript & string & yes & \\ \hline
- volpiano       & string & no  & has to be in Volpiano format \\ \hline
- notes          & string & yes & \\
+ id             & number & no  & yes & the column will be dropped when processing \\ \hline
+ corpus\_id     & string & yes & yes &  \\ \hline
+ incipit        & string & yes & no  & \\ \hline
+ cantus\_id     & string & yes & yes & should be a valid Cantus ID \\ \hline
+ mode           & string & yes & yes & \\ \hline
+ finalis        & string & yes & yes & \\ \hline
+ differentia    & string & yes & yes & \\ \hline
+ siglum         & string & yes & no  & \\ \hline
+ position       & string & yes & yes & \\ \hline
+ folio          & string & yes & yes & \\ \hline
+ sequence       & string & yes & yes & \\ \hline
+ marginalia     & string & yes & yes & \\ \hline
+ cao\_concordances & string & yes & yes & \\ \hline
+ feast\_id      & string & yes & yes & \\ \hline
+ genre\_id      & string & yes & yes & list of genres is in attachment \ref{attachment:genres} \\ \hline
+ office\_id     & string & yes & yes & list of offices is in attachment \ref{attachment:offices} \\ \hline
+ source\_id     & string & yes & yes & \\ \hline
+ melody\_id     & string & yes & yes & \\ \hline
+ drupal\_path   & string & yes & yes & should be a valid URL \\ \hline
+ full\_text     & string & yes & no  & \\ \hline
+ full\_text\_manuscript & string & yes & yes & \\ \hline
+ volpiano       & string & yes & no  & has to be in Volpiano format \\ \hline
+ notes          & string & yes & yes & \\ \hline
+ dataset\_name  & string & no & yes & the column will be dropped when processing \\ \hline
+ dataset\_idx   & number & no & yes & the column will be dropped when processing \\
  \hline
 
 %\end{tabular}
 %\end{center}
 \caption{Fields in the user-uploaded CSV}
+\label{table:data_usr}
 \end{longtable}
 
 \begin{figure}[h]
@@ -124,7 +136,7 @@ the Volpiano font. Each character represents either a pitch, empty space, or oth
 Volpiano was developed as a research tool optimized for databases and word processors. There are strict rules concerning the transcription, which leads
 to all Volpiano-encoded melodies having a standardized format. For example, the Volpiano protocol dictates that each transcription begins with
 a treble clef followed by three spaces, that words are separated by three spaces and syllables by two, and others.
-\footnote{https://cantus.uwaterloo.ca/sites/default/files/documents/2.\%20Volpiano\%20Protocols.pdf}
+\footnote{\url{https://cantus.uwaterloo.ca/sites/default/files/documents/2.\%20Volpiano\%20Protocols.pdf}}
 
 \begin{figure}[h!]
 \centering
@@ -132,7 +144,7 @@ a treble clef followed by three spaces, that words are separated by three spaces
 \caption{Example of volpiano as stored in the database and how it is rendered as musical notation. \cite[Figure~2]{cantus_lacoste}}
 \end{figure}
 
-\section{Data cleaning}
+\section{Data statistics}
 
 As mentioned earlier, not the entire dataset is usable. Since we are analysing melodies, it is necessary that each data point contains information
 about the chant's melody.
@@ -141,5 +153,5 @@ As one of the application's main features is melody alignment, it is necessary t
 not empty. Moreover, some visualizations compare text length to melody length, therefore we require the data points to have both. Additionally, 
 text and melody should be able to be aligned, i.e. they contain the same number of words and syllables.
 
-Removing the data that does not adhere to the conditions, we are left with 13,397 usable data points.
+After removing the data that does not adhere to the conditions, we are left with 13,397 usable data points.
 

@@ -1,2 +1,40 @@
 \chapter*{Conclusion}
 \addcontentsline{toc}{chapter}{Conclusion}
+
+The outcome of this thesis is a software tool enabling researchers to analyze relatively large amounts of data computationally. The software
+provides the ability to investigate the origin and evolution of a set of chants. An important implication of this ability is that it facilitates
+the discovery of contrafacta (chants with different lyrics but the same melodies) and transpositions (chants whose melodies differ by an interval
+in all positions), which is a task that lacked the proper tools until now.
+
+To analyze the chants, we used techniques from bioinformatics, namely multiple sequence alignment algorithms. These techniques have been used by
+biologists for a long time to study the same properties - origin and evolution - of biological sequences. As chant melodies and biological sequences
+share many properties, and MSA algorithms do not require assumptions about chants that we cannot guarantee, these methods are suitable
+for studying Gregorian chant.
+
+Our work provides tools for interdisciplinary research in the field of digital musicology. It bridges the gap between traditional musicology,
+which relied on the individual ability to draw conclusions from analog sources, and computational analysis. The software is a tool
+that will have immediate applications in the basic research of Gregorian chant, such as the study of \emph{Jistebnice Cantional}.
+
+Originally, one of the purposes of this work was to create a set of visualizations that would facilitate the quantitative analysis of a set of chants.
+However, during the development process it became clear that musicology itself has not yet formalized many of its problems in such a way that 
+would make it clear what types of quantitative analysis is actually needed. In fact, the alignment tool proved to be much more useful for immediate
+applications\footnote{From personal communication with doc. PhDr. Hana Vlhová-Wörner, Ph.D}. Therefore, our attention shifted to the proper
+development of the alignment tool. The visualization part is left for further development, in hopes that the desired use cases crystallize into
+a more definite form in the future.
+
+The software continues to be developed in collaboration with the Czech Aca\-demy of Sciences.
+
+\section*{Future work}
+
+MSA algorithms open the door to many other applications, in addition to what the tool already provides. Our software already touches one
+of them by providing the ability to calculate the conservation profile.
+
+The natural next step is to use the results of the alignment to obtain and visualize the phylogenetic tree of the set, i.e. their
+``family tree'' showing how the individual melodies changed and developed. The tree's visualization could make it easier to see
+the relationship between the melodies without the need to study the alignment.
+
+Another possibility is to use the similarity matrix obtained from the alignment to visualize a network of the chants. The clusters
+forming in this visualization would immediately show related groups of chants and reveal relationships that were not obvious before.
+
+The opportunities promised by MSA algorithms are vast. We plan to explore many of those that we deem useful for the study of Gregorian
+chant, as we continue with the development of the software.
