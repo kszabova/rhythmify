@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.3.29)  21 JUL 2021 17:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.3.29)  21 JUL 2021 18:37
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1720,28 +1720,54 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [47 <./images/udocs-alignment-raw.png> <./images/udocs-alignment-no-headers.png
 > <./images/udocs-alignment-no-headers-no-text.png>] [48 <./images/udocs-alignm
-ent-vol-colors.png> <./images/udocs-alignment-vol-cons.png>]) [49]
+ent-vol-colors.png> <./images/udocs-alignment-vol-cons.png>]
+<./images/udocs-dashboard-scatter.png, id=933, 636.57825pt x 377.0085pt>
+File: ./images/udocs-dashboard-scatter.png Graphic file (type png)
+<use ./images/udocs-dashboard-scatter.png>
+Package pdftex.def Info: ./images/udocs-dashboard-scatter.png  used on input li
+ne 298.
+(pdftex.def)             Requested size: 381.94989pt x 226.20683pt.
+<./images/udocs-dashboard-hist-melody.png, id=934, 590.205pt x 410.7345pt>
+File: ./images/udocs-dashboard-hist-melody.png Graphic file (type png)
+<use ./images/udocs-dashboard-hist-melody.png>
+Package pdftex.def Info: ./images/udocs-dashboard-hist-melody.png  used on inpu
+t line 305.
+(pdftex.def)             Requested size: 354.12573pt x 246.4426pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./images/udocs-dashboard-hist-text.png, id=935, 570.933pt x 422.7795pt>
+File: ./images/udocs-dashboard-hist-text.png Graphic file (type png)
+<use ./images/udocs-dashboard-hist-text.png>
+Package pdftex.def Info: ./images/udocs-dashboard-hist-text.png  used on input 
+line 312.
+(pdftex.def)             Requested size: 342.56244pt x 253.66965pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [49 <./images/udocs-dashboard-scatter.png>] [50 <./images/udocs-dashboard-his
+t-melody.png> <./images/udocs-dashboard-hist-text.png>]
 \openout2 = `05_dev-docs.aux'.
 
-
-(05_dev-docs.tex
+ (05_dev-docs.tex
 Chapter 6.
-<./images/ddocs_layout.png, id=935, 251.94125pt x 221.82875pt>
+<./images/ddocs_layout.png, id=951, 251.94125pt x 221.82875pt>
 File: ./images/ddocs_layout.png Graphic file (type png)
 <use ./images/ddocs_layout.png>
 Package pdftex.def Info: ./images/ddocs_layout.png  used on input line 8.
 (pdftex.def)             Requested size: 251.94063pt x 221.82819pt.
-[50
+[51
 
 
 
  <./images/ddocs_layout.png>]
-<./images/ddocs_schema.png, id=947, 240.9pt x 335.45325pt>
+<./images/ddocs_schema.png, id=964, 240.9pt x 335.45325pt>
 File: ./images/ddocs_schema.png Graphic file (type png)
 <use ./images/ddocs_schema.png>
 Package pdftex.def Info: ./images/ddocs_schema.png  used on input line 36.
 (pdftex.def)             Requested size: 240.8994pt x 335.45241pt.
- [51 <./images/ddocs_schema.png>]
+ [52 <./images/ddocs_schema.png>]
 Overfull \hbox (2.68633pt too wide) in paragraph at lines 82--82
 []|\OT1/lmr/m/n/12 Method| |
  []
@@ -1802,7 +1828,7 @@ Overfull \hbox (8.74094pt too wide) in alignment at lines 77--97
 Underfull \vbox (badness 10000) detected at line 97
  []
 
-[52]
+[53]
 LaTeX Font Info:    Font shape `OML/lmr/bx/n' in size <12> not available
 (Font)              Font shape `OML/lmm/b/it' tried instead on input line 107.
 
@@ -1817,38 +1843,38 @@ Overfull \hbox (41.33022pt too wide) in paragraph at lines 120--123
 st con-tain the field [][]\OT1/lmtt/m/n/12 idsToExport[]\OT1/lmr/m/n/12 .|
  []
 
-[53]
+[54]
 Overfull \hbox (0.39278pt too wide) in paragraph at lines 140--143
 \OT1/lmr/m/n/12 proper be-hav-ior of the ap-pli-ca-tion, e.g. the im-ple-men-ta
 -tion of align-ment, MAFFT|
  []
 
-<./images/ddocs_core.png, id=975, 492.84125pt x 292.09125pt>
+<./images/ddocs_core.png, id=991, 492.84125pt x 292.09125pt>
 File: ./images/ddocs_core.png Graphic file (type png)
 <use ./images/ddocs_core.png>
 Package pdftex.def Info: ./images/ddocs_core.png  used on input line 147.
 (pdftex.def)             Requested size: 344.98651pt x 204.46246pt.
-[54 <./images/ddocs_core.png>]
+[55 <./images/ddocs_core.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 173--173
 [][][][]$\OT1/lmtt/m/n/10 https : / / cantus . uwaterloo . ca / sites / default
  / files / documents / 2 . %20Volpiano %
  []
 
-<./images/ddocs_text-to-syllables.png, id=992, 654.64575pt x 60.82726pt>
+<./images/ddocs_text-to-syllables.png, id=1008, 654.64575pt x 60.82726pt>
 File: ./images/ddocs_text-to-syllables.png Graphic file (type png)
 <use ./images/ddocs_text-to-syllables.png>
 Package pdftex.def Info: ./images/ddocs_text-to-syllables.png  used on input li
 ne 179.
 (pdftex.def)             Requested size: 392.79048pt x 36.49663pt.
-<./images/ddocs_volpiano_to_syllables.png, id=993, 657.657pt x 107.2005pt>
+<./images/ddocs_volpiano_to_syllables.png, id=1009, 657.657pt x 107.2005pt>
 File: ./images/ddocs_volpiano_to_syllables.png Graphic file (type png)
 <use ./images/ddocs_volpiano_to_syllables.png>
 Package pdftex.def Info: ./images/ddocs_volpiano_to_syllables.png  used on inpu
 t line 186.
 (pdftex.def)             Requested size: 394.59724pt x 64.32079pt.
-[55 <./images/ddocs_text-to-syllables.png> <./images/ddocs_volpiano_to_syllable
+[56 <./images/ddocs_text-to-syllables.png> <./images/ddocs_volpiano_to_syllable
 s.png>]
-<./images/ddocs_syllables-stressed.png, id=1006, 656.4525pt x 61.4295pt>
+<./images/ddocs_syllables-stressed.png, id=1022, 656.4525pt x 61.4295pt>
 File: ./images/ddocs_syllables-stressed.png Graphic file (type png)
 <use ./images/ddocs_syllables-stressed.png>
 Package pdftex.def Info: ./images/ddocs_syllables-stressed.png  used on input l
@@ -1872,13 +1898,13 @@ Overfull \hbox (20.53935pt too wide) in paragraph at lines 203--208
 /12 transform_intervals_to_volpiano|
  []
 
-<./images/ddocs_intervals.png, id=1009, 657.657pt x 120.45pt>
+<./images/ddocs_intervals.png, id=1025, 657.657pt x 120.45pt>
 File: ./images/ddocs_intervals.png Graphic file (type png)
 <use ./images/ddocs_intervals.png>
 Package pdftex.def Info: ./images/ddocs_intervals.png  used on input line 211.
 (pdftex.def)             Requested size: 394.59724pt x 72.27054pt.
-[56 <./images/ddocs_syllables-stressed.png> <./images/ddocs_intervals.png>]
-<./images/ddocs_frontend-schema.png, id=1027, 661.47125pt x 620.3175pt>
+[57 <./images/ddocs_syllables-stressed.png> <./images/ddocs_intervals.png>]
+<./images/ddocs_frontend-schema.png, id=1044, 661.47125pt x 620.3175pt>
 File: ./images/ddocs_frontend-schema.png Graphic file (type png)
 <use ./images/ddocs_frontend-schema.png>
 Package pdftex.def Info: ./images/ddocs_frontend-schema.png  used on input line
@@ -1888,13 +1914,13 @@ Package pdftex.def Info: ./images/ddocs_frontend-schema.png  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[57]
+[58]
 Overfull \hbox (23.18066pt too wide) in paragraph at lines 274--277
 [][]\OT1/lmtt/m/n/12 setFilterSettings[]\OT1/lmr/m/n/12 , which changes the cur
 -rent value, and [][]\OT1/lmtt/m/n/12 getFilterSettings[]\OT1/lmr/m/n/12 ,|
  []
 
-[58 <./images/ddocs_frontend-schema.png>]
+[59 <./images/ddocs_frontend-schema.png>]
 Overfull \hbox (5.73515pt too wide) in paragraph at lines 284--287
 []\OT1/lmr/bx/n/12 CreateDatasetService. \OT1/lmr/m/n/12 The ser-vice con-tains
  one method, [][]\OT1/lmtt/m/n/12 createDataset[]\OT1/lmr/m/n/12 .|
@@ -1906,7 +1932,7 @@ Overfull \hbox (3.75449pt too wide) in paragraph at lines 308--310
 -tains only one method called|
  []
 
-[59]
+[60]
 Overfull \hbox (11.14647pt too wide) in paragraph at lines 329--331
 []\OT1/lmr/bx/n/12 ChantLlistWrapperComponent. \OT1/lmr/m/n/12 The com-po-nent 
 en-cap-su-lates \OT1/lmr/m/it/12 ChantList-|
@@ -1918,33 +1944,33 @@ Overfull \hbox (4.812pt too wide) in paragraph at lines 343--344
 su-lates \OT1/lmr/m/it/12 Chant-De-tailsCom-|
  []
 
-[60]) [61]
+[61]) [62]
 \openout2 = `epilog.aux'.
 
- (epilog.tex [62
+ (epilog.tex [63
 
 
 
-]) [63]
+]) [64]
 \openout2 = `bibliography.aux'.
 
- (bibliography.tex (thesis.bbl [64
+ (bibliography.tex (thesis.bbl [65
 
 
 
-])) [65]
-(thesis.lof [66
+])) [66]
+(thesis.lof [67
 
 
 ])
 \tf@lof=\write8
 \openout8 = `thesis.lof'.
 
- [67] (thesis.lot)
+ [68] (thesis.lot)
 \tf@lot=\write9
 \openout9 = `thesis.lot'.
 
- [68
+ [69
 
 ]
 \openout2 = `attachment_genres.aux'.
@@ -1985,10 +2011,10 @@ Overfull \hbox (49.99992pt too wide) in alignment at lines 48--68
  [] [] [] [] 
  []
 
-[69
+[70
 
 
-]) [70]
+]) [71]
 \openout2 = `attachment_offices.aux'.
 
  (attachment_offices.tex
@@ -2007,7 +2033,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 4--28
 Underfull \vbox (badness 10000) detected at line 28
  []
 
-) [71
+) [72
 
 
 
@@ -2016,7 +2042,7 @@ Underfull \vbox (badness 10000) detected at line 28
 
  (attachment_installation.tex
 Appendix C.
-) [72
+) [73
 
 
 
@@ -2038,10 +2064,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 173.
  ) 
 Here is how much of TeX's memory you used:
- 27925 strings out of 480934
- 487863 string characters out of 2898513
- 724346 words of memory out of 3000000
- 42891 multiletter control sequences out of 15000+200000
+ 27953 strings out of 480934
+ 488725 string characters out of 2898513
+ 724845 words of memory out of 3000000
+ 42915 multiletter control sequences out of 15000+200000
  620803 words of font info for 95 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,24n,60p,667b,2341s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2073,9 +2099,9 @@ AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/kri
 stina/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Us
 ers/kristina/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb
 >
-Output written on thesis.pdf (76 pages, 3483414 bytes).
+Output written on thesis.pdf (77 pages, 3574110 bytes).
 PDF statistics:
- 1397 PDF objects out of 1440 (max. 8388607)
- 259 named destinations out of 1000 (max. 500000)
- 752 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1419 PDF objects out of 1440 (max. 8388607)
+ 263 named destinations out of 1000 (max. 500000)
+ 767 words of extra memory for PDF output out of 10000 (max. 10000000)
 
