@@ -27,7 +27,8 @@ to be as valid within their cultural environment as the older layers.
 
 In this chapter, we will first give the definition of the problem of sequence alignment. We will mention some important considerations,
 as well as theoretical limitations. Then we will provide an overview of the methods developed for bioinformatics that attempt to solve
-the problem. Finally, we will show how we applied the existing methods and technologies on Gregorian chant melodies.
+the problem. Finally, we will show how we applied the existing methods and technologies on Gregorian chant melodies, as encoded
+using Volpiano in current chant databases.
 
 \section{The problem of sequence alignment}
 
@@ -168,8 +169,6 @@ Let us show the algorithm on an example. Consider two sequences of nucleotide re
 \end{verbatim}
 
 The matrix is initialized without anything filled out.
-
-% create a figure
 
 \begin{verbatim}
           G  C  A  T  G
@@ -471,7 +470,7 @@ in proteins or 4 nucleotide bases in DNA we have around 40 different characters 
 The evolution of both biological and melodic sequences is guided by environmental factors such as migration to other places. Some segments tend to undergo a lot
 of modifications, while other remain relatively unchanged. Studying the alignment of chant melodies can reveal a lot of information about their relationship.
 
-An important aspect to consider is that unlike in bioinformatics, here we are working with two closely related sequences - the melody and the lyric. They cannot
+An important aspect to consider is that unlike in bioinformatics, here we are working with two closely related sequences - the melody and the text. They cannot
 be separated, as they always developed concurrently. Additionally, textual boundaries are important for the segmentation of melodies \citep{chant21}. Here, we
 do not treat boundary symbols as special characters. However, in the future, it is worth studying whether they should be treated as such.
 
@@ -493,8 +492,6 @@ The alignment is computed using Algorithm \ref{algo:align_word}. Its results can
 
 \begin{algorithm}[H]
 \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
-% more formalized data structures text : V_1, ... V_k , words : S_1, S_k
-% for each pair (melody, text) there is a function that says which notes start at which position
     \Input{set of volpiano-encoded melodies $V = \{V_1, \dots, V_k\}$, $V_i$ is composed of $w_i$ words $V_i = \{W_{i1}, \dots, W_{iw_i}\}$, $W_{ij}$ is composed of $s_{ij}$ syllables $W_{ij} = \{S_{ij1}, \dots, S_{ijs_{ij}}\}$;
             set of texts $T = \{T_1, \dots, T_k\}$, $T_i$ is composed of $w_i$ words $T_i = \{U_{i1}, \dots, U_{iw_i}\}$, $U_{ij}$ is composed of $r_{ij}$ syllables $U_{ij} = \{R_{ij1}, \dots, R_{ijr_{ij}}\}$}
     \Output{Aligned set of melodies $V^* = \{V^*_1, \dots, V^*_k\}$, $V^*_i$ is composed of $w$ words $V^*_i = \{W^*_{i1}, \dots, W^*_{iw}\}$, $W^*_{ij}$ is composed of $s_j$ syllables $W^*_{ij} = \{S^*_{ij1}, \dots, S^*_{ijs_j}\}$;
@@ -535,7 +532,7 @@ The alignment is computed using Algorithm \ref{algo:align_word}. Its results can
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.4]{alignment_naive}
+\includegraphics[scale=0.35]{alignment_naive}
 \caption{Chants of different genres aligned using the naive approach. The vertical lines represent word boundaries.}
 \label{fig:align_word}
 \end{figure}
@@ -585,7 +582,7 @@ The process is described in Algorithm \ref{algo:align_pitch}. Its results are sh
         }
     }
     return $T^*$\;
-    \caption{Aligning melody and lyric}
+    \caption{Aligning melody and text}
     \label{algo:volpiano_text_combine}
 \end{algorithm}
 
@@ -597,8 +594,8 @@ here they just mean empty space.\newline
 
 \begin{algorithm}[H]
 \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
-    \Input{a set of volpiano-encoded melodies $V$ with their respective lyrics $T$}
-    \Output{aligned melodies $V^*$ and their lyrics $T^*$}
+    \Input{a set of volpiano-encoded melodies $V$ with their respective texts $T$}
+    \Output{aligned melodies $V^*$ and their texts $T^*$}
     \BlankLine
     $\hat{V} \longleftarrow V$ preprocessed to a MAFFT-friendly format\;
     $aligned\_without\_errors \longleftarrow False$\;
@@ -620,8 +617,7 @@ here they just mean empty space.\newline
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.4]{alignment_pitches}
-% write that the tildes and pipes from MAFFT are replaced with - and spaces
+\includegraphics[scale=0.35]{alignment_pitches}
 \caption{Chants aligned using MAFFT on absolute pitches.}
 \label{fig:align_pitches}
 \end{figure}
@@ -698,8 +694,8 @@ are shown in Figure \ref{fig:align_intervals}.\newline
 
 \begin{algorithm}[H]
 \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
-    \Input{a set of $n$ volpiano-encoded melodies $V$ with their respective lyrics $T$}
-    \Output{aligned melodies $V^*$ and their lyrics $T^*$}
+    \Input{a set of $n$ volpiano-encoded melodies $V$ with their respective texts $T$}
+    \Output{aligned melodies $V^*$ and their texts $T^*$}
     \BlankLine
     $I_i \longleftarrow V_i$ converted using algorithm \ref{algo:convert_to_interval} $\forall i \in \{1,\dots, n\}$\;
     $\hat{I} \longleftarrow I$ preprocessed to a MAFFT-friendly format\;
@@ -747,7 +743,7 @@ Conservation profile is then the vector $C$ whose elements $C_j$ are defined as
 Our application does not visualize conservation profile, but rather the conservation values of all meaningful symbols (i.e. those that represent notes or intervals). It
 also computes the average conservation value $\frac{\sum^k_{j=1} C_j}{k}$.
 
-Conservation profile of aligned sequences depends on what approach we choose. Consider the last two chants shown in Figure \ref{fig:align_intervals}. Each note
+Conservation profile of aligned sequences depends on what approach we choo\-se. Consider the last two chants shown in Figure \ref{fig:align_intervals}. Each note
 is different, however, a person well-versed in musical theory immediately notices that they are only shifted by 5 semitones (except for the first note). If we consider only
 the intervals, they are almost the same melodies. However, if we consider the absolute pitches, they are totally different. Figure \ref{fig:cons_pitch}
 and Figure \ref{fig:cons_intervals} demonstrate these differences by displaying the chants' conservation profile.

@@ -62,13 +62,16 @@
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"> 
    <dc:format>application/pdf</dc:format> 
-   <dc:title><rdf:Alt><rdf:li xml:lang="x-default">Thesis title</rdf:li></rdf:Alt></dc:title>
-   <dc:creator><rdf:Seq><rdf:li>Name Surname</rdf:li></rdf:Seq></dc:creator>
+   <dc:title><rdf:Alt><rdf:li xml:lang="x-default">Analytical tools for Gregorian chant</rdf:li></rdf:Alt></dc:title>
+   <dc:creator><rdf:Seq><rdf:li>Kristína Szabová</rdf:li></rdf:Seq></dc:creator>
    <dc:publisher><rdf:Bag><rdf:li>Charles University</rdf:li></rdf:Bag></dc:publisher>
-   <dc:description><rdf:Alt><rdf:li xml:lang="x-default">Abstract of thesis</rdf:li></rdf:Alt></dc:description>
-   <dc:subject><rdf:Bag><rdf:li>keywords</rdf:li>
-     <rdf:li>more such</rdf:li>
-     <rdf:li>yet another</rdf:li></rdf:Bag></dc:subject>
+   <dc:description><rdf:Alt><rdf:li xml:lang="x-default"> Gregorian chant, a subset of mostly medieval music, is of great interest for many musicologists, as it is a foundational body of music and has had a substantial impact on European culture. One of the most interesting problems regarding Gregorian chant is its evolution across centuries. Discovering related chants, and, conversely, unrelated ones, is a necessary step in the handling of the problem, after expert selection of the set of chants to compare. Computational methods may help with this step, as it requires aligning large amounts of chants. While there exist large databases of digitalized chants, digital musicology lacks the software necessary to perform this step. This thesis presents a software tool that can help in the discovery of related chants using multiple sequence alignment (MSA) algorithms, methods borrowed from bioinformatics. It enables researchers to align arbitrary sets of related (and unrelated) chants, thus revealing clusters of related melodies. Additionally, it facilitates the discovery of contrafacta and transpositions. Nevertheless, the tool has some limitations: it is run locally and some of its interactive functionality becomes slow when processing hundreds of data. Further development is planned as part of an ongoing collaboration with digital musicology researchers from the Czech Academy of Sciences and the Faculty of Arts of Charles University. </rdf:li></rdf:Alt></dc:description>
+   <dc:subject><rdf:Bag><rdf:li>digital musicology</rdf:li>
+     <rdf:li>gregorian chant</rdf:li>
+     <rdf:li>multiple sequence alignment</rdf:li>
+     <rdf:li>bioinformatics</rdf:li>
+     <rdf:li>angular</rdf:li>
+     <rdf:li>django</rdf:li></rdf:Bag></dc:subject>
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:prism="http://prismstandard.org/namespaces/basic/2.2/"> 
   </rdf:Description> 
@@ -80,15 +83,15 @@
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> 
    <xmp:CreatorTool>LaTeX with hyperref</xmp:CreatorTool> 
-   <xmp:ModifyDate>2021-07-21T18:48:27+02:00</xmp:ModifyDate> 
-   <xmp:CreateDate>2021-07-21T18:48:27+02:00</xmp:CreateDate> 
-   <xmp:MetadataDate>2021-07-21T18:48:27+02:00</xmp:MetadataDate> 
+   <xmp:ModifyDate>2021-07-21T23:33:21+02:00</xmp:ModifyDate> 
+   <xmp:CreateDate>2021-07-21T23:33:21+02:00</xmp:CreateDate> 
+   <xmp:MetadataDate>2021-07-21T23:33:21+02:00</xmp:MetadataDate> 
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmpRights = "http://ns.adobe.com/xap/1.0/rights/"> 
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"> 
    <xmpMM:DocumentID>uuid:C8CFC28F-88E1-7995-E9AD-F6D12EAD346B</xmpMM:DocumentID> 
-   <xmpMM:InstanceID>uuid:7AA9F29A-319A-B56B-59C4-9DC587E01714</xmpMM:InstanceID> 
+   <xmpMM:InstanceID>uuid:D376FD34-CF2C-AA38-7907-AC9511732288</xmpMM:InstanceID> 
   </rdf:Description> 
  </rdf:RDF> 
 </x:xmpmeta> 

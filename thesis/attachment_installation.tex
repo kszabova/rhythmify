@@ -1,1 +1,34 @@
 \chapter{Installation instructions}
+\label{attachment:setup}
+
+To set up and run the application, follow these instructions.
+
+The code is available online. Front end\footnote{\url{https://github.com/kszabova/rhythmify_frontend/tree/bc_final}}
+and back end\footnote{\url{https://github.com/kszabova/rhythmify_backend/tree/bc_final}} are available separately.
+Download both repositories and store them on your device.
+
+Install the correct version of MAFFT for your platform.\footnote{\url{https://mafft.cbrc.jp/alignment/software/}} If you
+are using Windows, choose the option for installing it on WSL.\footnote{\url{https://docs.microsoft.com/en-us/windows/wsl/install-win10}}
+In this case, please, ensure that MAFFT can be accessed by running \verb|wsl mafft <options>| from command line.
+
+Ensure that you have both Python (\textgreater =3.9.2) and Node.js installed. If you do not, follow the installation instructions
+on their respective web pages\footnote{\url{https://www.python.org/downloads/}}\footnote{\url{https://nodejs.org/en/download/}}
+
+Set up the Django framework by following the installation instructions.\footnote{\url{https://www.djangoproject.com/download/}}
+Do the same for the Angular platform.\footnote{\url{https://angular.io/guide/setup-local}}
+
+Once all these dependencies are installed, navigate to the back end directory. In command line, run \verb|pip install -r requirements.txt|.
+Additionally, it is necessary to download the Latin corpus for the correct processing of Latin texts.\footnote{\url{https://docs.cltk.org/en/latest/data.html}}
+In Python environment, run the following commands:
+
+\begin{verbatim}
+    from cltk.data.fetch import FetchCorpus
+    corpus_downloader = FetchCorpus(language="lat")
+    corpus_downloader.import_corpus("lat_models_cltk")
+\end{verbatim}
+
+To run the back end, type \verb|python manage.py runserver|.
+
+Now, navigate to the front end directory and run \verb|npm install|. This will install the required packages.
+To run the front end, type \verb|ng serve|.
+The application can be accessed from your browser on the address \verb|localhost:4200|.

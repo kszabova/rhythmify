@@ -28,7 +28,7 @@ which focuses on the melodic aspect of mode. The authors chose various segmentat
 model to classify mode. The study found that we can accurately classify mode even when we discard all absolute pitch information, the melody
 contour contains enough information on its own.
 
-A considerable amount of research has been done into the evaluation of melodic similarity, albeit not for Gregorian chant specifically.
+A considerable amount of research has been done into the evaluation of me\-lo\-dic similarity, albeit not for Gregorian chant specifically.
 \cite{melodic_similarity} provides an overview of the methods. He mentions edit distance, Markov chains, and geometric measurements as
 the most widely used ones. \cite{similarity_plot} used an adapted edit distance metric to calculate the similarity of two melodic sequences
 by first calculating the similarity for all segments of each of the sequences and then scaling them by a weight function depending on the
@@ -44,7 +44,7 @@ algorithms, therefore not relying on heuristics, as opposed to previous works. T
 alignemnt, which can be attributed to the algorithm using gap-free segments as anchor points, therefore partitioning melodies into more meaningful
 segments than other algorithms.
 
-The general algorithm for calculating pairwise sequence alignment is the Needleman-Wunsch algorithm \citep{needleman}. It uses dynamic programming
+The general algorithm for calculating pairwise sequence alignment is the Nee\-dle\-man-Wunsch algorithm \citep{needleman}. It uses dynamic programming
 to break down the problem into smaller problems. Given two sequences, it starts aligning them from the beginning. At each point, the algorithm checks
 whether the two sequences match in the current position, and if not, whether it will leave the elements mismatched or insert a space. In essence,
 all possible alignments are computed and scored and the best one is chosen. The algorithm always yields an optimal alignment, therefore it is

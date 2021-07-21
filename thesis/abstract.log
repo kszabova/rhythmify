@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.3.29)  21 JUL 2021 18:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.3.29)  21 JUL 2021 22:41
 entering extended mode
 **./abstract.tex
 (abstract.tex
@@ -483,22 +483,22 @@ LaTeX Info: Redefining \nameref on input line 12.
 \@outlinefile=\write4
 \openout4 = `abstract.out'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 26.
  [1
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 26.
  (abstract.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 26.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
 Package rerunfilecheck Info: File `abstract.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 28.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
  ) 
 Here is how much of TeX's memory you used:
  12602 strings out of 480934
  182240 string characters out of 2898513
- 412381 words of memory out of 3000000
+ 411534 words of memory out of 3000000
  28312 multiletter control sequences out of 15000+200000
  540661 words of font info for 28 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -507,7 +507,7 @@ Here is how much of TeX's memory you used:
 .enc}<C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm
 /lmr12.pfb><C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
 lic/lm/lmri12.pfb>
-Output written on abstract.pdf (1 page, 55417 bytes).
+Output written on abstract.pdf (1 page, 55911 bytes).
 PDF statistics:
  25 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)

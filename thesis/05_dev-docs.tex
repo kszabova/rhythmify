@@ -1,6 +1,8 @@
+\overfullrule=0pt
 \chapter{Development documentation}
 
-The software is a locally-run web application. It consists of three principal parts that ensure its proper functioning: the database, back end and
+The software is a locally-run web application. Setup instructions can be found in attachment \ref{attachment:setup}.
+It consists of three principal parts that ensure its proper functioning: the database, back end and
 front end. Their interactions are outlined in Figure \ref{fig:architecture}.
 
 \begin{figure}[!h]
@@ -57,7 +59,6 @@ Django programs consist of one or more logical units called \emph{apps}. An \emp
 to Django's modularity, an \emph{app} can be plugged in into many projects without the need to always rewrite it. Our application only uses one \emph{app},
 \verb|melodies|, which provides REST API to other programs.
 
-% the app only contains one app, melodies
 The app only contains one app, \verb|melodies|, which provides the API for other applications. The app uses the module \verb|core| providing the essential
 computations.
 
@@ -74,9 +75,7 @@ the contrary, POST requests contain data that the application takes into account
 
 Table \ref{table:api} summarizes the API provided by the application. The API is described into more detail below.
 
-\begin{longtable}{| p{.24\textwidth} | p{.09\textwidth} | p{.18\textwidth} | p{.39\textwidth} |} 
-%\begin{center}
-%\begin{tabular}{| c | c | c | c |} 
+\begin{longtable}{| p{.24\textwidth} | p{.09\textwidth} | p{.18\textwidth} | p{.39\textwidth} |}
 
  \hline
  Endpoint & Method & POST fields & Description \\
@@ -90,8 +89,6 @@ Table \ref{table:api} summarizes the API provided by the application. The API is
 \emph{api/chants/align/}          & POST & \verb|idsToAlign|, \verb|mode|                                    & Takes chants with the specified IDs and aligns them according to \verb|mode|\\
  \hline
 
-%\end{tabular}
-%\end{center}
 \caption{API of back end.}
 \label{table:api}
 \end{longtable}
@@ -117,7 +114,7 @@ will be uploaded directly to the database as a new data source with the given na
 \emph{id}, \emph{dataset\_idx}, and \emph{dataset\_name}, if the file contains them. The response is a JSON object with the keys \emph{name}, the name of the new data
 source, and \emph{index}, the index assigned to it.
 
-\item \textbf{api/chants/export/} The POST request body must contain the field \verb|idsToExport|. It is a list of integers representing the IDs of the chants to be exported. If
+\item \textbf{api/chants/export/} The POST request body must contain the field \verb|idsTo|\verb|Export|. It is a list of integers representing the IDs of the chants to be exported. If
 an ID does not correspond to any chant in the database, the ID will be excluded. The response contains a CSV file with its entries being the corresponding chants, formatted
 as outlined in Section \ref{section:data_usr}.
 
@@ -141,7 +138,6 @@ values in the \emph{drupal\_path} field of the database.
 MAFFT integration, and others. Figure \ref{fig:core} outlines the classes provided in the submodule and how they interact. The classes' functionality
 is described below.
 
-% prehodit api a core sekcie - a rovno napisat ktore api calls to pouzivaju
 \begin{figure}[!h]
 \centering
 \includegraphics[scale=0.7]{ddocs_core}
@@ -200,10 +196,10 @@ the results of the stress calculation. The function is shown in use in Figure \r
 \label{fig:syl_stress}
 \end{figure}
 
-\item\textbf{IntervalProcessor.} The class provides tools to work with the interval representation of a melody. It contains two methods, \verb|transform_volpiano_to_intervals|
-and \verb|transform_intervals_to_volpiano|. \verb|transform_volpiano_to_intervals| takes a string representing a melody (it can be encoded either as dictated by the Volpiano protocol, or processed
+\item\textbf{IntervalProcessor.} The class provides tools to work with the interval representation of a melody. It contains two methods, \verb|transform_volpiano_to|\verb|_intervals|
+and \verb|transform_intervals_to_volpiano|. \verb|transform|\verb|_volpiano|\verb|_to|\verb|_intervals| takes a string representing a melody (it can be encoded either as dictated by the Volpiano protocol, or processed
 to have its words separated by \verb|~|s and syllables by \verb=|=s for the purposes of alignment, see Section \ref{section:vol_preprocess}) and returns the same melody represented as intervals.
-\verb|transform_intervals_to_volpiano| is its reverse: it takes a string representing a melody encoded by intervals and returns the Volpiano representation.
+\verb|transform|\verb|_intervals|\verb|_to|\verb|_volpiano| is its reverse: it takes a string representing a melody encoded by intervals and returns the Volpiano representation.
 Figure \ref{fig:vol_intervals} shows how these functions are used.
 
 \begin{figure}[!h]
@@ -253,8 +249,6 @@ to component B implies that component A has component B in its HTML template. An
 
 \subsection{Services}
 
-% urobit z toho zoznam
-
 \begin{itemize}
 
 \item\textbf{ChantService.} This service is the service responsible for communication with the back end. It uses back end's API as described in Section \ref{section:api} to
@@ -272,7 +266,7 @@ object.
 storing the value.
 
 \item\textbf{SearchFilterService.} The service stores an object containing a list of allowed genres and a list of allowed offices which will be used for filtering
-when retrieving data from the database. It provides two methods, \verb|setFilterSettings|, which changes the current value, and \verb|getFilterSettings|, returning
+when retrieving data from the database. It provides two methods, \verb|setFilterSettings|, which changes the current value, and \verb|getFilter|\verb|Settings|, returning
 a \emph{BehaviorSubject} with the value.
 
 \item\textbf{DataSourceService.} The service stores a list of indices of data sources we are currently using. The stored value persists throughout browser sessions.
@@ -311,8 +305,6 @@ it calculates the conservation value for each position in each melody. It return
 \end{itemize}
 
 \subsection{Components}
-
-% screenshoty - moze byt viac komponentov v jednom komponente
 
 \begin{itemize}
 

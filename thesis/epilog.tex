@@ -7,26 +7,24 @@ provides the ability to investigate the origin and evolution of a set of chants.
 the discovery of contrafacta (chants with different lyrics but the same melodies) and transpositions (chants whose melodies differ by an interval
 in all positions), which is a task that lacked the proper tools until now.
 
-To analyze the chants, we used techniques from bioinformatics, namely multiple sequence alignment algorithms. These techniques have been used by
-biologists for a long time to study the same properties - origin and evolution - of biological sequences. As chant melodies and biological sequences
-share many properties, and, importantly, MSA algorithms do not require assumptions about chants that we cannot guarantee, these methods are suitable
-for studying Gregorian chant.
-
 Our work bridges the gap between traditional musicology,
 which relied on the individual ability to draw conclusions from analog sources, and computational analysis. The software is a tool
 that will have immediate applications in the basic research of Gregorian chant, such as the study of \emph{Jistebnice Cantionale}.\footnote{
 Done in collaboration with the \emph{Old Myths, new Facts} project at the Masaryk Institute of the Czech Academy of Sciences and the Faculty
 of Arts of Charles Univeristy.}
 
+To analyze the chants, we used MAFFT, a multiple sequence alignment algorithm, which is a technique developed in bioinformatics. These techniques have been used by
+biologists for a long time to study the same properties - origin and evolution - of biological sequences. As chant melodies and biological sequences
+share many properties, and, importantly, MSA algorithms do not require assumptions about chants that we cannot guarantee, these methods are suitable
+for studying Gregorian chant.
+
 Originally, one of the purposes of this work was to create a set of visualizations that would facilitate the quantitative analysis of a set of chants.
 However, during the development process it became clear that musicology itself has not yet formalized many of its problems in such a way that 
 would make it clear what types of quantitative analysis is actually needed.\footnote{From personal communication with Dr. Jennifer Bain and Dr.
 Debra Lacoste.} In fact, the alignment tool proved to be much more useful for immediate
 applications\footnote{From personal communication with doc. PhDr. Hana Vlhová-Wörner, Ph.D}. Therefore, our attention shifted to the proper
-development of the alignment tool. The visualization part is left for further development, in hopes that the desired use cases crystallize into
-a more definite form in the future.
-
-The software continues to be developed in collaboration with the Czech Aca\-demy of Sciences.
+integration of the alignment tool and the development of the interactive user interface. The visualization part is left for further development,
+in hopes that the desired use cases crystallize into a more definite form in the future.
 
 \section*{Future work}
 

@@ -28,9 +28,7 @@ This application uses the module \emph{pandas}\footnote{https://pandas.pydata.or
 
 Table \ref{table:data_db} represents the data fields in the database.
 
-\begin{longtable}{| p{.25\textwidth} | p{.75\textwidth} |} 
-%\begin{center}
-%\begin{tabular}{| c | c |} 
+\begin{longtable}{| p{.25\textwidth} | p{.75\textwidth} |}
 
  \hline
  Data field & Description \\
@@ -62,8 +60,6 @@ Table \ref{table:data_db} represents the data fields in the database.
  dataset\_idx   & index of the data source to which the chant belongs \\
  \hline
 
-%\end{tabular}
-%\end{center}
 \caption{List of database fields}
 \label{table:data_db}
 \end{longtable}
@@ -77,9 +73,7 @@ fields is as described in the previous section unless said otherwise. The value 
 the column must be present in the file. The value \emph{Nullable} indicates whether a data entry can have \emph{null} or an empty value in the column.
 Figure \ref{fig:csv} shows a valid CSV file.
 
-\begin{longtable}{| p{.25\textwidth} | p{.1\textwidth} | p{.1\textwidth} | p{.1\textwidth} | p{.35\textwidth} |} 
-%\begin{center}
-%\begin{tabular}{| c | c | c | c | c |} 
+\begin{longtable}{| p{.25\textwidth} | p{.1\textwidth} | p{.1\textwidth} | p{.1\textwidth} | p{.35\textwidth} |}
 
  \hline
  Column name     & Type & Re\-qui\-red  & Null\-able  & Notes \\
@@ -111,15 +105,13 @@ Figure \ref{fig:csv} shows a valid CSV file.
  dataset\_idx   & number & no & yes & the column will be dropped when processing \\
  \hline
 
-%\end{tabular}
-%\end{center}
 \caption{Fields in the user-uploaded CSV}
 \label{table:data_usr}
 \end{longtable}
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.6]{data_csv-example}
+\includegraphics[scale=0.4]{data_csv-example}
 \caption{Example of a valid CSV file}
 \label{fig:csv}
 \end{figure}
@@ -144,9 +136,7 @@ of an encoded melody along with its rendering.
 
 \section{Data statistics}
 
-As mentioned earlier, not the entire dataset is usable. Since we are analysing melodies, it is necessary that each data point contains information
-about the chant's melody.
-
+As mentioned earlier, not all of the almost 500,000 entries in the CantusCorpus can be aligned.
 As one of the application's main features is melody alignment, it is necessary that we only use those data points whose \emph{volpiano} field is
 not empty. Moreover, some visualizations compare text length to melody length, therefore we require the data points to have both. Additionally, 
 text and melody should be able to be aligned, i.e. they contain the same number of words and syllables.
@@ -154,7 +144,9 @@ text and melody should be able to be aligned, i.e. they contain the same number 
 After removing the data that does not adhere to the conditions, we are left with 13,397 usable data points.
 
 In the rest of this section, we outline the basic statistics about the data. We concentrate in particular on the length of the chants'
-melodies and lyrics, as these characteristics tend to differ among genres.
+melodies and lyrics, as these characteristics tend to differ among genres. This information is not necessary for the understanding of
+the thesis. However, it shows the diversity of the chant repertoire and allows us to visualize the amount of information contained
+in the data.
 
 The dataset contains entries of 37 different genres. 14 of them are associated with more than 100 entries. Figure \ref{fig:genre-counts}
 shows their distribution. The following statistics are done on the subset of all data whose entries belong to one of these genres.
@@ -167,56 +159,32 @@ The list of genres corresponding to each genre ID is in attachment \ref{attachme
 \label{fig:genre-counts}
 \end{figure}
 
-Tables \ref{table:text_genres} and \ref{table:melody_genres} show the mean of text and melody length by genres, respectively. Text length is defined as the number of words
+Table \ref{table:genres} shows the mean and the standard deviation of text and melody length by genres. Text length is defined as the number of words
 (strings separated by spaces). Melody length is defined as the number of non-gap characters (\verb|-|) in the Volpiano encoding.
 
-\begin{longtable}{| p{.4\textwidth} | p{.3\textwidth} | p{.3\textwidth} |}
+\begin{longtable}{| p{.2\textwidth} | p{.15\textwidth} | p{.15\textwidth} | p{.15\textwidth} | p{.15\textwidth} |}
 
 \hline
-Genre ID & mean & standard deviation \\
+Genre ID & mean text length & standard deviation of text length & mean melody length & standard deviation of melody length \\
 \hline
-genre\_a & 9.86 & 8.02 \\
-genre\_av & 7.36 & 2.89 \\
-genre\_cm & 14.63 & 7.12 \\
-genre\_gr & 9.24 & 4.49 \\
-genre\_grv & 10.94 & 3.66 \\
-genre\_h & 5.23 & 5.48 \\
-genre\_hv & 12.83 & 5.19 \\
-genre\_i & 4.72 & 3.51 \\
-genre\_in & 16.55 & 7.50 \\
-genre\_of & 11.90 & 9.32 \\
-genre\_r & 4.88 & 5.36 \\
-genre\_tcv & 10.74 & 3.34 \\
-genre\_v & 7.04 & 4.57 \\
-genre\_w & 3.25 & 1.60 \\
-\hline
-
-\caption{Mean text length and standard deviation of chants grouped by genres.}
-\label{table:text_genres}
-\end{longtable}
-
-\begin{longtable}{| p{.4\textwidth} | p{.3\textwidth} | p{.3\textwidth} |}
-\hline
-Genre ID & mean & standard deviation \\
-\hline
-genre\_a & 38.28 & 38.80 \\
-genre\_av & 22.47 & 13.05 \\
-genre\_cm & 82.56 & 35.96 \\
-genre\_gr & 99.10 & 54.38 \\
-genre\_grv & 141.76 & 44.74 \\
-genre\_h & 18.97 & 22.43 \\
-genre\_hv & 50.71 & 21.93 \\
-genre\_i & 28.03 & 24.64 \\
-genre\_in & 99.40 & 41.94 \\
-genre\_of & 103.29 & 77.94 \\
-genre\_r & 4.28.87 & 45.31 \\
-genre\_tcv & 102.87 & 28.22 \\
-genre\_v & 36.77 & 24.81 \\
-genre\_w & 10.96 & 6.23 \\
+genre\_a & 9.9 & 8.0 & 38.3 & 38.8 \\
+genre\_av & 7.4 & 2.9 & 22.5 & 13.0 \\
+genre\_cm & 14.6 & 7.1 & 82.6 & 36.0\\
+genre\_gr & 9.2 & 4.5 & 99.1 & 54.4 \\
+genre\_grv & 10.9 & 3.7 & 141.8 & 44.7 \\
+genre\_h & 5.2 & 5.5 & 29.0 & 22. 4 \\
+genre\_hv & 12.8 & 5.2 & 50.7 & 21.9 \\
+genre\_i & 4.7 & 3.5 & 28.0 & 24.6 \\
+genre\_in & 16.6 & 7.5 & 99.4 & 41.9 \\
+genre\_of & 11.9 & 9.3 & 103.3 & 77.9 \\
+genre\_r & 4.9 & 5.5 & 28.9 & 45.3 \\
+genre\_tcv & 10.7 & 3.3 & 102.9 & 28.2 \\
+genre\_v & 7.0 & 4.6 & 36.8 & 24.8 \\
+genre\_w & 3.3 & 1.6 & 11.0 & 6.2 \\
 \hline
 
-\caption{Mean melody length and standard deviation of chants grouped by genres.}
-\label{table:melody_genres}
+\caption{Mean text and melody length and standard deviation of chants grouped by genres.}
+\label{table:genres}
 \end{longtable}
 
 Figure \ref{fig:genres-scatter} shows the comparison of text length to melody length for the individual genres.
@@ -224,11 +192,11 @@ Figure \ref{fig:genres-scatter} shows the comparison of text length to melody le
 \begin{figure}[h!]
 \centering
 \includegraphics{data_genres-scatter}
-\caption{Comparison of text length and melody length for each genre.}
+\caption{Approximate visual comparison of text length and melody length for each genre.}
 \label{fig:genres-scatter}
 \end{figure}
 
-Now, we will show the same statistics for chants divided by their offices. First, Figure \ref{fig:offices} shows the distribution of the offices
+Now, we will show the same statistics for chants divided by their offices. First, Figure \ref{fig:office-counts} shows the distribution of the offices
 among the dataset. The list of office names corresponding to each office ID can be found in attachment \ref{attachment:offices}.
 
 \begin{figure}[h!]
@@ -238,58 +206,32 @@ among the dataset. The list of office names corresponding to each office ID can 
 \label{fig:office-counts}
 \end{figure}
 
-Table \ref{table:text_offices} and Table \ref{table:melody_offices} show the mean and the standard deviation of text and melody length, respectively,
-of the datasets.
+Table \ref{table:offices} shows the mean and the standard deviation of text and melody length of the datasets.
 
-\begin{longtable}{| p{.4\textwidth} | p{.3\textwidth} | p{.3\textwidth} |}
+\begin{longtable}{| p{.2\textwidth} | p{.15\textwidth} | p{.15\textwidth} | p{.15\textwidth} | p{.15\textwidth} |}
 
 \hline
-Office ID & mean & standard deviation \\
+Office ID & mean text length & standard deviation of text length & mean melody length & standard deviation of melody length \\
 \hline
-office\_c & 9.80 & 8.28 \\
-office\_d & 5.00 & 2.64 \\
-office\_e & 13.97 & 8.77 \\
-office\_h & 14.20 & 7.31 \\
-office\_l & 8.28 & 6.37 \\
-office\_m & 6.87 & 9.99 \\
-office\_mi & 13.09 & 10.32 \\
-office\_n & 5.38 & 4.58 \\
-office\_p & 4.94 & 4.52 \\
-office\_r & 9.32 & 6.08 \\
-office\_s & 4.87 & 3.80 \\
-office\_t & 5.32 & 3.84 \\
-office\_v & 6.82 & 7.67 \\
-office\_v2 & 6.84 & 7.14 \\
-office\_x & 13.08 & 10.81 \\
-\hline
-
-\caption{Mean text length and standard deviation of chants grouped by office.}
-\label{table:text_offices}
-\end{longtable}
-
-\begin{longtable}{| p{.4\textwidth} | p{.3\textwidth} | p{.3\textwidth} |}
-\hline
-Office ID & mean & standard deviation \\
-\hline
-office\_c & 38.70 & 37.49 \\
-office\_d & 19.92 & 20.23 \\
-office\_e & 50.01 & 33.74 \\
-office\_h & 65.76 & 37.40 \\
-office\_l & 30.41 & 24.95 \\
-office\_m & 33.75 & 43.72 \\
-office\_mi & 102.83 & 54.81 \\
-office\_n & 19.81 & 16.90 \\
-office\_p & 18.39 & 20.42 \\
-office\_r & 35.44 & 34.37 \\
-office\_s & 17.88 & 15.45 \\
-office\_t & 19.03 & 15.87 \\
-office\_v & 29.00 & 36.01 \\
-office\_v2 & 26.43 & 30.97 \\
-office\_x & 61.01 & 52.29 \\
+office\_c & 9.8 & 8.3 & 38.7 & 37.5 \\
+office\_d & 5.0 & 2.6 & 19.9 & 20.2 \\
+office\_e & 14.0 & 8.8 & 50.0 & 33.7 \\
+office\_h & 14.2 & 7.3 & 65.8 & 37.4 \\
+office\_l & 8.3 & 6.4 & 30.4 & 25.0 \\
+office\_m & 6.9 & 10.0 & 33.8 & 43.7 \\
+office\_mi & 13.1 & 10.3 & 102.8 & 54.8 \\
+office\_n & 5.4 & 4.6 & 19.8 & 16.9 \\
+office\_p & 4.9 & 4.5 & 18.4 & 20.4 \\
+office\_r & 9.3 & 6.1 & 35.44 & 34.4 \\
+office\_s & 4.9 & 3.8 & 17.9 & 15.5 \\
+office\_t & 5.3 & 3.8 & 19.0 & 15.9 \\
+office\_v & 6.8 & 7.7 & 29.0 & 36.0 \\
+office\_v2 & 6.8 & 7.1 & 26.4 & 31.0 \\
+office\_x & 13.1 & 10.8 & 61.0 & 52.3 \\
 \hline
 
-\caption{Mean melody length and standard deviation of chants grouped by office.}
-\label{table:melody_offices}
+\caption{Mean text and melody length and standard deviation of chants grouped by office.}
+\label{table:offices}
 \end{longtable}
 
 Finally, Figure \ref{fig:offices-scatter} compares lengths text and melody of chants divided by genres.
@@ -297,6 +239,7 @@ Finally, Figure \ref{fig:offices-scatter} compares lengths text and melody of ch
 \begin{figure}[h!]
 \centering
 \includegraphics{data_offices-scatter}
-\caption{Comparison of text length and melody length for each office.}
+\caption{Approximate visual comparison of text length and melody length for each office. From this visualization it is already clear that there is a group
+of chants from the morning prayer that merits further investigation.}
 \label{fig:offices-scatter}
 \end{figure}

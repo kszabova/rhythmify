@@ -6,58 +6,58 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Example of a valid CSV file}}{14}{figure.3.1}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Example of volpiano as stored in the database and how it is rendered as musical notation. \cite [Figure\nobreakspace {}2]{cantus_lacoste}}}{15}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Distribution of genres in the dataset.}}{18}{figure.3.3}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Comparison of text length and melody length for each genre.}}{18}{figure.3.4}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Distribution of offices in the dataset.}}{19}{figure.3.5}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Comparison of text length and melody length for each office.}}{19}{figure.3.6}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Distribution of genres in the dataset.}}{17}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Approximate visual comparison of text length and melody length for each genre.}}{17}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Distribution of offices in the dataset.}}{18}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Approximate visual comparison of text length and melody length for each office. From this visualization it is already clear that there is a group of chants from the morning prayer that merits further investigation.}}{18}{figure.3.6}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces A path representing an optimal alignment.}}{26}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Misalignment of the word CAT using other progressive methods. \citep [Figure\nobreakspace {}2(a)]{t_coffee}}}{27}{figure.4.2}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Primary library created from 4 sequences. \citep [Figure\nobreakspace {}2(b)]{t_coffee}}}{27}{figure.4.3}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Extended library weights for two sequences and their alignment recomputed using these weights. \citep [Figure\nobreakspace {}2(c)]{t_coffee}}}{28}{figure.4.4}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces T-Coffee layout. \citep [Figure\nobreakspace {}1]{t_coffee}}}{29}{figure.4.5}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Plot of the correlation function $c(k)$. \citep [Figure\nobreakspace {}1A]{mafft}}}{30}{figure.4.6}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Finding homologous regions with different positional lags using a sliding window. \citep [Figure\nobreakspace {}1B]{mafft}}}{30}{figure.4.7}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Dynamic programming applied to segment arrangement. \citep [Figure\nobreakspace {}2A]{mafft}}}{31}{figure.4.8}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Chants of different genres aligned using the naive approach. The vertical lines represent word boundaries.}}{33}{figure.4.9}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Chants aligned using MAFFT on absolute pitches.}}{35}{figure.4.10}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Chants aligned using MAFFT on intervals.}}{37}{figure.4.11}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Conservation profile on chants aligned by pitch.}}{38}{figure.4.12}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Conservation profile on chants aligned by intervals.}}{38}{figure.4.13}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces A path representing an optimal alignment.}}{25}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Misalignment of the word CAT using other progressive methods. \citep [Figure\nobreakspace {}2(a)]{t_coffee}}}{26}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Primary library created from 4 sequences. \citep [Figure\nobreakspace {}2(b)]{t_coffee}}}{26}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Extended library weights for two sequences and their alignment recomputed using these weights. \citep [Figure\nobreakspace {}2(c)]{t_coffee}}}{27}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces T-Coffee layout. \citep [Figure\nobreakspace {}1]{t_coffee}}}{28}{figure.4.5}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Plot of the correlation function $c(k)$. \citep [Figure\nobreakspace {}1A]{mafft}}}{29}{figure.4.6}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Finding homologous regions with different positional lags using a sliding window. \citep [Figure\nobreakspace {}1B]{mafft}}}{29}{figure.4.7}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Dynamic programming applied to segment arrangement. \citep [Figure\nobreakspace {}2A]{mafft}}}{30}{figure.4.8}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Chants of different genres aligned using the naive approach. The vertical lines represent word boundaries.}}{32}{figure.4.9}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Chants aligned using MAFFT on absolute pitches.}}{34}{figure.4.10}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Chants aligned using MAFFT on intervals.}}{36}{figure.4.11}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Conservation profile on chants aligned by pitch.}}{37}{figure.4.12}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Conservation profile on chants aligned by intervals.}}{37}{figure.4.13}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Sitemap of the application.}}{39}{figure.5.1}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Landing page and its features.}}{40}{figure.5.2}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Entering search query into the \emph {Search incipit} box.}}{41}{figure.5.3}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces The result of the query. Notice that each incipit has the query as a substring.}}{41}{figure.5.4}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Search filter panel.}}{41}{figure.5.5}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Page with the detail of the selected chant.}}{42}{figure.5.6}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces First few lines of the exported CSV file.}}{42}{figure.5.7}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Prompt for entering the name of the data source appears after clicking the \emph {Create Dataset} button.}}{43}{figure.5.8}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces The newly created data source automatically appears in the data source list.}}{43}{figure.5.9}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces The upload form with the file \emph {dataset.csv} selected for upload. The new data source will have the name \emph {Responsories}.}}{44}{figure.5.10}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces The uploaded data source automatically appears in the list.}}{44}{figure.5.11}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Result of the alignment.}}{45}{figure.5.12}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Aligned melody with the chant information displayed.}}{45}{figure.5.13}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Alignment after dragging and dropping the last melody. Compare to Figure \ref {fig:align-result}.}}{46}{figure.5.14}%
-\contentsline {figure}{\numberline {5.15}{\ignorespaces The first chant is collapsed.}}{46}{figure.5.15}%
-\contentsline {figure}{\numberline {5.16}{\ignorespaces The first chant is removed. Compare to Figure \ref {fig:align-result}.}}{46}{figure.5.16}%
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Aligned melodies shown as the raw string.}}{47}{figure.5.17}%
-\contentsline {figure}{\numberline {5.18}{\ignorespaces The aligned melodies shown without headers.}}{47}{figure.5.18}%
-\contentsline {figure}{\numberline {5.19}{\ignorespaces The aligned melodies shown in \emph {Raw} mode without headers and text.}}{47}{figure.5.19}%
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Aligned melodies with each note colored a different color.}}{48}{figure.5.20}%
-\contentsline {figure}{\numberline {5.21}{\ignorespaces Aligned melodies with their conservation profile shown.}}{48}{figure.5.21}%
-\contentsline {figure}{\numberline {5.22}{\ignorespaces Scatter plot of melody and text length for the data sources \emph {Antiphons} and \emph {Responsories}.}}{49}{figure.5.22}%
-\contentsline {figure}{\numberline {5.23}{\ignorespaces Histogram of melody length for the data sources \emph {Antiphons} and \emph {Responsories}.}}{50}{figure.5.23}%
-\contentsline {figure}{\numberline {5.24}{\ignorespaces Histogram of text length for the data sources \emph {Antiphons} and \emph {Responsories}.}}{50}{figure.5.24}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Sitemap of the application.}}{38}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Landing page and its features.}}{39}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Entering search query into the \emph {Search incipit} box.}}{40}{figure.5.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces The result of the query. Notice that each incipit has the query as a substring.}}{40}{figure.5.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Search filter panel.}}{40}{figure.5.5}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Page with the detail of the selected chant.}}{41}{figure.5.6}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces First few lines of the exported CSV file.}}{41}{figure.5.7}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Prompt for entering the name of the data source appears after clicking the \emph {Create Dataset} button.}}{42}{figure.5.8}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces The newly created data source automatically appears in the data source list.}}{42}{figure.5.9}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces The upload form with the file \emph {dataset.csv} selected for upload. The new data source will have the name \emph {Responsories}.}}{43}{figure.5.10}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces The uploaded data source automatically appears in the list.}}{43}{figure.5.11}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Result of the alignment.}}{44}{figure.5.12}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Aligned melody with the chant information displayed.}}{44}{figure.5.13}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Alignment after dragging and dropping the last melody. Compare to Figure \ref {fig:align-result}.}}{45}{figure.5.14}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces The first chant is collapsed.}}{45}{figure.5.15}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces The first chant is removed. Compare to Figure \ref {fig:align-result}.}}{45}{figure.5.16}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Aligned melodies shown as the raw string.}}{46}{figure.5.17}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces The aligned melodies shown without headers.}}{46}{figure.5.18}%
+\contentsline {figure}{\numberline {5.19}{\ignorespaces The aligned melodies shown in \emph {Raw} mode without headers and text.}}{46}{figure.5.19}%
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Aligned melodies with each note colored a different color.}}{47}{figure.5.20}%
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Aligned melodies with their conservation profile shown.}}{47}{figure.5.21}%
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Scatter plot of melody and text length for the data sources \emph {Antiphons} and \emph {Responsories}.}}{48}{figure.5.22}%
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Histogram of melody length for the data sources \emph {Antiphons} and \emph {Responsories}.}}{49}{figure.5.23}%
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Histogram of text length for the data sources \emph {Antiphons} and \emph {Responsories}.}}{49}{figure.5.24}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces A high-level overview of the application's architecture.}}{51}{figure.6.1}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Schema of the \emph {chant} table.}}{52}{figure.6.2}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces A high-level overview of the application's architecture.}}{50}{figure.6.1}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Schema of the \emph {chant} table.}}{51}{figure.6.2}%
 \contentsline {figure}{\numberline {6.3}{\ignorespaces Outline of the classes contained in \emph {core} and their interaction. An arrow from A to B indicates that A depends on B. The elements in rectangles are classes, the elements in rhombi are external libraries, MAFFT is an external application.}}{55}{figure.6.3}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Example of dividing Latin text into syllables using \emph {ChantProcessor}.}}{56}{figure.6.4}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Example of dividing Latin text into syllables using \emph {ChantProcessor}.}}{55}{figure.6.4}%
 \contentsline {figure}{\numberline {6.5}{\ignorespaces Example of dividing a melody encoded as Volpiano into syllables using \emph {ChantProcessor}.}}{56}{figure.6.5}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Example of finding the stressed syllables of a Latin text using \emph {ChantProcessor}.}}{57}{figure.6.6}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Transforming a Volpiano-encoded melody into an interval representation and back.}}{57}{figure.6.7}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces The architecture of the front end. Elements in rectangles are components, elements in ellipses are services. \emph {AppComponent} is the component encapsulating the entire application. Blue components are always present on the page. Green components can be navigated to using their own URL. A dashed arrow from component A to component B implies that component A has component B in its HTML template. An arrow from a component or service A to service B means that element A uses service B.}}{59}{figure.6.8}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Example of finding the stressed syllables of a Latin text using \emph {ChantProcessor}.}}{56}{figure.6.6}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Transforming a Volpiano-encoded melody into an interval representation and back.}}{56}{figure.6.7}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces The architecture of the front end. Elements in rectangles are components, elements in ellipses are services. \emph {AppComponent} is the component encapsulating the entire application. Blue components are always present on the page. Green components can be navigated to using their own URL. A dashed arrow from component A to component B implies that component A has component B in its HTML template. An arrow from a component or service A to service B means that element A uses service B.}}{58}{figure.6.8}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

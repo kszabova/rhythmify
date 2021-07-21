@@ -1,7 +1,18 @@
 % Metadata to be stored in PDF, see documentation of the pdfx package for more details.
 
-\Author{Name Surname}
-\Title{Thesis title}
-\Keywords{keywords\sep more such\sep yet another}
-\Subject{Abstract of thesis}
+\Author{Kristína Szabová}
+\Title{Analytical tools for Gregorian chant}
+\Keywords{digital musicology\sep gregorian chant\sep multiple sequence alignment\sep bioinformatics\sep angular\sep django} 
+\Subject{
+    Gregorian chant, a subset of mostly medieval music, is of great interest for many musicologists, as it is a foundational body of music and has had a substantial impact on European culture.
+One of the most interesting problems regarding Gregorian chant is its evolution across centuries.
+Discovering related chants, and, conversely, unrelated ones, is a necessary step in the handling of the problem, after expert selection of the set of chants to compare.
+Computational methods may help with this step, as it requires aligning large amounts of chants.
+While there exist large databases of digitalized chants, digital musicology lacks the software necessary to perform this step.
+This thesis presents a software tool that can help in the discovery of related chants using multiple sequence alignment (MSA) algorithms, methods borrowed from bioinformatics.
+It enables researchers to align arbitrary sets of related (and unrelated) chants, thus revealing clusters of related melodies.
+Additionally, it facilitates the discovery of contrafacta and transpositions. 
+Nevertheless, the tool has some limitations: it is run locally and some of its interactive functionality becomes slow when processing hundreds of data.
+Further development is planned as part of an ongoing collaboration with digital musicology researchers from the Czech Academy of Sciences and the Faculty of Arts of Charles University.
+}
 \Publisher{Charles University}
