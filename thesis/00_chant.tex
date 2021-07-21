@@ -2,8 +2,11 @@
 
 \emph{This chapter is adapted after \cite{chant_book}.}
 
-Gregorian chant is the music associated with the Roman catholic tradition. It is sung in churches, as well as in convents. Its current form is,
-as far as we can tell, very similar to its original form from the first millenium.
+In order to design an application that processes chant data, it is necessary to understand the basics of what Gregorian chant is.
+
+Gregorian chant is the music associated with the Roman catholic tradition. It is sung in churches, as well as in convents, and can also be sung during outdoor
+ceremonies such as processionals (and outdoor liturgy in general.). Its current written form is, as far as we can tell, very similar to its original
+form from the first millenium.
 
 Gregorian chant is one of the earliest forms of music preserved in written form, and the
 largest preserved body of medieval music. The earliest preserved fragments of written notes date back to the 9th century, although texts from as early as 
@@ -16,7 +19,8 @@ Each center developed their own tradition, including their own type of chant. Ro
 can be attributed to Charlemagne's attempt to unify European kingdoms.
 
 Gregorian chant is an integral part of the Roman church, and has been so for centuries. It is the monophonic music (i.e. single-voice)
-sung during liturgies. Here, liturgy means chant sung during Christian worship. Unlike in the Eastern churches, where the term is reserved 
+sung during liturgy at specific points, defined by the rules for conducting liturgy according to the Roman rite (the rite of the Latin church, or what
+we know as the Catholic church today). Here, liturgy means chant sung during Christian worship. Unlike in the Eastern churches, where the term is reserved 
 for the Eucharist, liturgy includes both the Mass and the Divine Office in the Roman church.
 
 As with other kinds of music, there exist several genres of Gregorian chant. A \emph{genre} is a group of chants that share some characteristics, such as
@@ -39,10 +43,11 @@ on the most important feast days.
 The other part of the liturgy, besides the Mass, is the Divine Office, also called Liturgy of the Hours or canonical hours. It is the set of chants
 sung during services at different times of the day, for example \emph{Vespers} in the evening or \emph{Lauds} in the morning. The office consists
 largely of singing psalms, of which there are 150, all sung on different days and hours. Psalms were usually preceded and followed by antiphons,
-which differ not only by the day of the week, but also depending on the place. Each day of the week had an allocated set of antiphons, hymns and
-responsories, while responsories were assigned to the different Sundays. Additionally, important feasts had their own set of chants to be sung.
+which differ not only by the day of the week, but also depending on the position within the liturgical year. Each day of the week had an allocated
+set of antiphons, hymns and responsories, while responsories were assigned to the different Sundays. Additionally, important feasts had their own
+set of chants to be sung.
 
-The liturgical year contains several feasts. Some feasts are fixed on a specific date. Feasts associated with a specific saint are an example of those.
+The liturgical year consists of many feasts. Some feasts are fixed on a specific date. Feasts associated with a specific saint are an example of those.
 For example, John the Baptist is celebrated on the 24th of June, Michael on the 29th of September, and All Saints on the 1st of November. Other
 fixed-date feasts include Christmas Day (25 December), Epiphany (6 January), and others. Such feasts can fall on any day of the week, and if they fall
 on a Sunday, they will take precedence over it. On the other hand, there are also feasts that are fixed to a specific day of the week, the most important
@@ -89,7 +94,7 @@ reason of their abundance.
 At first, melodies were written without a staff. The writers simply marked the direction in which the pitch was moving, serving barely as memory aids,
 not for learning. Later, better accuracy was required,
 therefore melodies started being written with their exact pitch, resembling the modern-day musical notation. However, written melodies never contained
-information about the rhythm. An example of a chant melody as found in a manuscript is shown in Figure \ref{fig:chant}.
+explicit information about the rhythm. An example of a chant melody as found in a manuscript is shown in Figure \ref{fig:chant}.
 
 \begin{figure}[h]
 \centering
@@ -105,11 +110,12 @@ some churches or convents sang the same melody, but shifted by a certain interva
 \section{Digital chant research}
 
 The study of Gregorian chant is an active area of musicology covering many centuries and the whole continent. It has a rich digital infrastructure facilitating
-the research using computational methods. There exist several large databases of digitalized chants, such as the Cantus database,\footnote{https://cantus.uwaterloo.ca/},
-and the databases are indexed in the Cantus Index,\footnote{http://cantusindex.org/}, providing a standard API for searching among them.
+the research using computational methods. There exist several large databases of digitalized chants, such as the Cantus database\footnote{\url{https://cantus.uwaterloo.ca/}},
+and the databases are indexed in the Cantus Index,\footnote{\url{http://cantusindex.org/}}, providing a standard API for searching among them.
 
 There are several problems that can be tackled using computational methods. For example, some researchers have a sense that women's houses may have used
-transposed modes more frequently than men's houses. However, no research has been done on this topic. Computational methods could help quantify the numbers.
+transposed modes more frequently than men's houses. However, no research has been done on this topic yet, as it requires comparing too many chants to draw
+a conclusion with reasonable scientific certainty. Computational methods could help quantify the numbers.
 Another question is whether mode distribution is different according to monastic order. It is also possible to find if there is a regional preference for
 pitch progression (e.g. A-B-A vs. A-C-A) by comparing manuscripts.\footnote{From personal communication with Debra Lacoste and Jennifer Bain.}
 

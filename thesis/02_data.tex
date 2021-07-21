@@ -75,6 +75,7 @@ The application enables user to upload their own dataset. Table \ref{table:data_
 file is not implemented; it is left up to the user to upload a valid file. The meaning of the individual
 fields is as described in the previous section unless said otherwise. The value in the column \emph{Required} indicates whether
 the column must be present in the file. The value \emph{Nullable} indicates whether a data entry can have \emph{null} or an empty value in the column.
+Figure \ref{fig:csv} shows a valid CSV file.
 
 \begin{longtable}{| p{.25\textwidth} | p{.1\textwidth} | p{.1\textwidth} | p{.1\textwidth} | p{.35\textwidth} |} 
 %\begin{center}
@@ -117,15 +118,10 @@ the column must be present in the file. The value \emph{Nullable} indicates whet
 \end{longtable}
 
 \begin{figure}[h]
-    \begin{lstlisting}[breaklines]
-    ,id,incipit,cantus_id,mode,finalis,differentia,siglum,position,folio,sequence,marginalia,cao_concordances,feast_id,genre_id,office_id,source_id,melody_id,drupal_path,full_text,full_text_manuscript,volpiano,notes
-    621,chant_000622,A Christo de caelo vocatus,001188,8,,1,F-Pn lat. 12044,3.,053v,5.0,,,feast_0287,genre_a,office_m,source_014,,http://cantus.uwaterloo.ca/chant/399542/,A Christo de caelo vocatus et in terram prostratus ex persecutore effectus est vas electionis,A xpisto de caelo vocatus et in terram prostratus ex persequutore effectus est vas electionis,1---g---g-kk--h---g---h--g---f--gh--g---g---g---hgf--g---gh--f--f7---g---f--h--j--kl--kj-klk---h--kj--hg---g---h---gf--gh--h--g--g---4,
-    635,chant_000636,A Christo de caelo vocatus,007123a,1,,,US-CHNbcbl 097,01,035r,2.0,,,feast_1321,genre_v,office_m,source_069,,http://cantus.uwaterloo.ca/chant/665425/,A Christo de caelo vocatus,,1--h---h--hghgf---g---g--g---g--gh--g---,
-    645,chant_000646,A Christo de caelo vocatus,007123a,1,,,D-KA Aug. LX,01,125r,2.0,,,feast_1321,genre_v,office_m,source_414,,http://cantus.uwaterloo.ca/chant/617583/,A Christo de caelo vocatus et in terram prostratus ex persecutore effectus est vas electionis,A xpisto de celo vocatus et in terram prostratus ex persecutore effectus est vas electionis | ~Vere,1---h-h---hg--hg-gf7---g---g--g---g--gh--g---g---g---hG--gh---gh--hjh--h---hf---gh--h--h--hk--h---h--hk--h---h---h---hg-hg--hf--fghg--hkh-hgfe--fgh-gf7---3,
-    667,chant_000668,A Christo de caelo vocatus,007123a,1,,,A-KN 1018,01,071v,3.0,,,feast_1321,genre_v,office_m,source_265,,http://cantus.uwaterloo.ca/chant/293103/,A Christo de caelo vocatus et in terram prostratus ex persecutore effectus est vas electionis,A christo de celo vocatus et in terram prostratus ex persecutore efectus est vas eleccionis,1---dh---h--hg-hgg---g---g--g---g--gh--g---g---g---hF--gh7---gh--hijh--h---h---gH--h--h--hk--h---h--hk--h---h---hghgfed-efg---gh--fe7--ef--fghgh--gf---3,
-    923,chant_000924,A deo praelectus*,600006,8,,,NL-Uu 406,,196r,8.0,,,feast_1814,genre_r,office_v2,source_573,,http://cantus.uwaterloo.ca/chant/497010/,A deo praelectus*,A deo preelectus,1---g---g--ffg---gge---3,
-    \end{lstlisting}
+\centering
+\includegraphics[scale=0.6]{data_csv-example}
 \caption{Example of a valid CSV file}
+\label{fig:csv}
 \end{figure}
 
 \section{Melody encoding}
@@ -136,12 +132,14 @@ the Volpiano font. Each character represents either a pitch, empty space, or oth
 Volpiano was developed as a research tool optimized for databases and word processors. There are strict rules concerning the transcription, which leads
 to all Volpiano-encoded melodies having a standardized format. For example, the Volpiano protocol dictates that each transcription begins with
 a treble clef followed by three spaces, that words are separated by three spaces and syllables by two, and others.
-\footnote{\url{https://cantus.uwaterloo.ca/sites/default/files/documents/2.\%20Volpiano\%20Protocols.pdf}}
+\footnote{\url{https://cantus.uwaterloo.ca/sites/default/files/documents/2.\%20Volpiano\%20Protocols.pdf}} Figure \ref{fig:volpiano} shows an example
+of an encoded melody along with its rendering.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.1]{volpiano}
 \caption{Example of volpiano as stored in the database and how it is rendered as musical notation. \cite[Figure~2]{cantus_lacoste}}
+\label{fig:volpiano}
 \end{figure}
 
 \section{Data statistics}
@@ -155,3 +153,150 @@ text and melody should be able to be aligned, i.e. they contain the same number 
 
 After removing the data that does not adhere to the conditions, we are left with 13,397 usable data points.
 
+In the rest of this section, we outline the basic statistics about the data. We concentrate in particular on the length of the chants'
+melodies and lyrics, as these characteristics tend to differ among genres.
+
+The dataset contains entries of 37 different genres. 14 of them are associated with more than 100 entries. Figure \ref{fig:genre-counts}
+shows their distribution. The following statistics are done on the subset of all data whose entries belong to one of these genres.
+The list of genres corresponding to each genre ID is in attachment \ref{attachment:genres}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics{data_genre-counts}
+\caption{Distribution of genres in the dataset.}
+\label{fig:genre-counts}
+\end{figure}
+
+Tables \ref{table:text_genres} and \ref{table:melody_genres} show the mean of text and melody length by genres, respectively. Text length is defined as the number of words
+(strings separated by spaces). Melody length is defined as the number of non-gap characters (\verb|-|) in the Volpiano encoding.
+
+\begin{longtable}{| p{.4\textwidth} | p{.3\textwidth} | p{.3\textwidth} |}
+
+\hline
+Genre ID & mean & standard deviation \\
+\hline
+genre\_a & 9.86 & 8.02 \\
+genre\_av & 7.36 & 2.89 \\
+genre\_cm & 14.63 & 7.12 \\
+genre\_gr & 9.24 & 4.49 \\
+genre\_grv & 10.94 & 3.66 \\
+genre\_h & 5.23 & 5.48 \\
+genre\_hv & 12.83 & 5.19 \\
+genre\_i & 4.72 & 3.51 \\
+genre\_in & 16.55 & 7.50 \\
+genre\_of & 11.90 & 9.32 \\
+genre\_r & 4.88 & 5.36 \\
+genre\_tcv & 10.74 & 3.34 \\
+genre\_v & 7.04 & 4.57 \\
+genre\_w & 3.25 & 1.60 \\
+\hline
+
+\caption{Mean text length and standard deviation of chants grouped by genres.}
+\label{table:text_genres}
+\end{longtable}
+
+\begin{longtable}{| p{.4\textwidth} | p{.3\textwidth} | p{.3\textwidth} |}
+\hline
+Genre ID & mean & standard deviation \\
+\hline
+genre\_a & 38.28 & 38.80 \\
+genre\_av & 22.47 & 13.05 \\
+genre\_cm & 82.56 & 35.96 \\
+genre\_gr & 99.10 & 54.38 \\
+genre\_grv & 141.76 & 44.74 \\
+genre\_h & 18.97 & 22.43 \\
+genre\_hv & 50.71 & 21.93 \\
+genre\_i & 28.03 & 24.64 \\
+genre\_in & 99.40 & 41.94 \\
+genre\_of & 103.29 & 77.94 \\
+genre\_r & 4.28.87 & 45.31 \\
+genre\_tcv & 102.87 & 28.22 \\
+genre\_v & 36.77 & 24.81 \\
+genre\_w & 10.96 & 6.23 \\
+\hline
+
+\caption{Mean melody length and standard deviation of chants grouped by genres.}
+\label{table:melody_genres}
+\end{longtable}
+
+Figure \ref{fig:genres-scatter} shows the comparison of text length to melody length for the individual genres.
+
+\begin{figure}[h!]
+\centering
+\includegraphics{data_genres-scatter}
+\caption{Comparison of text length and melody length for each genre.}
+\label{fig:genres-scatter}
+\end{figure}
+
+Now, we will show the same statistics for chants divided by their offices. First, Figure \ref{fig:offices} shows the distribution of the offices
+among the dataset. The list of office names corresponding to each office ID can be found in attachment \ref{attachment:offices}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics{data_office-counts}
+\caption{Distribution of offices in the dataset.}
+\label{fig:office-counts}
+\end{figure}
+
+Table \ref{table:text_offices} and Table \ref{table:melody_offices} show the mean and the standard deviation of text and melody length, respectively,
+of the datasets.
+
+\begin{longtable}{| p{.4\textwidth} | p{.3\textwidth} | p{.3\textwidth} |}
+
+\hline
+Office ID & mean & standard deviation \\
+\hline
+office\_c & 9.80 & 8.28 \\
+office\_d & 5.00 & 2.64 \\
+office\_e & 13.97 & 8.77 \\
+office\_h & 14.20 & 7.31 \\
+office\_l & 8.28 & 6.37 \\
+office\_m & 6.87 & 9.99 \\
+office\_mi & 13.09 & 10.32 \\
+office\_n & 5.38 & 4.58 \\
+office\_p & 4.94 & 4.52 \\
+office\_r & 9.32 & 6.08 \\
+office\_s & 4.87 & 3.80 \\
+office\_t & 5.32 & 3.84 \\
+office\_v & 6.82 & 7.67 \\
+office\_v2 & 6.84 & 7.14 \\
+office\_x & 13.08 & 10.81 \\
+\hline
+
+\caption{Mean text length and standard deviation of chants grouped by office.}
+\label{table:text_offices}
+\end{longtable}
+
+\begin{longtable}{| p{.4\textwidth} | p{.3\textwidth} | p{.3\textwidth} |}
+\hline
+Office ID & mean & standard deviation \\
+\hline
+office\_c & 38.70 & 37.49 \\
+office\_d & 19.92 & 20.23 \\
+office\_e & 50.01 & 33.74 \\
+office\_h & 65.76 & 37.40 \\
+office\_l & 30.41 & 24.95 \\
+office\_m & 33.75 & 43.72 \\
+office\_mi & 102.83 & 54.81 \\
+office\_n & 19.81 & 16.90 \\
+office\_p & 18.39 & 20.42 \\
+office\_r & 35.44 & 34.37 \\
+office\_s & 17.88 & 15.45 \\
+office\_t & 19.03 & 15.87 \\
+office\_v & 29.00 & 36.01 \\
+office\_v2 & 26.43 & 30.97 \\
+office\_x & 61.01 & 52.29 \\
+\hline
+
+\caption{Mean melody length and standard deviation of chants grouped by office.}
+\label{table:melody_offices}
+\end{longtable}
+
+Finally, Figure \ref{fig:offices-scatter} compares lengths text and melody of chants divided by genres.
+
+\begin{figure}[h!]
+\centering
+\includegraphics{data_offices-scatter}
+\caption{Comparison of text length and melody length for each office.}
+\label{fig:offices-scatter}
+\end{figure}

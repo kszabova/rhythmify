@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.3.29)  21 JUL 2021 02:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.3.29)  21 JUL 2021 15:45
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1184,7 +1184,7 @@ Chapter 1.
 <./images/modes.png, id=385, 323.40825pt x 383.63326pt>
 File: ./images/modes.png Graphic file (type png)
 <use ./images/modes.png>
-Package pdftex.def Info: ./images/modes.png  used on input line 64.
+Package pdftex.def Info: ./images/modes.png  used on input line 69.
 (pdftex.def)             Requested size: 226.38422pt x 268.54144pt.
 
 
@@ -1194,13 +1194,16 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <./images/manuscript.png, id=393, 361.35pt x 135.50626pt>
 File: ./images/manuscript.png Graphic file (type png)
 <use ./images/manuscript.png>
-Package pdftex.def Info: ./images/manuscript.png  used on input line 96.
+Package pdftex.def Info: ./images/manuscript.png  used on input line 101.
 (pdftex.def)             Requested size: 361.34912pt x 135.5059pt.
- [7 <./images/modes.png> <./images/manuscript.png>]) [8]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7 <./images/modes.png>]) [8 <./images/manuscript.png>]
 \openout2 = `01_related-work.aux'.
 
-
-(01_related-work.tex
+ (01_related-work.tex
 Chapter 2.
 
 Overfull \hbox (0.5068pt too wide) in paragraph at lines 31--38
@@ -1242,79 +1245,153 @@ Overfull \hbox (25.19997pt too wide) in alignment at lines 56--69
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 84--84
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
 []|\OT1/lmr/m/n/12 Re-qui-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--84
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
 []|\OT1/lmr/m/n/12 Null-
  []
 
 
-Overfull \hbox (21.15349pt too wide) in alignment at lines 79--104
+Overfull \hbox (21.15349pt too wide) in alignment at lines 80--105
  [] [] [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 104
+Underfull \vbox (badness 10000) detected at line 105
  []
 
 
-Overfull \hbox (21.15349pt too wide) in alignment at lines 104--117
+Overfull \hbox (21.15349pt too wide) in alignment at lines 105--118
  [] [] [] [] [] 
  []
 
 [13]
-LaTeX Font Info:    Trying to load font information for OMS+lmr on input line 1
-24.
+<./images/data_csv-example.png, id=507, 934.692pt x 184.89075pt>
+File: ./images/data_csv-example.png Graphic file (type png)
+<use ./images/data_csv-example.png>
+Package pdftex.def Info: ./images/data_csv-example.png  used on input line 122.
 
-("C:\Users\kristina\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmr.fd"
-File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 124.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-26.
+(pdftex.def)             Requested size: 560.81953pt x 110.93529pt.
 
-("C:\Users\kristina\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-
-LaTeX Warning: Float too large for page by 27.7002pt on input line 129.
+Overfull \hbox (148.25458pt too wide) in paragraph at lines 122--123
+ [][] |
+ []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 139--139
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
 [][][][]$\OT1/lmtt/m/n/10 https : / / cantus . uwaterloo . ca / sites / default
  / files / documents / 2 . %20Volpiano %
  []
 
-<./images/volpiano.png, id=505, 1716.4125pt x 1032.85875pt>
+[14 <./images/data_csv-example.png>]
+<./images/volpiano.png, id=516, 1716.4125pt x 1032.85875pt>
 File: ./images/volpiano.png Graphic file (type png)
 <use ./images/volpiano.png>
-Package pdftex.def Info: ./images/volpiano.png  used on input line 143.
+Package pdftex.def Info: ./images/volpiano.png  used on input line 140.
 (pdftex.def)             Requested size: 171.6513pt x 103.29192pt.
+<./images/data_genre-counts.png, id=523, 302.93175pt x 230.66174pt>
+File: ./images/data_genre-counts.png Graphic file (type png)
+<use ./images/data_genre-counts.png>
+Package pdftex.def Info: ./images/data_genre-counts.png  used on input line 165
+.
+(pdftex.def)             Requested size: 302.931pt x 230.66116pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[14]) [15] [16] [17 <./images/volpiano.png>]
+
+Overfull \hbox (37.59995pt too wide) in alignment at lines 173--196
+ [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 196
+ []
+
+[15 <./images/volpiano.png>]
+Overfull \hbox (37.59995pt too wide) in alignment at lines 198--220
+ [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 220
+ []
+
+<./images/data_genres-scatter.png, id=540, 386.6445pt x 201.75375pt>
+File: ./images/data_genres-scatter.png Graphic file (type png)
+<use ./images/data_genres-scatter.png>
+Package pdftex.def Info: ./images/data_genres-scatter.png  used on input line 2
+26.
+(pdftex.def)             Requested size: 386.64355pt x 201.75325pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig:offices' on page 16 undefined on input line 231.
+
+<./images/data_office-counts.png, id=542, 296.90926pt x 222.8325pt>
+File: ./images/data_office-counts.png Graphic file (type png)
+<use ./images/data_office-counts.png>
+Package pdftex.def Info: ./images/data_office-counts.png  used on input line 23
+6.
+(pdftex.def)             Requested size: 296.90852pt x 222.83195pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (37.59995pt too wide) in alignment at lines 244--268
+ [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 268
+ []
+
+[16]
+Overfull \hbox (37.59995pt too wide) in alignment at lines 270--293
+ [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 293
+ []
+
+<./images/data_offices-scatter.png, id=553, 377.61075pt x 205.36725pt>
+File: ./images/data_offices-scatter.png Graphic file (type png)
+<use ./images/data_offices-scatter.png>
+Package pdftex.def Info: ./images/data_offices-scatter.png  used on input line 
+299.
+(pdftex.def)             Requested size: 377.60982pt x 205.36674pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [17] [18 <./images/data_genre-counts.png> <./images/data_genres-scatter.png>]
+[19 <./images/data_office-counts.png> <./images/data_offices-scatter.png>]
 \openout2 = `03_alignment.aux'.
 
- (03_alignment.tex
+
+(03_alignment.tex
 Chapter 4.
-[18
+[20
 
 
 
-] [19] [20] [21] [22]
+]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
+2.
+
+("C:\Users\kristina\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+[21] [22] [23] [24]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[23]
-<./images/t-coffee-errors.png, id=591, 454.69875pt x 121.05225pt>
+[25]
+<./images/t-coffee-errors.png, id=623, 454.69875pt x 121.05225pt>
 File: ./images/t-coffee-errors.png Graphic file (type png)
 <use ./images/t-coffee-errors.png>
 Package pdftex.def Info: ./images/t-coffee-errors.png  used on input line 329.
@@ -1323,21 +1400,21 @@ Package pdftex.def Info: ./images/t-coffee-errors.png  used on input line 329.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24]
-<./images/t-coffee-primary-lib.png, id=607, 467.94826pt x 85.5195pt>
+[26]
+<./images/t-coffee-primary-lib.png, id=639, 467.94826pt x 85.5195pt>
 File: ./images/t-coffee-primary-lib.png Graphic file (type png)
 <use ./images/t-coffee-primary-lib.png>
 Package pdftex.def Info: ./images/t-coffee-primary-lib.png  used on input line 
 360.
 (pdftex.def)             Requested size: 397.75789pt x 72.6919pt.
- [25 <./images/t-coffee-errors.png> <./images/t-coffee-primary-lib.png>]
-<./images/t-coffee-extended-lib.png, id=621, 465.53925pt x 173.448pt>
+ [27 <./images/t-coffee-errors.png> <./images/t-coffee-primary-lib.png>]
+<./images/t-coffee-extended-lib.png, id=654, 465.53925pt x 173.448pt>
 File: ./images/t-coffee-extended-lib.png Graphic file (type png)
 <use ./images/t-coffee-extended-lib.png>
 Package pdftex.def Info: ./images/t-coffee-extended-lib.png  used on input line
  380.
 (pdftex.def)             Requested size: 395.71022pt x 147.43149pt.
-<./images/t-coffee-flowchart.png, id=627, 316.7835pt x 439.6425pt>
+<./images/t-coffee-flowchart.png, id=660, 316.7835pt x 439.6425pt>
 File: ./images/t-coffee-flowchart.png Graphic file (type png)
 <use ./images/t-coffee-flowchart.png>
 Package pdftex.def Info: ./images/t-coffee-flowchart.png  used on input line 39
@@ -1347,8 +1424,8 @@ Package pdftex.def Info: ./images/t-coffee-flowchart.png  used on input line 39
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[26 <./images/t-coffee-extended-lib.png>]
-<./images/mafft_correlation_plot.png, id=640, 221.628pt x 155.3805pt>
+[28 <./images/t-coffee-extended-lib.png>]
+<./images/mafft_correlation_plot.png, id=673, 221.628pt x 155.3805pt>
 File: ./images/mafft_correlation_plot.png Graphic file (type png)
 <use ./images/mafft_correlation_plot.png>
 Package pdftex.def Info: ./images/mafft_correlation_plot.png  used on input lin
@@ -1358,7 +1435,7 @@ e 432.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./images/mafft_sliding_window.png, id=645, 383.63326pt x 170.43675pt>
+<./images/mafft_sliding_window.png, id=678, 383.63326pt x 170.43675pt>
 File: ./images/mafft_sliding_window.png Graphic file (type png)
 <use ./images/mafft_sliding_window.png>
 Package pdftex.def Info: ./images/mafft_sliding_window.png  used on input line 
@@ -1367,8 +1444,8 @@ Package pdftex.def Info: ./images/mafft_sliding_window.png  used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[27 <./images/t-coffee-flowchart.png>]
-<./images/mafft_optimal_path.png, id=659, 209.583pt x 205.36725pt>
+[29 <./images/t-coffee-flowchart.png>]
+<./images/mafft_optimal_path.png, id=691, 209.583pt x 205.36725pt>
 File: ./images/mafft_optimal_path.png Graphic file (type png)
 <use ./images/mafft_optimal_path.png>
 Package pdftex.def Info: ./images/mafft_optimal_path.png  used on input line 45
@@ -1378,13 +1455,13 @@ Package pdftex.def Info: ./images/mafft_optimal_path.png  used on input line 45
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[28 <./images/mafft_correlation_plot.png> <./images/mafft_sliding_window.png>]
-[29 <./images/mafft_optimal_path.png>]
+[30 <./images/mafft_correlation_plot.png> <./images/mafft_sliding_window.png>]
+[31 <./images/mafft_optimal_path.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 492--493
 
  []
 
-<./images/alignment_naive.png, id=681, 1040.08575pt x 187.902pt>
+<./images/alignment_naive.png, id=713, 1040.08575pt x 187.902pt>
 File: ./images/alignment_naive.png Graphic file (type png)
 <use ./images/alignment_naive.png>
 Package pdftex.def Info: ./images/alignment_naive.png  used on input line 538.
@@ -1397,17 +1474,17 @@ Overfull \hbox (3.46198pt too wide) in paragraph at lines 538--539
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[30]
+[32]
 Underfull \hbox (badness 10000) in paragraph at lines 566--567
 
  []
 
-[31 <./images/alignment_naive.png>]
+[33 <./images/alignment_naive.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 592--597
 
  []
 
-<./images/alignment_pitches.png, id=705, 1049.72176pt x 175.857pt>
+<./images/alignment_pitches.png, id=738, 1049.72176pt x 175.857pt>
 File: ./images/alignment_pitches.png Graphic file (type png)
 <use ./images/alignment_pitches.png>
 Package pdftex.def Info: ./images/alignment_pitches.png  used on input line 623
@@ -1418,12 +1495,12 @@ Overfull \hbox (7.31631pt too wide) in paragraph at lines 623--625
  [][] |
  []
 
-[32]
+[34]
 Underfull \hbox (badness 10000) in paragraph at lines 638--641
 
  []
 
-[33 <./images/alignment_pitches.png>]
+[35 <./images/alignment_pitches.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 665--667
 
  []
@@ -1433,8 +1510,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 696--698
 
  []
 
-[34]
-<./images/alignment_intervals.png, id=736, 977.45175pt x 178.86826pt>
+[36]
+<./images/alignment_intervals.png, id=768, 977.45175pt x 178.86826pt>
 File: ./images/alignment_intervals.png Graphic file (type png)
 <use ./images/alignment_intervals.png>
 Package pdftex.def Info: ./images/alignment_intervals.png  used on input line 7
@@ -1444,42 +1521,42 @@ LaTeX Font Info:    Trying to load font information for U+bbm on input line 737
 .
  ("C:\Users\kristina\AppData\Local\Programs\MiKTeX 2.9\tex/latex/bbm\ubbm.fd"
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [35 <./images/alignment_intervals.png>]
+) [37 <./images/alignment_intervals.png>]
 Overfull \hbox (1.62181pt too wide) in paragraph at lines 750--754
 []\OT1/lmr/m/n/12 Conservation pro-file of aligned se-quences de-pends on what 
 ap-proach we choose.|
  []
 
-<./images/alignment_antiphons_pitches.png, id=749, 254.1495pt x 175.857pt>
+<./images/alignment_antiphons_pitches.png, id=781, 254.1495pt x 175.857pt>
 File: ./images/alignment_antiphons_pitches.png Graphic file (type png)
 <use ./images/alignment_antiphons_pitches.png>
 Package pdftex.def Info: ./images/alignment_antiphons_pitches.png  used on inpu
 t line 757.
 (pdftex.def)             Requested size: 254.14888pt x 175.85657pt.
-<./images/alignment_antiphons_intervals.png, id=750, 257.16075pt x 169.23225pt>
+<./images/alignment_antiphons_intervals.png, id=782, 257.16075pt x 169.23225pt>
 
 File: ./images/alignment_antiphons_intervals.png Graphic file (type png)
 <use ./images/alignment_antiphons_intervals.png>
 Package pdftex.def Info: ./images/alignment_antiphons_intervals.png  used on in
 put line 764.
 (pdftex.def)             Requested size: 257.16011pt x 169.23184pt.
-) [36 <./images/alignment_antiphons_pitches.png> <./images/alignment_antiphons_
+) [38 <./images/alignment_antiphons_pitches.png> <./images/alignment_antiphons_
 intervals.png>]
 \openout2 = `04_user-docs.aux'.
 
  (04_user-docs.tex
 Chapter 5.
-<./images/udocs_sitemap.png, id=763, 623.32875pt x 357.335pt>
+<./images/udocs_sitemap.png, id=795, 623.32875pt x 357.335pt>
 File: ./images/udocs_sitemap.png Graphic file (type png)
 <use ./images/udocs_sitemap.png>
 Package pdftex.def Info: ./images/udocs_sitemap.png  used on input line 25.
 (pdftex.def)             Requested size: 405.15889pt x 232.26498pt.
-[37
+[39
 
 
 
  <./images/udocs_sitemap.png>]
-<./images/udocs-homepage-marked.png, id=771, 844.3545pt x 540.8205pt>
+<./images/udocs-homepage-marked.png, id=804, 844.3545pt x 540.8205pt>
 File: ./images/udocs-homepage-marked.png Graphic file (type png)
 <use ./images/udocs-homepage-marked.png>
 Package pdftex.def Info: ./images/udocs-homepage-marked.png  used on input line
@@ -1490,13 +1567,13 @@ Overfull \hbox (9.61127pt too wide) in paragraph at lines 42--43
  [][] |
  []
 
-<./images/udocs-search-incipit.png, id=772, 151.16475pt x 39.14626pt>
+<./images/udocs-search-incipit.png, id=805, 151.16475pt x 39.14626pt>
 File: ./images/udocs-search-incipit.png Graphic file (type png)
 <use ./images/udocs-search-incipit.png>
 Package pdftex.def Info: ./images/udocs-search-incipit.png  used on input line 
 60.
 (pdftex.def)             Requested size: 151.16437pt x 39.14615pt.
-<./images/udocs-after-incipit-search.png, id=773, 517.935pt x 260.172pt>
+<./images/udocs-after-incipit-search.png, id=806, 517.935pt x 260.172pt>
 File: ./images/udocs-after-incipit-search.png Graphic file (type png)
 <use ./images/udocs-after-incipit-search.png>
 Package pdftex.def Info: ./images/udocs-after-incipit-search.png  used on input
@@ -1505,14 +1582,14 @@ Package pdftex.def Info: ./images/udocs-after-incipit-search.png  used on input
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[38 <./images/udocs-homepage-marked.png> <./images/udocs-search-incipit.png>]
-<./images/udocs-filter-marked.png, id=782, 614.295pt x 253.54726pt>
+[40 <./images/udocs-homepage-marked.png> <./images/udocs-search-incipit.png>]
+<./images/udocs-filter-marked.png, id=815, 614.295pt x 253.54726pt>
 File: ./images/udocs-filter-marked.png Graphic file (type png)
 <use ./images/udocs-filter-marked.png>
 Package pdftex.def Info: ./images/udocs-filter-marked.png  used on input line 8
 3.
 (pdftex.def)             Requested size: 307.14674pt x 126.7733pt.
-<./images/udocs-chant-detail.png, id=783, 501.67426pt x 402.303pt>
+<./images/udocs-chant-detail.png, id=816, 501.67426pt x 402.303pt>
 File: ./images/udocs-chant-detail.png Graphic file (type png)
 <use ./images/udocs-chant-detail.png>
 Package pdftex.def Info: ./images/udocs-chant-detail.png  used on input line 97
@@ -1522,27 +1599,27 @@ Package pdftex.def Info: ./images/udocs-chant-detail.png  used on input line 97
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[39 <./images/udocs-after-incipit-search.png> <./images/udocs-filter-marked.png
+[41 <./images/udocs-after-incipit-search.png> <./images/udocs-filter-marked.png
 >]
-<./images/udocs-exported-ds.png, id=793, 983.47424pt x 253.54726pt>
+<./images/udocs-exported-ds.png, id=825, 983.47424pt x 253.54726pt>
 File: ./images/udocs-exported-ds.png Graphic file (type png)
 <use ./images/udocs-exported-ds.png>
 Package pdftex.def Info: ./images/udocs-exported-ds.png  used on input line 111
 .
 (pdftex.def)             Requested size: 393.38274pt x 101.41708pt.
-<./images/udocs-create-ds.png, id=794, 522.753pt x 425.79076pt>
+<./images/udocs-create-ds.png, id=826, 522.753pt x 425.79076pt>
 File: ./images/udocs-create-ds.png Graphic file (type png)
 <use ./images/udocs-create-ds.png>
 Package pdftex.def Info: ./images/udocs-create-ds.png  used on input line 129.
 (pdftex.def)             Requested size: 313.65422pt x 255.47643pt.
- [40 <./images/udocs-chant-detail.png> <./images/udocs-exported-ds.png>]
-<./images/udocs-ds-in-list.png, id=803, 172.84575pt x 96.96225pt>
+ [42 <./images/udocs-chant-detail.png> <./images/udocs-exported-ds.png>]
+<./images/udocs-ds-in-list.png, id=835, 172.84575pt x 96.96225pt>
 File: ./images/udocs-ds-in-list.png Graphic file (type png)
 <use ./images/udocs-ds-in-list.png>
 Package pdftex.def Info: ./images/udocs-ds-in-list.png  used on input line 136.
 
 (pdftex.def)             Requested size: 172.8453pt x 96.962pt.
-<./images/udocs-upload-respon.png, id=806, 190.91325pt x 139.722pt>
+<./images/udocs-upload-respon.png, id=838, 190.91325pt x 139.722pt>
 File: ./images/udocs-upload-respon.png Graphic file (type png)
 <use ./images/udocs-upload-respon.png>
 Package pdftex.def Info: ./images/udocs-upload-respon.png  used on input line 1
@@ -1552,7 +1629,7 @@ Package pdftex.def Info: ./images/udocs-upload-respon.png  used on input line 1
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./images/udocs-ds-with-respon.png, id=807, 133.09724pt x 105.39375pt>
+<./images/udocs-ds-with-respon.png, id=839, 133.09724pt x 105.39375pt>
 File: ./images/udocs-ds-with-respon.png Graphic file (type png)
 <use ./images/udocs-ds-with-respon.png>
 Package pdftex.def Info: ./images/udocs-ds-with-respon.png  used on input line 
@@ -1561,8 +1638,8 @@ Package pdftex.def Info: ./images/udocs-ds-with-respon.png  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[41 <./images/udocs-create-ds.png> <./images/udocs-ds-in-list.png>]
-<./images/udocs-alignment-basic-marked.png, id=818, 895.54575pt x 489.027pt>
+[43 <./images/udocs-create-ds.png> <./images/udocs-ds-in-list.png>]
+<./images/udocs-alignment-basic-marked.png, id=850, 895.54575pt x 489.027pt>
 File: ./images/udocs-alignment-basic-marked.png Graphic file (type png)
 <use ./images/udocs-alignment-basic-marked.png>
 Package pdftex.def Info: ./images/udocs-alignment-basic-marked.png  used on inp
@@ -1572,7 +1649,7 @@ ut line 175.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./images/udocs-alignment-detail.png, id=819, 983.47424pt x 425.79076pt>
+<./images/udocs-alignment-detail.png, id=851, 983.47424pt x 425.79076pt>
 File: ./images/udocs-alignment-detail.png Graphic file (type png)
 <use ./images/udocs-alignment-detail.png>
 Package pdftex.def Info: ./images/udocs-alignment-detail.png  used on input lin
@@ -1581,7 +1658,7 @@ e 185.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./images/udocs-alignment-rearrange.png, id=820, 1001.54175pt x 308.352pt>
+<./images/udocs-alignment-rearrange.png, id=852, 1001.54175pt x 308.352pt>
 File: ./images/udocs-alignment-rearrange.png Graphic file (type png)
 <use ./images/udocs-alignment-rearrange.png>
 Package pdftex.def Info: ./images/udocs-alignment-rearrange.png  used on input 
@@ -1590,7 +1667,7 @@ line 194.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./images/udocs-alignment-collapsed.png, id=823, 1000.9395pt x 329.43076pt>
+<./images/udocs-alignment-collapsed.png, id=855, 1000.9395pt x 329.43076pt>
 File: ./images/udocs-alignment-collapsed.png Graphic file (type png)
 <use ./images/udocs-alignment-collapsed.png>
 Package pdftex.def Info: ./images/udocs-alignment-collapsed.png  used on input 
@@ -1599,7 +1676,7 @@ line 207.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./images/udocs-alignment-deleted.png, id=824, 1003.95074pt x 302.93175pt>
+<./images/udocs-alignment-deleted.png, id=856, 1003.95074pt x 302.93175pt>
 File: ./images/udocs-alignment-deleted.png Graphic file (type png)
 <use ./images/udocs-alignment-deleted.png>
 Package pdftex.def Info: ./images/udocs-alignment-deleted.png  used on input li
@@ -1608,16 +1685,16 @@ ne 214.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[42 <./images/udocs-upload-respon.png> <./images/udocs-ds-with-respon.png>]
-[43 <./images/udocs-alignment-basic-marked.png> <./images/udocs-alignment-detai
+[44 <./images/udocs-upload-respon.png> <./images/udocs-ds-with-respon.png>]
+[45 <./images/udocs-alignment-basic-marked.png> <./images/udocs-alignment-detai
 l.png> <./images/udocs-alignment-rearrange.png>]
-<./images/udocs-alignment-raw.png, id=844, 961.79324pt x 487.8225pt>
+<./images/udocs-alignment-raw.png, id=877, 961.79324pt x 487.8225pt>
 File: ./images/udocs-alignment-raw.png Graphic file (type png)
 <use ./images/udocs-alignment-raw.png>
 Package pdftex.def Info: ./images/udocs-alignment-raw.png  used on input line 2
 29.
 (pdftex.def)             Requested size: 384.71048pt x 195.12553pt.
-<./images/udocs-alignment-no-headers.png, id=845, 893.13675pt x 301.72725pt>
+<./images/udocs-alignment-no-headers.png, id=878, 893.13675pt x 301.72725pt>
 File: ./images/udocs-alignment-no-headers.png Graphic file (type png)
 <use ./images/udocs-alignment-no-headers.png>
 Package pdftex.def Info: ./images/udocs-alignment-no-headers.png  used on input
@@ -1627,7 +1704,7 @@ Package pdftex.def Info: ./images/udocs-alignment-no-headers.png  used on input
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./images/udocs-alignment-no-headers-no-text.png, id=846, 962.3955pt x 248.127p
+<./images/udocs-alignment-no-headers-no-text.png, id=879, 962.3955pt x 248.127p
 t>
 File: ./images/udocs-alignment-no-headers-no-text.png Graphic file (type png)
 <use ./images/udocs-alignment-no-headers-no-text.png>
@@ -1637,15 +1714,15 @@ on input line 246.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./images/udocs-alignment-vol-colors.png, id=847, 897.95474pt x 488.42474pt>
+<./images/udocs-alignment-vol-colors.png, id=880, 897.95474pt x 488.42474pt>
 File: ./images/udocs-alignment-vol-colors.png Graphic file (type png)
 <use ./images/udocs-alignment-vol-colors.png>
 Package pdftex.def Info: ./images/udocs-alignment-vol-colors.png  used on input
  line 256.
 (pdftex.def)             Requested size: 359.17554pt x 195.36642pt.
-[44 <./images/udocs-alignment-collapsed.png> <./images/udocs-alignment-deleted.
+[46 <./images/udocs-alignment-collapsed.png> <./images/udocs-alignment-deleted.
 png> <./images/udocs-alignment-raw.png>]
-<./images/udocs-alignment-vol-cons.png, id=858, 893.13675pt x 492.03825pt>
+<./images/udocs-alignment-vol-cons.png, id=891, 893.13675pt x 492.03825pt>
 File: ./images/udocs-alignment-vol-cons.png Graphic file (type png)
 <use ./images/udocs-alignment-vol-cons.png>
 Package pdftex.def Info: ./images/udocs-alignment-vol-cons.png  used on input l
@@ -1655,29 +1732,29 @@ ine 267.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[45 <./images/udocs-alignment-no-headers.png> <./images/udocs-alignment-no-head
-ers-no-text.png> <./images/udocs-alignment-vol-colors.png>]) [46 <./images/udoc
+[47 <./images/udocs-alignment-no-headers.png> <./images/udocs-alignment-no-head
+ers-no-text.png> <./images/udocs-alignment-vol-colors.png>]) [48 <./images/udoc
 s-alignment-vol-cons.png>]
 \openout2 = `05_dev-docs.aux'.
 
  (05_dev-docs.tex
 Chapter 6.
-<./images/ddocs_layout.png, id=877, 251.94125pt x 221.82875pt>
+<./images/ddocs_layout.png, id=909, 251.94125pt x 221.82875pt>
 File: ./images/ddocs_layout.png Graphic file (type png)
 <use ./images/ddocs_layout.png>
 Package pdftex.def Info: ./images/ddocs_layout.png  used on input line 8.
 (pdftex.def)             Requested size: 251.94063pt x 221.82819pt.
-[47
+[49
 
 
 
  <./images/ddocs_layout.png>]
-<./images/ddocs_schema.png, id=889, 240.9pt x 335.45325pt>
+<./images/ddocs_schema.png, id=921, 240.9pt x 335.45325pt>
 File: ./images/ddocs_schema.png Graphic file (type png)
 <use ./images/ddocs_schema.png>
 Package pdftex.def Info: ./images/ddocs_schema.png  used on input line 36.
 (pdftex.def)             Requested size: 240.8994pt x 335.45241pt.
- [48 <./images/ddocs_schema.png>]
+ [50 <./images/ddocs_schema.png>]
 Overfull \hbox (2.68633pt too wide) in paragraph at lines 82--82
 []|\OT1/lmr/m/n/12 Method| |
  []
@@ -1738,7 +1815,7 @@ Overfull \hbox (8.74094pt too wide) in alignment at lines 77--97
 Underfull \vbox (badness 10000) detected at line 97
  []
 
-[49]
+[51]
 LaTeX Font Info:    Font shape `OML/lmr/bx/n' in size <12> not available
 (Font)              Font shape `OML/lmm/b/it' tried instead on input line 107.
 
@@ -1753,38 +1830,38 @@ Overfull \hbox (41.33022pt too wide) in paragraph at lines 120--123
 st con-tain the field [][]\OT1/lmtt/m/n/12 idsToExport[]\OT1/lmr/m/n/12 .|
  []
 
-[50]
+[52]
 Overfull \hbox (0.39278pt too wide) in paragraph at lines 140--143
 \OT1/lmr/m/n/12 proper be-hav-ior of the ap-pli-ca-tion, e.g. the im-ple-men-ta
 -tion of align-ment, MAFFT|
  []
 
-<./images/ddocs_core.png, id=916, 492.84125pt x 292.09125pt>
+<./images/ddocs_core.png, id=949, 492.84125pt x 292.09125pt>
 File: ./images/ddocs_core.png Graphic file (type png)
 <use ./images/ddocs_core.png>
 Package pdftex.def Info: ./images/ddocs_core.png  used on input line 147.
 (pdftex.def)             Requested size: 344.98651pt x 204.46246pt.
-[51 <./images/ddocs_core.png>]
+[53 <./images/ddocs_core.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 173--173
 [][][][]$\OT1/lmtt/m/n/10 https : / / cantus . uwaterloo . ca / sites / default
  / files / documents / 2 . %20Volpiano %
  []
 
-<./images/ddocs_text-to-syllables.png, id=934, 654.64575pt x 60.82726pt>
+<./images/ddocs_text-to-syllables.png, id=966, 654.64575pt x 60.82726pt>
 File: ./images/ddocs_text-to-syllables.png Graphic file (type png)
 <use ./images/ddocs_text-to-syllables.png>
 Package pdftex.def Info: ./images/ddocs_text-to-syllables.png  used on input li
 ne 179.
 (pdftex.def)             Requested size: 392.79048pt x 36.49663pt.
-<./images/ddocs_volpiano_to_syllables.png, id=935, 657.657pt x 107.2005pt>
+<./images/ddocs_volpiano_to_syllables.png, id=967, 657.657pt x 107.2005pt>
 File: ./images/ddocs_volpiano_to_syllables.png Graphic file (type png)
 <use ./images/ddocs_volpiano_to_syllables.png>
 Package pdftex.def Info: ./images/ddocs_volpiano_to_syllables.png  used on inpu
 t line 186.
 (pdftex.def)             Requested size: 394.59724pt x 64.32079pt.
-[52 <./images/ddocs_text-to-syllables.png> <./images/ddocs_volpiano_to_syllable
+[54 <./images/ddocs_text-to-syllables.png> <./images/ddocs_volpiano_to_syllable
 s.png>]
-<./images/ddocs_syllables-stressed.png, id=948, 656.4525pt x 61.4295pt>
+<./images/ddocs_syllables-stressed.png, id=980, 656.4525pt x 61.4295pt>
 File: ./images/ddocs_syllables-stressed.png Graphic file (type png)
 <use ./images/ddocs_syllables-stressed.png>
 Package pdftex.def Info: ./images/ddocs_syllables-stressed.png  used on input l
@@ -1808,13 +1885,13 @@ Overfull \hbox (20.53935pt too wide) in paragraph at lines 203--208
 /12 transform_intervals_to_volpiano|
  []
 
-<./images/ddocs_intervals.png, id=951, 657.657pt x 120.45pt>
+<./images/ddocs_intervals.png, id=983, 657.657pt x 120.45pt>
 File: ./images/ddocs_intervals.png Graphic file (type png)
 <use ./images/ddocs_intervals.png>
 Package pdftex.def Info: ./images/ddocs_intervals.png  used on input line 211.
 (pdftex.def)             Requested size: 394.59724pt x 72.27054pt.
-[53 <./images/ddocs_syllables-stressed.png> <./images/ddocs_intervals.png>]
-<./images/ddocs_frontend-schema.png, id=969, 661.47125pt x 620.3175pt>
+[55 <./images/ddocs_syllables-stressed.png> <./images/ddocs_intervals.png>]
+<./images/ddocs_frontend-schema.png, id=1001, 661.47125pt x 620.3175pt>
 File: ./images/ddocs_frontend-schema.png Graphic file (type png)
 <use ./images/ddocs_frontend-schema.png>
 Package pdftex.def Info: ./images/ddocs_frontend-schema.png  used on input line
@@ -1824,13 +1901,13 @@ Package pdftex.def Info: ./images/ddocs_frontend-schema.png  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[54]
+[56]
 Overfull \hbox (23.18066pt too wide) in paragraph at lines 274--277
 [][]\OT1/lmtt/m/n/12 setFilterSettings[]\OT1/lmr/m/n/12 , which changes the cur
 -rent value, and [][]\OT1/lmtt/m/n/12 getFilterSettings[]\OT1/lmr/m/n/12 ,|
  []
 
-[55 <./images/ddocs_frontend-schema.png>]
+[57 <./images/ddocs_frontend-schema.png>]
 Overfull \hbox (5.73515pt too wide) in paragraph at lines 284--287
 []\OT1/lmr/bx/n/12 CreateDatasetService. \OT1/lmr/m/n/12 The ser-vice con-tains
  one method, [][]\OT1/lmtt/m/n/12 createDataset[]\OT1/lmr/m/n/12 .|
@@ -1842,7 +1919,7 @@ Overfull \hbox (3.75449pt too wide) in paragraph at lines 308--310
 -tains only one method called|
  []
 
-[56]
+[58]
 Overfull \hbox (11.14647pt too wide) in paragraph at lines 329--331
 []\OT1/lmr/bx/n/12 ChantLlistWrapperComponent. \OT1/lmr/m/n/12 The com-po-nent 
 en-cap-su-lates \OT1/lmr/m/it/12 ChantList-|
@@ -1854,33 +1931,33 @@ Overfull \hbox (4.812pt too wide) in paragraph at lines 343--344
 su-lates \OT1/lmr/m/it/12 Chant-De-tailsCom-|
  []
 
-[57]) [58]
+[59]) [60]
 \openout2 = `epilog.aux'.
 
- (epilog.tex [59
+ (epilog.tex [61
 
 
 
-]) [60]
+]) [62]
 \openout2 = `bibliography.aux'.
 
- (bibliography.tex (thesis.bbl [61
+ (bibliography.tex (thesis.bbl [63
 
 
 
-])) [62]
-(thesis.lof [63
+])) [64]
+(thesis.lof [65
 
 
 ])
 \tf@lof=\write8
 \openout8 = `thesis.lof'.
 
- [64] (thesis.lot)
+ [66] (thesis.lot)
 \tf@lot=\write9
 \openout9 = `thesis.lot'.
 
- [65
+ [67
 
 ]
 \openout2 = `attachment_genres.aux'.
@@ -1921,10 +1998,10 @@ Overfull \hbox (49.99992pt too wide) in alignment at lines 48--68
  [] [] [] [] 
  []
 
-[66
+[68
 
 
-]) [67]
+]) [69]
 \openout2 = `attachment_offices.aux'.
 
  (attachment_offices.tex
@@ -1943,7 +2020,7 @@ Overfull \hbox (37.59996pt too wide) in alignment at lines 4--28
 Underfull \vbox (badness 10000) detected at line 28
  []
 
-) [68
+) [70
 
 
 
@@ -1952,7 +2029,7 @@ Underfull \vbox (badness 10000) detected at line 28
 
  (attachment_installation.tex
 Appendix C.
-) [69
+) [71
 
 
 
@@ -1967,24 +2044,28 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 173.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 173.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 1606C6745970722F8F7DE59D3E151376;9130.
+
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 173.
  ) 
 Here is how much of TeX's memory you used:
- 28145 strings out of 480934
- 488866 string characters out of 2898513
- 875034 words of memory out of 3000000
- 43115 multiletter control sequences out of 15000+200000
- 616585 words of font info for 94 fonts, out of 3000000 for 9000
+ 27924 strings out of 480934
+ 487856 string characters out of 2898513
+ 724341 words of memory out of 3000000
+ 42891 multiletter control sequences out of 15000+200000
+ 620803 words of font info for 95 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,24n,60p,667b,2341s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ma
-thit.enc}{C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/l
-m/lm-rm.enc} <C:\Users\kristina\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public
+{C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm
+.enc}{C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm
+-mathit.enc} <C:\Users\kristina\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public
 /bbm/dpi600\bbm12.pk>{C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fonts
 /enc/dvips/lm/lm-mathex.enc}{C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.
 9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/kristina/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/enc/dvips/lm/lm-rmtt.enc}{C:/Users/kristina/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users/kristina/AppData/Local/Pr
+KTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/kristina/AppData/Local/Program
+s/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rmtt.enc}<C:/Users/kristina/AppData/Local/Pr
 ograms/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/kristina/AppData/L
 ocal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Users/kristina/Ap
 pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Users/kris
@@ -1998,14 +2079,16 @@ pe1/public/lm/lmr17.pfb><C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fo
 nts/type1/public/lm/lmr6.pfb><C:/Users/kristina/AppData/Local/Programs/MiKTeX 2
 .9/fonts/type1/public/lm/lmr7.pfb><C:/Users/kristina/AppData/Local/Programs/MiK
 TeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/kristina/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Users/kristina/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/kristina/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/kristina/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/kri
-stina/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on thesis.pdf (73 pages, 3256838 bytes).
+s/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Users/kristina/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Users/kristina/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/kristina/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/kri
+stina/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Us
+ers/kristina/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb
+>
+Output written on thesis.pdf (75 pages, 3473541 bytes).
 PDF statistics:
- 1318 PDF objects out of 1440 (max. 8388607)
- 253 named destinations out of 1000 (max. 500000)
- 727 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1370 PDF objects out of 1440 (max. 8388607)
+ 258 named destinations out of 1000 (max. 500000)
+ 752 words of extra memory for PDF output out of 10000 (max. 10000000)
 
