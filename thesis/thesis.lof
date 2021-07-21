@@ -27,7 +27,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Sitemap of the application.}}{39}{figure.5.1}%
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Landing page and its features.}}{40}{figure.5.2}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Entering search query into the \emph {Search incipit} box.}}{40}{figure.5.3}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Entering search query into the \emph {Search incipit} box.}}{41}{figure.5.3}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces The result of the query. Notice that each incipit has the query as a substring.}}{41}{figure.5.4}%
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Search filter panel.}}{41}{figure.5.5}%
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Page with the detail of the selected chant.}}{42}{figure.5.6}%
@@ -38,23 +38,23 @@
 \contentsline {figure}{\numberline {5.11}{\ignorespaces The uploaded data source automatically appears in the list.}}{44}{figure.5.11}%
 \contentsline {figure}{\numberline {5.12}{\ignorespaces Result of the alignment.}}{45}{figure.5.12}%
 \contentsline {figure}{\numberline {5.13}{\ignorespaces Aligned melody with the chant information displayed.}}{45}{figure.5.13}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Alignment after dragging and dropping the last melody. Compare to Figure \ref {fig:align-result}.}}{45}{figure.5.14}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Alignment after dragging and dropping the last melody. Compare to Figure \ref {fig:align-result}.}}{46}{figure.5.14}%
 \contentsline {figure}{\numberline {5.15}{\ignorespaces The first chant is collapsed.}}{46}{figure.5.15}%
 \contentsline {figure}{\numberline {5.16}{\ignorespaces The first chant is removed. Compare to Figure \ref {fig:align-result}.}}{46}{figure.5.16}%
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Aligned melodies shown as the raw string.}}{46}{figure.5.17}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Aligned melodies shown as the raw string.}}{47}{figure.5.17}%
 \contentsline {figure}{\numberline {5.18}{\ignorespaces The aligned melodies shown without headers.}}{47}{figure.5.18}%
 \contentsline {figure}{\numberline {5.19}{\ignorespaces The aligned melodies shown in \emph {Raw} mode without headers and text.}}{47}{figure.5.19}%
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Aligned melodies with each note colored a different color.}}{47}{figure.5.20}%
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Aligned melodies with each note colored a different color.}}{48}{figure.5.20}%
 \contentsline {figure}{\numberline {5.21}{\ignorespaces Aligned melodies with their conservation profile shown.}}{48}{figure.5.21}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces A high-level overview of the application's architecture.}}{49}{figure.6.1}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Schema of the \emph {chant} table.}}{50}{figure.6.2}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Outline of the classes contained in \emph {core} and their interaction. An arrow from A to B indicates that A depends on B. The elements in rectangles are classes, the elements in rhombi are external libraries, MAFFT is an external application.}}{53}{figure.6.3}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Example of dividing Latin text into syllables using \emph {ChantProcessor}.}}{54}{figure.6.4}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Example of dividing a melody encoded as Volpiano into syllables using \emph {ChantProcessor}.}}{54}{figure.6.5}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Example of finding the stressed syllables of a Latin text using \emph {ChantProcessor}.}}{55}{figure.6.6}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Transforming a Volpiano-encoded melody into an interval representation and back.}}{55}{figure.6.7}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces The architecture of the front end. Elements in rectangles are components, elements in ellipses are services. \emph {AppComponent} is the component encapsulating the entire application. Blue components are always present on the page. Green components can be navigated to using their own URL. A dashed arrow from component A to component B implies that component A has component B in its HTML template. An arrow from a component or service A to service B means that element A uses service B.}}{57}{figure.6.8}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces A high-level overview of the application's architecture.}}{50}{figure.6.1}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Schema of the \emph {chant} table.}}{51}{figure.6.2}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Outline of the classes contained in \emph {core} and their interaction. An arrow from A to B indicates that A depends on B. The elements in rectangles are classes, the elements in rhombi are external libraries, MAFFT is an external application.}}{54}{figure.6.3}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Example of dividing Latin text into syllables using \emph {ChantProcessor}.}}{55}{figure.6.4}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Example of dividing a melody encoded as Volpiano into syllables using \emph {ChantProcessor}.}}{55}{figure.6.5}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Example of finding the stressed syllables of a Latin text using \emph {ChantProcessor}.}}{56}{figure.6.6}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Transforming a Volpiano-encoded melody into an interval representation and back.}}{56}{figure.6.7}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces The architecture of the front end. Elements in rectangles are components, elements in ellipses are services. \emph {AppComponent} is the component encapsulating the entire application. Blue components are always present on the page. Green components can be navigated to using their own URL. A dashed arrow from component A to component B implies that component A has component B in its HTML template. An arrow from a component or service A to service B means that element A uses service B.}}{58}{figure.6.8}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -33,31 +33,31 @@
 \contentsline {section}{\numberline {5.2}Landing page}{39}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}List of available chants}{40}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Incipit search}{40}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Search filter}{40}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Chant detail}{41}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.3}Search filter}{41}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Chant detail}{42}{subsection.5.2.4}%
 \contentsline {subsection}{\numberline {5.2.5}Data export}{42}{subsection.5.2.5}%
-\contentsline {section}{\numberline {5.3}Data source creation}{42}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Create from search}{42}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}User data upload}{43}{subsection.5.3.2}%
-\contentsline {section}{\numberline {5.4}Alignment}{43}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Collapsing and deleting alignment}{44}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Alignment display options}{45}{subsection.5.4.2}%
+\contentsline {section}{\numberline {5.3}Data source creation}{43}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Create from search}{43}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}User data upload}{44}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Alignment}{44}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Collapsing and deleting alignment}{45}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Alignment display options}{46}{subsection.5.4.2}%
 \contentsline {subsection}{\numberline {5.4.3}Alignment export}{48}{subsection.5.4.3}%
 \contentsline {section}{\numberline {5.5}Dashboard}{48}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Known issues}{48}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Development documentation}{49}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Data}{49}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Back end}{50}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}REST API}{51}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Core}{53}{subsection.6.2.2}%
-\contentsline {section}{\numberline {6.3}Front end}{56}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Services}{56}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Components}{59}{subsection.6.3.2}%
-\contentsline {section}{\numberline {6.4}Dependencies}{60}{section.6.4}%
-\contentsline {chapter}{Conclusion}{61}{chapter*.7}%
-\contentsline {chapter}{Bibliography}{63}{chapter*.9}%
-\contentsline {chapter}{List of Figures}{65}{chapter*.10}%
-\contentsline {chapter}{List of Tables}{67}{chapter*.11}%
-\contentsline {chapter}{\numberline {A}List of genres and their abbreviations}{68}{appendix.A}%
-\contentsline {chapter}{\numberline {B}List of offices and their abbreviations}{70}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Installation instructions}{71}{appendix.C}%
+\contentsline {section}{\numberline {5.6}Known issues}{49}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Development documentation}{50}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Data}{50}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Back end}{51}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}REST API}{52}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Core}{54}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}Front end}{57}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Services}{57}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Components}{60}{subsection.6.3.2}%
+\contentsline {section}{\numberline {6.4}Dependencies}{61}{section.6.4}%
+\contentsline {chapter}{Conclusion}{62}{chapter*.7}%
+\contentsline {chapter}{Bibliography}{64}{chapter*.9}%
+\contentsline {chapter}{List of Figures}{66}{chapter*.10}%
+\contentsline {chapter}{List of Tables}{68}{chapter*.11}%
+\contentsline {chapter}{\numberline {A}List of genres and their abbreviations}{69}{appendix.A}%
+\contentsline {chapter}{\numberline {B}List of offices and their abbreviations}{71}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Installation instructions}{72}{appendix.C}%

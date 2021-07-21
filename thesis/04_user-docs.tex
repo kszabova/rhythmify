@@ -1,9 +1,5 @@
 \chapter{User documentation}
 
-% the application does not substitute the function for database webs
-% it is functionality for user-uploaded data
-% we uploaded some data, but to do research, the researchers must upload their own data!
-
 This application is a tool for analyzing user-defined data. It comes with some data already provided, however, it does not substitute the
 function of database webs.
 
@@ -13,7 +9,6 @@ In the default settings, this URL is \url{localhost:4200}.}
 In this chapter, we present an overview of the functionality of the application. The first section sketches out the overall
 functionality of the application. The following sections describe each feature in more detail.
 
-% explain the basic objects - data source - what it is
 
 \section{Site map}
 
@@ -29,9 +24,13 @@ The rectangles represent pages with their own URLs, while the ellipses represent
 
 \section{Landing page}
 
-The landing page displays a list of chants from a specified source, which is by default set to the provided data source \emph{CantusCorpus v0.2}.
-As we assume that the number of all selected chants can be large, we do not display all of them at once. Instead, the user can choose the number of
-chants displayed at once and paginate through the list to get to later ones.
+The application contains one or more data sources. A data source is a set of chant data defined by the user. The application comes with one data
+source, \emph{CantusCorpus v0.2}, already uploaded. The separation of data sources enables users to compare different datasets.
+
+The landing page provides several functions (see Figure \ref{fig:land_page}). The top panel, which is always present on the page, allows for quick
+navigation to other pages and for filtering search by chants' incipit (the first few words of text). It shows a list of chants from the current search
+settings, as well as a filter panel used for modifying the settings. There is an option to export a selection of chants to a CSV file and to create a new
+data source from them, as well as several options for their alignment.
 
 The panel on the right side enables data source selection. To change data source (more than one can be selected at once), click the checkbox next
 to the data source name and click \emph{save}. To hide or unhide the data source panel, click on the black \emph{Data sources} button. The panel
@@ -44,16 +43,20 @@ is available in the entire application.
 \label{fig:land_page}
 \end{figure}
 
-% create data source from user-defined search
-% say what incipit* means
-
 \subsection{List of available chants}
+
+The landing page displays a list of chants from a specified source, which is by default set to the provided data source \emph{CantusCorpus v0.2}.
+As we assume that the number of all selected chants can be large, we do not display all of them at once. Instead, the user can choose the number of
+chants displayed at once and paginate through the list to get to later ones.
+
+Some elements of the list have an incipit ending with an asterisk (\verb|*|). This indicates that the specific chant does not have its entire
+text transcribed, only the part in the incipit.
 
 \subsection{Incipit search}
 
 The landing page provides the possibility to filter chants from the current selection by their incipit (the first few words of the chant). To do so, enter the desired string into
-the field in the top-right corner marked as \emph{Search incipit} and press Enter. A set of chants that contain the query as a substring (not necessarily as a prefix)
-of their incipit will be displayed. Be aware that a misspelled query will not return the correct results.
+the field in the top-right corner marked as \emph{Search incipit} and press Enter (Figure \ref{fig:inc-search}). A set of chants that contain the query as
+a substring (not necessarily as a prefix) of their incipit will be displayed (Figure \ref{fig:inc-search-result}). Be aware that a misspelled query will not return the correct results.
 
 \begin{figure}[!h]
 \centering
@@ -73,10 +76,10 @@ of their incipit will be displayed. Be aware that a misspelled query will not re
 
 It is possible to filter the search results by their genre and office. The filter panel can be opened by clicking the down arrow next to the \emph{Filter search}
 heading. By default, all genres and all offices are selected. To select or unselect some of them, click the checkbox next to their abbreviation. To select 
-or unselect all genres or offices, click the checkbox next to \emph{All} in the respective section.
+or unselect all genres or offices, click the checkbox next to \emph{All} in the respective section (Figure \ref{fig:search_filter}).
 
 The filter panel does not use the full names of the genres and offices, as in some cases, the name can be very long. Instead, it uses their abbreviations as used 
-in Cantus Index. Attachments XXX and YYY provide a list of genres, resp. offices and their abbreviations.
+in Cantus Index. Attachments \ref{attachment:genres} and \ref{attachment:offices} provide a list of genres, resp. offices and their abbreviations.
 
 \begin{figure}[!h]
 \centering
@@ -89,8 +92,8 @@ in Cantus Index. Attachments XXX and YYY provide a list of genres, resp. offices
 
 By clicking on a chant's incipit in the search results list, the user is redirected to a page which displays the chant's melody with the text in full,
 as well as other information of interest. It shows the chant's Cantus ID, by which it can be found in the Cantus Database. It also shows a URL which
-points to the corresponding entry on the Cantus website. These fields are valid for all chants from the default \emph{CantusCorpus v0.2} dataset,
-but there is no guarantee of their correctness in user-uploaded data.
+points to the corresponding entry on the Cantus website (Figure \ref{fig:chant-detail}). These fields are valid for all chants from the default
+\emph{CantusCorpus v0.2} dataset, but there is no guarantee of their correctness in user-uploaded data.
 
 \begin{figure}[!h]
 \centering
@@ -104,7 +107,7 @@ but there is no guarantee of their correctness in user-uploaded data.
 
 The user may wish to export the results of their search into a CSV file. In that case, select the desired chants by checking the checkbox next to
 their incipit (or \emph{Select all}) and click the \emph{Export to CSV} button at the bottom of the page. A file with the name \emph{dataset.csv}
-will be automatically downloaded.
+will be automatically downloaded (Figure \ref{fig:export-ex}).
 
 \begin{figure}[!h]
 \centering
@@ -121,8 +124,8 @@ completely new data.
 \subsection{Create from search}
 
 To create a data source from the search results, check the checkboxes next to the desired chants and click the \emph{Create Dataset} button at the bottom
-of the page. The user will be prompted for the data source name. If no name is entered, the name of the data source will be \emph{undefined}. After confirming
-the name, the data source list will be automatically updated with the newly-created one.
+of the page. The user will be prompted for the data source name (Figure \ref{fig:create-ds}). If no name is entered, the name of the data source will be
+\emph{undefined}. After confirming the name, the data source list will be automatically updated with the newly-created one (Figure \ref{fig:update-ds-antiphons}).
 
 \begin{figure}[!h]
 \centering
@@ -140,9 +143,9 @@ the name, the data source list will be automatically updated with the newly-crea
 
 \subsection{User data upload}
 
-To upload new data, navigate to the \emph{Upload data} page in the top panel. Select the file to upload and enter the data source name. The file should be
+To upload new data, navigate to the \emph{Upload data} page in the top panel. Select the file to upload and enter the data source name (Figure \ref{fig:upload-ds}). The file should be
 in CSV format and its contents are specified in Section \ref{section:data_usr}. Click \emph{Upload} to upload the file. After the file is processed, the data source list will
-be automatically updated. The exported file created in Section \ref{section:data_export} is suitable for upload.
+be automatically updated (Figure \ref{fig:update-ds-respon}). The exported file created in Section \ref{section:data_export} is suitable for upload.
 
 \begin{figure}[!h]
 \centering
@@ -161,13 +164,12 @@ be automatically updated. The exported file created in Section \ref{section:data
 \section{Alignment}
 
 The alignment tool is the core functionality of the application.
-% refer to the first image when talking about the buttons
 
 It is possible to select a set of chants and have them be aligned using one of the methods described in Section \ref{section:chant_alignment}. The alignment option is selected by clicking
 on one of the buttons above the chant list (see Figure \ref{fig:land_page}) after selecting the chants to be aligned. After doing so, the user is redirected to a page where the alignment result
 is shown. In some cases, the alignment make take up to a minute to complete.
 
-The alignment result is shown as a list of melodies. The melodies are either arranged in the same order as they were displayed in the chant list (in the case of
+The alignment result is shown as a list of melodies (Figure \ref{fig:align-result}). The melodies are either arranged in the same order as they were displayed in the chant list (in the case of
 naive alignment) or in the order of similarity.
 
 \begin{figure}[!h]
@@ -178,7 +180,7 @@ naive alignment) or in the order of similarity.
 \end{figure}
 
 To show more information about each melody, the user can click on the chant source button by which each chant is identified. The same information as when navigating
-to the chant's page is displayed. To hide the detail, click on the chant source button again.
+to the chant's page is displayed (Figure \ref{fig:align-detail}). To hide the detail, click on the chant source button again.
 
 \begin{figure}[!h]
 \centering
@@ -187,7 +189,7 @@ to the chant's page is displayed. To hide the detail, click on the chant source 
 \label{fig:align-detail}
 \end{figure}
 
-If the user wishes to rearrange the displayed melodies, simply click anywhere close to a melody and drag it to another position.
+If the user wishes to rearrange the displayed melodies, simply click anywhere close to a melody and drag it to another position (Figure \ref{fig:align-rearrange}).
 
 \begin{figure}[!h]
 \centering
@@ -198,8 +200,8 @@ If the user wishes to rearrange the displayed melodies, simply click anywhere cl
 
 \subsection{Collapsing and deleting alignment}
 
-After the alignment is shown, the user can choose to collapse the alignment (i.e. hide the notes) by clicking on the \emph{Collapse} button
-in each melody's header or to remove it completely by clicking on the \emph{Remove button}. The chant can be uncollapsed by clicking
+After the alignment is shown, the user can choose to collapse the alignment (i.e. hide the notes) by clicking on the \emph{Collapse} button (Figure \ref{fig:align-collapsed})
+in each melody's header or to remove it completely by clicking on the \emph{Remove button} (Figure \ref{fig:align-removed}). The chant can be uncollapsed by clicking
 on the same button. However, removing the chant entirely is permanent. To get the removed chant back, the page needs to be reloaded.
 
 \begin{figure}[!h]
@@ -222,7 +224,7 @@ Once the chants have been aligned, there exist several options to better show ho
 
 As the Volpiano font does not have characters of equal width, the notes that are actually aligned might not be shown as aligned. To see the
 actual alignment, the user can change the display mode above the aligned melodies to \emph{Raw}, which shows the melodies as the encoded string
-in a monopaced font.
+in a monopaced font (Figure \ref{fig:align-raw}).
 
 \begin{figure}[!h]
 \centering
@@ -232,7 +234,7 @@ in a monopaced font.
 \end{figure}
 
 To see the aligned sequences better, it is possible to remove the headers and the text independently by unclicking the corresponding boxes
-in the alignment options.
+in the alignment options (Figure \ref{fig:align-no-headers}, Figure \ref{fig:align-no-text}).
 
 \begin{figure}[!h]
 \centering
@@ -248,8 +250,8 @@ in the alignment options.
 \label{fig:align-no-text}
 \end{figure}
 
-It is possible to see how similar certain regions are. The first option is to color each note based on its absolute pitch. In the case of interval alignment,
-this option may show different colors even though the intervals are the same.
+It is possible to see how similar certain regions are. The first option is to color each note based on its absolute pitch (Figure \ref{fig:align-colors}).
+In the case of interval alignment, this option may show different colors even though the intervals are the same.
 
 \begin{figure}[!h]
 \centering
@@ -259,7 +261,8 @@ this option may show different colors even though the intervals are the same.
 \end{figure}
 
 The other option is to show the conservation profile, i.e. the proportion of the other chants sharing the same note or interval at the given position. This option will show
-conservation profile corresponding to the intervals in the interval alignment option. Darker colors mean the position is more conserved, while lighter colors mean less conserved.
+conservation profile corresponding to the intervals in the interval alignment option. Darker colors mean the position is more conserved, while lighter colors mean less conserved
+(Figure \ref{fig:align-cons}). Moreover, this option shows the overall conservation indicator of the entire set.
 Using this option, it is possible to see how similar entire regions are.
 
 \begin{figure}[!h]
