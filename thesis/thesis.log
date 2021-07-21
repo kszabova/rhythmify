@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.3.29)  21 JUL 2021 01:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.3.29)  21 JUL 2021 02:03
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1740,121 +1740,116 @@ Underfull \vbox (badness 10000) detected at line 97
 
 [49]
 LaTeX Font Info:    Font shape `OML/lmr/bx/n' in size <12> not available
-(Font)              Font shape `OML/lmm/b/it' tried instead on input line 106.
+(Font)              Font shape `OML/lmm/b/it' tried instead on input line 107.
 
-Overfull \hbox (0.39232pt too wide) in paragraph at lines 111--113
+Overfull \hbox (0.39232pt too wide) in paragraph at lines 112--114
 []\OT1/lmr/bx/n/12 api/chants/sources \OT1/lmr/m/n/12 The re-sponse is a JSON o
 b-ject with one key, [][]\OT1/lmtt/m/n/12 sources[]\OT1/lmr/m/n/12 .|
  []
 
 
-Overfull \hbox (41.33022pt too wide) in paragraph at lines 119--122
+Overfull \hbox (41.33022pt too wide) in paragraph at lines 120--123
 []\OT1/lmr/bx/n/12 api/chants/export/ \OT1/lmr/m/n/12 The POST re-quest body mu
 st con-tain the field [][]\OT1/lmtt/m/n/12 idsToExport[]\OT1/lmr/m/n/12 .|
  []
 
 [50]
-Overfull \hbox (0.39278pt too wide) in paragraph at lines 139--142
+Overfull \hbox (0.39278pt too wide) in paragraph at lines 140--143
 \OT1/lmr/m/n/12 proper be-hav-ior of the ap-pli-ca-tion, e.g. the im-ple-men-ta
 -tion of align-ment, MAFFT|
  []
 
-<./images/ddocs_core.png, id=912, 446.8695pt x 254.75175pt>
+<./images/ddocs_core.png, id=916, 492.84125pt x 292.09125pt>
 File: ./images/ddocs_core.png Graphic file (type png)
 <use ./images/ddocs_core.png>
-Package pdftex.def Info: ./images/ddocs_core.png  used on input line 149.
-(pdftex.def)             Requested size: 402.17883pt x 229.27444pt.
+Package pdftex.def Info: ./images/ddocs_core.png  used on input line 147.
+(pdftex.def)             Requested size: 344.98651pt x 204.46246pt.
 [51 <./images/ddocs_core.png>]
-Overfull \hbox (54.9527pt too wide) in paragraph at lines 164--168
-\OT1/lmr/m/n/12 texts and with melodies en-coded as Volpi-ano. The method [][]\
-OT1/lmtt/m/n/12 get_syllables_from_text|
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
 [][][][]$\OT1/lmtt/m/n/10 https : / / cantus . uwaterloo . ca / sites / default
  / files / documents / 2 . %20Volpiano %
  []
 
-<./images/ddocs_text-to-syllables.png, id=930, 654.64575pt x 60.82726pt>
+<./images/ddocs_text-to-syllables.png, id=934, 654.64575pt x 60.82726pt>
 File: ./images/ddocs_text-to-syllables.png Graphic file (type png)
 <use ./images/ddocs_text-to-syllables.png>
 Package pdftex.def Info: ./images/ddocs_text-to-syllables.png  used on input li
-ne 180.
+ne 179.
 (pdftex.def)             Requested size: 392.79048pt x 36.49663pt.
-<./images/ddocs_volpiano_to_syllables.png, id=931, 657.657pt x 107.2005pt>
+<./images/ddocs_volpiano_to_syllables.png, id=935, 657.657pt x 107.2005pt>
 File: ./images/ddocs_volpiano_to_syllables.png Graphic file (type png)
 <use ./images/ddocs_volpiano_to_syllables.png>
 Package pdftex.def Info: ./images/ddocs_volpiano_to_syllables.png  used on inpu
-t line 187.
+t line 186.
 (pdftex.def)             Requested size: 394.59724pt x 64.32079pt.
-<./images/ddocs_syllables-stressed.png, id=933, 656.4525pt x 61.4295pt>
+[52 <./images/ddocs_text-to-syllables.png> <./images/ddocs_volpiano_to_syllable
+s.png>]
+<./images/ddocs_syllables-stressed.png, id=948, 656.4525pt x 61.4295pt>
 File: ./images/ddocs_syllables-stressed.png Graphic file (type png)
 <use ./images/ddocs_syllables-stressed.png>
 Package pdftex.def Info: ./images/ddocs_syllables-stressed.png  used on input l
-ine 199.
+ine 198.
 (pdftex.def)             Requested size: 393.87454pt x 36.85797pt.
-[52 <./images/ddocs_text-to-syllables.png> <./images/ddocs_volpiano_to_syllable
-s.png>]
-Overfull \hbox (58.91914pt too wide) in paragraph at lines 204--209
+
+Overfull \hbox (58.91914pt too wide) in paragraph at lines 203--208
 \OT1/lmr/m/n/12 re-sen-ta-tion of a melody. It con-tains two meth-ods, [][]\OT1
 /lmtt/m/n/12 transform_volpiano_to_intervals|
  []
 
 
-Overfull \hbox (29.25291pt too wide) in paragraph at lines 204--209
+Overfull \hbox (29.25291pt too wide) in paragraph at lines 203--208
 []\OT1/lmr/m/n/12 and [][]\OT1/lmtt/m/n/12 transform_intervals_to_volpiano[]\OT
 1/lmr/m/n/12 . [][]\OT1/lmtt/m/n/12 transform_volpiano_to_intervals|
  []
 
 
-Overfull \hbox (20.53935pt too wide) in paragraph at lines 204--209
+Overfull \hbox (20.53935pt too wide) in paragraph at lines 203--208
 \OT1/lmr/m/n/12 the same melody rep-re-sented as in-ter-vals. [][]\OT1/lmtt/m/n
 /12 transform_intervals_to_volpiano|
  []
 
-<./images/ddocs_intervals.png, id=947, 657.657pt x 120.45pt>
+<./images/ddocs_intervals.png, id=951, 657.657pt x 120.45pt>
 File: ./images/ddocs_intervals.png Graphic file (type png)
 <use ./images/ddocs_intervals.png>
-Package pdftex.def Info: ./images/ddocs_intervals.png  used on input line 212.
+Package pdftex.def Info: ./images/ddocs_intervals.png  used on input line 211.
 (pdftex.def)             Requested size: 394.59724pt x 72.27054pt.
 [53 <./images/ddocs_syllables-stressed.png> <./images/ddocs_intervals.png>]
-<./images/ddocs_frontend-schema.png, id=965, 476.982pt x 479.391pt>
+<./images/ddocs_frontend-schema.png, id=969, 661.47125pt x 620.3175pt>
 File: ./images/ddocs_frontend-schema.png Graphic file (type png)
 <use ./images/ddocs_frontend-schema.png>
 Package pdftex.def Info: ./images/ddocs_frontend-schema.png  used on input line
- 254.
-(pdftex.def)             Requested size: 381.5861pt x 383.51332pt.
+ 247.
+(pdftex.def)             Requested size: 396.8858pt x 372.19337pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [54]
-Overfull \hbox (23.18066pt too wide) in paragraph at lines 279--282
+Overfull \hbox (23.18066pt too wide) in paragraph at lines 274--277
 [][]\OT1/lmtt/m/n/12 setFilterSettings[]\OT1/lmr/m/n/12 , which changes the cur
 -rent value, and [][]\OT1/lmtt/m/n/12 getFilterSettings[]\OT1/lmr/m/n/12 ,|
  []
 
 [55 <./images/ddocs_frontend-schema.png>]
-Overfull \hbox (5.73515pt too wide) in paragraph at lines 289--292
+Overfull \hbox (5.73515pt too wide) in paragraph at lines 284--287
 []\OT1/lmr/bx/n/12 CreateDatasetService. \OT1/lmr/m/n/12 The ser-vice con-tains
  one method, [][]\OT1/lmtt/m/n/12 createDataset[]\OT1/lmr/m/n/12 .|
  []
 
 
-Overfull \hbox (3.75449pt too wide) in paragraph at lines 313--315
+Overfull \hbox (3.75449pt too wide) in paragraph at lines 308--310
 []\OT1/lmr/bx/n/12 ConservationProfileService. \OT1/lmr/m/n/12 The ser-vice con
 -tains only one method called|
  []
 
 [56]
-Overfull \hbox (11.14647pt too wide) in paragraph at lines 334--336
+Overfull \hbox (11.14647pt too wide) in paragraph at lines 329--331
 []\OT1/lmr/bx/n/12 ChantLlistWrapperComponent. \OT1/lmr/m/n/12 The com-po-nent 
 en-cap-su-lates \OT1/lmr/m/it/12 ChantList-|
  []
 
 
-Overfull \hbox (4.812pt too wide) in paragraph at lines 348--349
+Overfull \hbox (4.812pt too wide) in paragraph at lines 343--344
 []\OT1/lmr/bx/n/12 ChantFetchComponent. \OT1/lmr/m/n/12 The com-po-nent en-cap-
 su-lates \OT1/lmr/m/it/12 Chant-De-tailsCom-|
  []
@@ -1977,11 +1972,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 173.
 Here is how much of TeX's memory you used:
  28145 strings out of 480934
  488866 string characters out of 2898513
- 874309 words of memory out of 3000000
+ 875034 words of memory out of 3000000
  43115 multiletter control sequences out of 15000+200000
  616585 words of font info for 94 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,24n,60p,634b,2341s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,24n,60p,667b,2341s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ma
 thit.enc}{C:/Users/kristina/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/l
 m/lm-rm.enc} <C:\Users\kristina\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public
@@ -2008,9 +2003,9 @@ Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/kristina/AppData
 /Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/kristina/A
 ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/kri
 stina/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on thesis.pdf (73 pages, 3380454 bytes).
+Output written on thesis.pdf (73 pages, 3256838 bytes).
 PDF statistics:
- 1303 PDF objects out of 1440 (max. 8388607)
+ 1318 PDF objects out of 1440 (max. 8388607)
  253 named destinations out of 1000 (max. 500000)
  727 words of extra memory for PDF output out of 10000 (max. 10000000)
 

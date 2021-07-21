@@ -100,8 +100,9 @@ Table \ref{table:api} summarizes the API provided by the application. The API is
 
 \item \textbf{api/chants/} The POST request must contain the fields as specified in Table \ref{table:api}. \verb|dataSources| is a list of indices of allowed data sources as stored
 in the database. \verb|incipit| is a string that must be present as a substring in the \emph{incipit} field in each of the returned entries. \verb|genres| and \verb|offices|
-are lists of strings, where each string is an identifier of a genre or an office, as seen in Attachment XX. Each returned entry must have its genre be an element of \verb|genres|
-and its office be an element of \verb|offices|. The response is a list of all entries in the database satisfying these constraints.
+are lists of strings, where each string is an identifier of a genre or an office, as seen in Attachment \ref{attachment:genres} and Attachment \ref{attachment:offices}.
+Each returned entry must have its genre be an element of \verb|genres| and its office be an element of \verb|offices|. The response is a list of all entries in the
+database satisfying these constraints.
 
 \item \textbf{api/chants/\textless pk\textgreater} The application looks for a chant with the ID \verb|pk| in the database. It returns an error if no such entry exists. If it does,
 it returns a JSON object with the following keys: \emph{db\_source}, which is the entry as stored in the database, \emph{json\_volpiano}, which is the chant processed in
@@ -111,14 +112,14 @@ can be computed.
 \item \textbf{api/chants/sources} The response is a JSON object with one key, \verb|sources|. Its value is the list of pairs representing the data sources currently present in
 the database. The first value of each pair is a data source index and the second one is its name.
 
-\item \textbf{api/chants/upload/} The POST request must contain a CSV file as specified in Section XX in the field \verb|file| and a string \verb|name|. The data in the file
+\item \textbf{api/chants/upload/} The POST request must contain a CSV file as specified in Section \ref{section:data_usr} in the field \verb|file| and a string \verb|name|. The data in the file
 will be uploaded directly to the database as a new data source with the given name. Some values may be changed before inserting the data in the database, namely the columns
 \emph{id}, \emph{dataset\_idx}, and \emph{dataset\_name}, if the file contains them. The response is a JSON object with the keys \emph{name}, the name of the new data
 source, and \emph{index}, the index assigned to it.
 
 \item \textbf{api/chants/export/} The POST request body must contain the field \verb|idsToExport|. It is a list of integers representing the IDs of the chants to be exported. If
 an ID does not correspond to any chant in the database, the ID will be excluded. The response contains a CSV file with its entries being the corresponding chants, formatted
-as outlined in Section XX.
+as outlined in Section \ref{section:data_usr}.
 
 \item \textbf{api/chants/create-dataset/} The POST request must contain a list of chant IDs in the field \verb|idsToExport| and a string in the field \verb|name|. The chants
 that correspond to the IDs will be duplicated in the database, given new IDs and assigned to a new data source with the name as specified in the field \verb|name|.
@@ -140,28 +141,26 @@ values in the \emph{drupal\_path} field of the database.
 MAFFT integration, and others. Figure \ref{fig:core} outlines the classes provided in the submodule and how they interact. The classes' functionality
 is described below.
 
-% MAFFt dat mimo core
-% farebny hranaty ramcek pre core
-% mozno aj napisat cltk
 % prehodit api a core sekcie - a rovno napisat ktore api calls to pouzivaju
 \begin{figure}[!h]
 \centering
-\includegraphics[scale=0.9]{ddocs_core}
-\caption{Outline of the classes contained in \emph{core} and their interaction. An arrow from A to B indicates that A depends on B.}
+\includegraphics[scale=0.7]{ddocs_core}
+\caption{Outline of the classes contained in \emph{core} and their interaction. An arrow from A to B indicates that A depends on B. The elements in rectangles are classes,
+the elements in rhombi are external libraries, MAFFT is an external application.}
 \label{fig:core}
 \end{figure}
 
-% vyraznejsie nadpisy pre triedy - napr subsubsection
 \begin{itemize}
 
 \item\textbf{Exporter.} The class contains one method, \verb|export_to_csv|. It takes as an argument a list of chant IDs contained in the database. It returns
-a response with a file with the corresponding database entries formatted as CSV.
+a response with a file with the corresponding database entries formatted as CSV. Used by the API call \verb|api/chants/export/|.
 
 \item\textbf{Uploader.} The class defines one method, \verb|upload_csv|. Its arguments are a \emph{pandas}\footnote{\url{https://pandas.pydata.org/}} dataframe, containing
 data columns as described in Section \ref{section:db_fields}, and a dataset name. The method inserts the data into the database, ensuring that no duplication 
-of IDs occurs. Input sanitization is done by the Django framework.
+of IDs occurs. Input sanitization is done by the Django framework. Used by the API calls \verb|api/chants/create-dataset/| and \verb|api/chants/upload/|.
 
-\item\textbf{ChantProcessor.} The class contains functionality for working with Latin texts and with melodies encoded as Volpiano. The method \verb|get_syllables_from_text|
+\item\textbf{ChantProcessor.} The class contains functionality for working with Latin texts and with melodies encoded as Volpiano. The class is used by the API call
+\verb|api/chants/<pk>|. The method \verb|get_syllables_from_text|
 takes a string of Latin text and returns the text syllabified: the returned value is a list, each of whose elements represents a word of the text, and each word
 is a list of strings representing the syllables in that word. To syllabify the text, we use the module \verb|cltk|,\footnote{\url{http://cltk.org/}} which facilitates
 working with classical languages, including Latin.
@@ -226,8 +225,8 @@ still be defined) or wishes to add another sequence to align. MAFFT is only run 
 
 \item\textbf{Aligner.} The class defines the methods to compute the three types of alignment, as described in Section \ref{section:chant_alignment}: \verb|alignment_syllables|,
 which performs the word-based alignment; \verb|alignment_pitches|, computing the alignment of pitches; and \verb|alignment_intervals|, which return the alignment of 
-intervals. All of them take as an argument just the list of IDs of the chants to be aligned and return a dictionary easy to work with in HTML templates.
-% alignment_syllables nepouziva triedu mafft, ostatne ano - interval pouziva aj interval processor
+intervals. All of them take as an argument just the list of IDs of the chants to be aligned and return a dictionary easy to work with in HTML templates. \verb|alignment_syllables|
+does not use the class \verb|Mafft|, the other two do. \verb|alignment_intervals| also uses \verb|IntervalProcessor|. The class is used by the API call \verb|api/chants/align/|.
 
 \end{itemize}
 
@@ -240,19 +239,15 @@ a small, logically contained set of functionality. This makes the application sa
 passed to it and updates the appearance dynamically.
 
 This application contains several components and services that interact with each other. Figure \ref{fig:frontend-schema} shows a diagram of the front end architecture.
-The elements in rectangles are components. Orange background, \emph{AppComponent}, represents the component encapsulating the entire application. Blue
-background represents components that are always present on the page. A dotted arrow from component A to component B indicates that component A has component
-B in its HTML template. The ellipses represent services. An arrow from a component or service A to service B means that element A uses service B.
 
 The following sections describe each service and component in more detail.
 
-% pridat do popisku co su obdlzniky etc
-% vyfarbit podla toho na ktorej su stranke
-% hruba farebna sipka "api calls"
 \begin{figure}[!h]
 \centering
-\includegraphics[scale=0.8]{ddocs_frontend-schema}
-\caption{The architecture of the front end.}
+\includegraphics[scale=0.6]{ddocs_frontend-schema}
+\caption{The architecture of the front end. Elements in rectangles are components, elements in ellipses are services. \emph{AppComponent} is the component encapsulating
+the entire application. Blue components are always present on the page. Green components can be navigated to using their own URL. A dashed arrow from component A
+to component B implies that component A has component B in its HTML template. An arrow from a component or service A to service B means that element A uses service B.}
 \label{fig:frontend-schema}
 \end{figure}
 
@@ -269,11 +264,11 @@ the ID equal to the argument. The method \verb|loadData| uses the current values
 The method \verb|getAlignment| takes a list of chant IDs and an alignment mode and makes a request to the back end to calculate the corresponding alignment.
 \verb|getDataSources| obtains all data sources currently present in the database. \verb|exportChants| takes as an argument a list of chant IDs and the 
 corresponding API call returns a CSV file with their database entries. \verb|createDataset| creates a new data source from the chant IDs and name provided
-to it. All arguments to these functions are passed as a part of a \emph{FormData}\footnote{https://developer.mozilla.org/en-US/docs/Web/API/FormData}
+to it. All arguments to these functions are passed as a part of a \emph{FormData}\footnote{\url{https://developer.mozilla.org/en-US/docs/Web/API/FormData}}
 object.
 
 \item\textbf{IncipitService.} The service stores the value of the incipit search query which is used when pulling data from the database. It provides two methods:
-\verb|setIncipit| which changes the current value of the search query, and \verb|incipit| which returns a \emph{BehaviorSubject}\footnote{https://www.learnrxjs.io/learn-rxjs/subjects/behaviorsubject}
+\verb|setIncipit| which changes the current value of the search query, and \verb|incipit| which returns a \emph{BehaviorSubject}\footnote{\url{https://www.learnrxjs.io/learn-rxjs/subjects/behaviorsubject}}
 storing the value.
 
 \item\textbf{SearchFilterService.} The service stores an object containing a list of allowed genres and a list of allowed offices which will be used for filtering
